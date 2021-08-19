@@ -13,7 +13,7 @@ class PageTop extends Component {
             <div className="background-dark-grey page-top white-text center">
                 <div className="container">
                     <h1 className="no-margin opacity-08 font-lighter hero-title">
-                        Welcome to CyberMap!
+                        Welcome to CyberMap
                     </h1>
                     <br />
                     <div className="row">
