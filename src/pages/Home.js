@@ -2,12 +2,13 @@ import React, {Component} from 'react'
 import Category from '../components/category'
 import PageTop from '../components/pageTop'
 import MetaTags from "react-meta-tags";
+import data from "../data.json";
 
 class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: window.companies,
+            data: data.companies,
             searchFilter: null,
             fundingFilter: new Set(),
             categoryFilter: new Set(),

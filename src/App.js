@@ -8,12 +8,16 @@ import {
     Route,
 } from "react-router-dom";
 
+
+
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
+          companies: null 
         }
     }
+    
     render() {
         return (
             <div className="App">
@@ -29,7 +33,7 @@ class App extends Component {
                     </Switch>
                 </Router>
             </div>
-        );
+        )
     }
 }
 
