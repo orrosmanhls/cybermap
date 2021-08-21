@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Modal from './modal'
+import Modal from './Modal'
 import '../style/tile.css'
 const M = window.M
 

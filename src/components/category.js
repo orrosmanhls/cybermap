@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Tile from './tile'
-import List from './list'
-import ListLabel from './listLabel'
-import Foldable from './foldable'
+import Tile from './Tile'
+import List from './List'
+import ListLabel from './ListLabel'
+import Foldable from './Foldable'
 import '../style/category.css'
 
 class CategoryComponent extends Component {

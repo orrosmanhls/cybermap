@@ -3,11 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.13.1",
-    "react-meta-tags": "^0.7.4",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.3",
+    "react": "^16.14.0",
+    "react-meta-tags": "^1.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
     "redux": "^4.0.5"
   },
   "scripts": {

@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import Navbar from './components/navbar'
+import React from 'react'
+import Navbar from "./components/Navbar"
 import Home from './pages/Home'
 import Careers from './pages/Careers'
 import {
@@ -8,33 +8,20 @@ import {
     Route,
 } from "react-router-dom";
 
-
-
-class App extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-          companies: null 
-        }
-    }
-    
-    render() {
-        return (
-            <div className="App">
-                <Router>
-                    <Navbar/>
-                    <Switch>
-                        <Route exact path="/">
-                            <Home/>
-                        </Route>
-                        <Route path="/careers">
-                            <Careers/>
-                        </Route>
-                    </Switch>
-                </Router>
-            </div>
-        )
-    }
+export default function App() {
+  return (
+    <div className="App">
+        <Router>
+            <Navbar/>
+            <Switch>
+                <Route exact path="/">
+                    <Home/>
+                </Route>
+                <Route path="/careers">
+                    <Careers/>
+                </Route>
+            </Switch>
+        </Router>
+    </div>
+)
 }
-
-export default App;
