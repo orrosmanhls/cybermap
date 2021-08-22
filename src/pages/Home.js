@@ -40,7 +40,7 @@ class Home extends Component {
         let fundingFilter = funding ? new Set(funding) : this.state.fundingFilter
         let searchFilter = search != null ? search.toLowerCase() : this.state.searchFilter
 
-        let data = window.companies
+        let data = dataJSON.companies
         if (searchFilter)
             data = data.filter(item => item.name.toLowerCase().includes(searchFilter))
         if (categoryFilter.size)
