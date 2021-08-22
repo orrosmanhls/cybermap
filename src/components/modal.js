@@ -26,7 +26,7 @@ class Modal extends Component {
                       item && console.log(item)
                     }
                     { item.headquarters && <div className="font-13 bold">Headquarters: {item.headquarters}</div> }
-                    { item.total_funding && <div className="font-13 bold">Funding: ${item.total_funding}</div> }
+                    { <div className="font-13 bold">Funding: {item.total_funding !== "N/A" && "$"}{item.total_funding}{item.total_funding !== "N/A" && "M"}</div> }
                     <br />
                     <hr />
                     <br />
