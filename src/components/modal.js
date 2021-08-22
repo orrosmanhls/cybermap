@@ -22,8 +22,11 @@ class Modal extends Component {
                     <div className="turquoise-text modal-category">{item.category}{item.subcategory ? (' | '+item.subcategory) : ''}</div>
                     <div className="font-14 pre-wrap">{item.description}</div>
                     <br />
+                    {
+                      item && console.log(item)
+                    }
                     { item.headquarters && <div className="font-13 bold">Headquarters: {item.headquarters}</div> }
-                    { item.funding && <div className="font-13 bold">Funding: ${item.funding}</div> }
+                    { item.total_funding && <div className="font-13 bold">Funding: ${item.total_funding}</div> }
                     <br />
                     <hr />
                     <br />
