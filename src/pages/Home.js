@@ -2,20 +2,20 @@ import React, {Component} from 'react'
 import Category from '../components/category'
 import PageTop from '../components/pageTop'
 import MetaTags from "react-meta-tags";
+import dataJSON from "../data.json"
 
 class Home extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: window.companies,
+            data: dataJSON.companies,
             searchFilter: null,
             fundingFilter: new Set(),
             categoryFilter: new Set(),
             fundingOptions: ['$0-$10M', '$10M-$30M', '$30M-$50M', '$50M+'],
-            isTile: true
-        }
-
-        this.state.sortedCategories = Object.keys(this.generateCategories(this.state.data)).sort(this.sortCategories)
+            isTile: true,
+            sortedCategories: Object.keys(this.generateCategories(dataJSON.companies)).sort(this.sortCategories)
+          }
     }
 
     sortCategories(a, b) {
@@ -40,7 +40,7 @@ class Home extends Component {
         let fundingFilter = funding ? new Set(funding) : this.state.fundingFilter
         let searchFilter = search != null ? search.toLowerCase() : this.state.searchFilter
 
-        let data = window.companies
+        let data = dataJSON.companies
         if (searchFilter)
             data = data.filter(item => item.name.toLowerCase().includes(searchFilter))
         if (categoryFilter.size)
