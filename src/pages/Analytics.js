@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
-import BubbleChartWrapper from '../components/chart/bubble/bubbleChart';
-import PerYearSection from '../components/chart/perYear/perYearSection';
-import MetaTagsWrapper from '../components/metaTags';
-import Tooltip from '../components/tooltip';
+import BubbleChartWrapper from '../components/chart/bubble/BubbleChart';
+import PerYearSection from '../components/chart/perYear/PerYearSection';
+import MetaTagsWrapper from '../components/MetaTags';
+import Tooltip from '../components/Tooltip';
 import {Collapse} from 'react-collapse';
 
 import '../style/analytics.css'
-import FundingSection from '../components/chart/funding/fundingSection';
-import AverageSection from '../components/chart/average/averageSection';
-import Spinner from '../components/spinner';
-import BubbleChartMobile from '../components/chart/bubble/bubbleChartMobile';
+import FundingSection from '../components/chart/funding/FundingSection';
+import AverageSection from '../components/chart/average/AverageSection';
+import Spinner from '../components/Spinner';
+import BubbleChartMobile from '../components/chart/bubble/BubbleChartMobile';
 
 import { categoryColor } from '../utils';
 
