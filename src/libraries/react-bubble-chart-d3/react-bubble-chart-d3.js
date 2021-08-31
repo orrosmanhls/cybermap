@@ -56,7 +56,7 @@ export default class BubbleChart extends Component {
 
     const bubblesWidth = showLegend ? width * (1 - (legendPercentage / 100)) : width;
     const legendWidth = width - bubblesWidth;
-    const color = d3.scaleOrdinal(d3.schemeCategory20c);
+    const color = d3.scaleOrdinal(d3.schemeCategory10);
 
     const pack = d3.pack()
         .size([bubblesWidth * graph.zoom, bubblesWidth * graph.zoom])
@@ -121,7 +121,7 @@ export default class BubbleChart extends Component {
       .on('mousemove', function(d) {
         tooltip
           .html(d.label)
-          .style("top", (d.y+d3.mouse(this)[1]+10)+"px").style("left",(d.x+d3.mouse(this)[0]+10)+"px");
+          .style("top", (d.y+d3.pointer(this)[1]+10)+"px").style("left",(d.x+d3.pointer(this)[0]+10)+"px");
       });
 
     node.append("circle")
