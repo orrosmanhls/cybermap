@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import Category from '../components/category'
-import PageTop from '../components/pageTop'
+import Category from '../components/Category'
+import PageTop from '../components/PageTop'
 import MetaTags from "react-meta-tags";
 import dataJSON from "../data.json"
 
