@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "react": "^16.14.0",
+    "react-meta-tags": "^1.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
     "@weknow/react-bubble-chart-d3": "^1.0.12",
     "change-case": "^4.1.2",
     "react-bubble-chart": "^0.4.0",
@@ -10,10 +14,6 @@
     "react-dom": "^16.13.1",
     "react-tooltip": "^4.2.15",
     "recharts": "^2.0.8",
-    "react": "^16.14.0",
-    "react-meta-tags": "^1.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
     "redux": "^4.0.5"
   },
   "scripts": {
