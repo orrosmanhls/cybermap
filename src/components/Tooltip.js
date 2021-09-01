@@ -3,27 +3,20 @@ import ReactTooltip from 'react-tooltip';
 import '../style/tooltip.css'
 
 
-class Tooltip extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-    render() {
+export default function Tooltip(props) {
+
         return(
             <>
                 <span
                     className="cybermap-tooltip_custom"
-                    data-tip={this.props.text}
-                    data-for={this.props.randomID}
+                    data-tip={props.text}
+                    data-for={props.randomID}
                 >
                 <i className="material-icons valign-middle no-margin">
-                    {this.props.icon}
+                    {props.icon}
                 </i>
                 </span>
-                <ReactTooltip type={'light'} id={this.props.randomID} />
+                <ReactTooltip type={'light'} id={props.randomID} />
             </>
         )
-    }
 }
-
-export default Tooltip
