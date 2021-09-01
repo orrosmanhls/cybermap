@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, {Component, useState, useEffect } from 'react'
 import BubbleChartWrapper from '../components/chart/bubble/BubbleChart';
 import PerYearSection from '../components/chart/perYear/PerYearSection';
 import MetaTagsWrapper from '../components/MetaTags';
@@ -13,33 +13,25 @@ import BubbleChartMobile from '../components/chart/bubble/BubbleChartMobile';
 
 import { categoryColor } from '../utils';
 
-class Analytics extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isOpened: false,
+export default function Analytics(prop) {
+  const [isOpened, setIsOpened] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [companies, setCompanies] = useState([]);
+  const [exits, setExits] = useState([]);
+  const [bubbleChartData, setBubbleChartData] = useState({});
+  const [filteredBubbleChartData, setFilteredBubbleChartData] = useState({});
+  const [totalCompany, setTotalCompany] = useState(0);
+  const [totalCapital, setTotalCapital] = useState(0);
+  const [showLessBubble, setShowLessBubble] = useState(true);
+  
 
-            companies:[],
-            exits: [],
-            loading: false,
-
-            // for bubblechart data
-            bubbleChartData: {},
-            filteredBubbleChartData: {},
-            totalCompany: 0,
-            totalCapital: 0,
-
-            showLessBubble: true
-        }
-    }
-
-    showLessBubble = () =>  {
-        this.setState({showLessBubble: !this.state.showLessBubble})
-        console.log('called')
+    const toggleShowLessBubble = () =>  {
+      setShowLessBubble(prevState => !prevState);
+      console.log('called');
     }
 
 
-    generateBubble = (data) => {
+    const generateBubble = (data) => {
         
         let totalCapital = 0;
 
@@ -66,128 +58,117 @@ class Analytics extends Component {
             });
             
         //* set state section
-        this.setState({
-                bubbleChartData, 
-                filteredBubbleChartData: bubbleChartData, 
-                totalCompany:data?.companies.length,
-                totalCapital
-            }); 
+        setBubbleChartData(bubbleChartData);
+        setFilteredBubbleChartData(bubbleChartData);
+        setTotalCompany(data?.companies.length);
+        setTotalCapital(totalCapital);
 
     }
 
 
-    componentDidMount() {
-
-        this.setState({loading: true})
-
-        let requestOptions = {
-            method: 'GET',
-            redirect: 'follow'
-          };
-
-        fetch("https://script.google.com/macros/s/AKfycbzb8LxPHh2JRpmBiZfjKXy0AV1nbZrdpgOsNvVlioTkl81TXLUCx6CZBjoLxA1471ko/exec", requestOptions)
-            .then(response => response.text())
-            .then(result => {
-                let data = JSON.parse(result);
-                console.log(data);
-
-                const exits = data.exits.map((e) => {
-                     e.exit_date =  new Date(e.exit_date).getFullYear();
-                     return e;
-                });
-
-                this.setState({companies:data.companies,exits});
-
-                this.generateBubble(data);
-
-                this.setState({loading: false})
+    useEffect(() => {
+      setLoading(true);
+      let requestOptions = {
+        method: 'GET',
+        redirect: 'follow'
+      };
+      fetch("https://script.google.com/macros/s/AKfycbzb8LxPHh2JRpmBiZfjKXy0AV1nbZrdpgOsNvVlioTkl81TXLUCx6CZBjoLxA1471ko/exec", requestOptions)
+      .then(response => response.text())
+      .then(result => {
+        let data = JSON.parse(result);
+        console.log(data);
         
-            })
-            .catch(error => console.log('error', error));
-        
-    }
-
-
-    // set active class to filter buttons
-    setActiveClass = (element) => {
-        Array.from(document.getElementsByClassName("cybermap-list_btn")).forEach((el) => {
-            el.classList.remove('active');
+        const exits = data.exits.map((e) => {
+          e.exit_date =  new Date(e.exit_date).getFullYear();
+          return e;
         });
-        element.target.classList.add('active');
+        setCompanies(data.companies);
+        setExits(exits);
+        generateBubble(data);
+        setLoading(false);
+      })
+      .catch(error => console.log('error', error));
+      
+    }, []);    
+  
+    // set active class to filter buttons
+    const setActiveClass = (element) => {
+      Array.from(document.getElementsByClassName("cybermap-list_btn")).forEach((el) => {
+        el.classList.remove('active');
+      });
+      element.target.classList.add('active');
     }
-
-
-
+    
+    
+    
     // function for filter bubble chart 
-    filterCategoryByFunding = (e, fData) => {    
-
-        this.setActiveClass(e);
+    const filterCategoryByFunding = (e, fData) => {    
+      
+        setActiveClass(e);
         let totalCapital = 0;
             
         if (fData.all === 'all') {
-            this.state.companies.map(v => {
+            companies.map(v => {
                 if (v.total_funding !== 'N/A') totalCapital +=v.total_funding;
             })
 
-            this.generateBubble({'companies': this.state.companies});
+            generateBubble({'companies': companies});
             return;
             
         } 
 
 // -----------------------
         else if (fData.start === 0 && fData.end === 10) {
-            var resultForCount = this.state.companies.filter((data) => {
+            var resultForCount = companies.filter((data) => {
                 return (data.total_funding >= 0 && data.total_funding <= 10)  || data.total_funding === 'N/A';
             });
         }
 // ----------------------
         else if (fData.start === 10 && fData.end === 30) {
-            var resultForCount = this.state.companies.filter((data) => {
+            var resultForCount = companies.filter((data) => {
                 return data.total_funding > 10 && data.total_funding <= 30
             });
         }
 // ----------------------
         else if (fData.start === 30 && fData.end === 50) {
-            var resultForCount = this.state.companies.filter((data) => {
+            var resultForCount = companies.filter((data) => {
                 return data.total_funding > 30 && data.total_funding <= 50
             });
 
             
-            var result = this.state.bubbleChartData.filter((data) => {
+            var result = bubbleChartData.filter((data) => {
                     return data.value > 30 && data.value <= 50
             });
         }
 // ----------------------
         else {  
-            var resultForCount = this.state.companies.filter((data) => {
+            var resultForCount = companies.filter((data) => {
                 return data.total_funding > 50;
             });
 
 
-            var result = this.state.bubbleChartData.filter((data) => {
+            var result = bubbleChartData.filter((data) => {
                     return data.value > 50;
             });
         }
 
-        this.generateBubble({'companies': resultForCount});
+        generateBubble({'companies': resultForCount});
 
         resultForCount.map(v => {
             if (v.total_funding !== 'N/A') totalCapital +=v.total_funding;
         })
 
+        
 
-        this.setState({
-            totalCompany:resultForCount.length,
-            totalCapital
-        });
+        setTotalCompany(resultForCount.length);
+        setTotalCompany(totalCompany);
     }
 
-    showCollapse = () => {
-        this.setState({isOpened:!this.state.isOpened})
+    const showCollapse = () => {
+        setIsOpened(prevState => !prevState);
     }
 
-    render() {
-        const capitalRaised = Math.ceil(this.state.totalCapital,5);
+        const capitalRaised = Math.ceil(totalCapital,5);
         return (
             <div className="careers-view background-dark-grey">
                 <MetaTagsWrapper />
@@ -216,15 +197,15 @@ class Analytics extends Component {
                             </span>
                             <div className="right left-align top-menu hide-on-med-and-down">
 
-                                <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 0, end: 10})}  className="cybermap-list_btn">$0-10M</button>
+                                <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 0, end: 10})}  className="cybermap-list_btn">$0-10M</button>
 
-                                <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 10, end: 30})} className="cybermap-list_btn">$10-30M</button>
+                                <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 10, end: 30})} className="cybermap-list_btn">$10-30M</button>
 
-                                <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 30, end: 50})} className="cybermap-list_btn">$30-50M</button>
+                                <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 30, end: 50})} className="cybermap-list_btn">$30-50M</button>
 
-                                <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 50, end: null})} className="cybermap-list_btn">+$50M</button>
+                                <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 50, end: null})} className="cybermap-list_btn">+$50M</button>
 
-                                <button onClick={(e) => this.filterCategoryByFunding(e, {all:'all', start: null, end: null})} className="cybermap-list_btn active">All</button>
+                                <button onClick={(e) => filterCategoryByFunding(e, {all:'all', start: null, end: null})} className="cybermap-list_btn active">All</button>
 
 
                                 <div className="clear"></div>
@@ -241,7 +222,7 @@ class Analytics extends Component {
                                 <div className="hide-on-med-and-down">
                                     <p>
                                             Total companies
-                                            <span>{this.state.totalCompany}</span>
+                                            <span>{totalCompany}</span>
                                     </p>
 
                                     <p>
@@ -252,33 +233,33 @@ class Analytics extends Component {
                                 </div>
 
                                 <div className="mobile-filter_btn hide-on-large-only">
-                                        <button className="filterCollapse" onClick={this.showCollapse}>
+                                        <button className="filterCollapse" onClick={showCollapse}>
                                             Filter by funding <i className="material-icons valign-middle no-margin">arrow_drop_down</i>
                                         </button>
-                                        <Collapse isOpened={this.state.isOpened}>
-                                            <button onClick={(e) => this.filterCategoryByFunding(e, {all:'all', start: null, end: null})} className="cybermap-list_collapse active">All</button>
+                                        <Collapse isOpened={isOpened}>
+                                            <button onClick={(e) => filterCategoryByFunding(e, {all:'all', start: null, end: null})} className="cybermap-list_collapse active">All</button>
 
-                                            <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 0, end: 10})}  className="cybermap-list_collapse">$0-10M</button>
+                                            <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 0, end: 10})}  className="cybermap-list_collapse">$0-10M</button>
 
-                                            <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 10, end: 30})} className="cybermap-list_collapse">$10-30M</button>
+                                            <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 10, end: 30})} className="cybermap-list_collapse">$10-30M</button>
 
-                                            <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 30, end: 50})} className="cybermap-list_collapse">$30-50M</button>
+                                            <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 30, end: 50})} className="cybermap-list_collapse">$30-50M</button>
 
-                                            <button onClick={(e) => this.filterCategoryByFunding(e,{all:'', start: 50, end: null})} className="cybermap-list_collapse">+$50M</button>
+                                            <button onClick={(e) => filterCategoryByFunding(e,{all:'', start: 50, end: null})} className="cybermap-list_collapse">+$50M</button>
                                         </Collapse>
                                     </div>
                             </div>
-                            {this.state.showLessBubble && <div className="cybermap-bubble_chart right" style={{ position: 'relative' }}>
-                                {this.state.filteredBubbleChartData.length ? <BubbleChartWrapper chartData={this.state.filteredBubbleChartData} />: <p>No Data</p>}
+                            {showLessBubble && <div className="cybermap-bubble_chart right" style={{ position: 'relative' }}>
+                                {filteredBubbleChartData.length ? <BubbleChartWrapper chartData={filteredBubbleChartData} />: <p>No Data</p>}
                             </div>}
                             <div className="show-less-centered hide-on-large-only">
-                                <button className="show-less_bubble" onClick={this.showLessBubble}>
-                                    Show {this.state.showLessBubble ? 'Less' : 'More' }
-                                     <i className="material-icons">{this.state.showLessBubble ? 'expand_less' : 'expand_more'}</i>
+                                <button className="show-less_bubble" onClick={toggleShowLessBubble}>
+                                    Show {showLessBubble ? 'Less' : 'More' }
+                                     <i className="material-icons">{showLessBubble ? 'expand_less' : 'expand_more'}</i>
                                 </button>
                             </div>
                             <div className="hide-on-large-only">
-                            {this.state.filteredBubbleChartData.length ?  <BubbleChartMobile chartData={this.state.filteredBubbleChartData} /> : <p>No Data</p>}
+                            {filteredBubbleChartData.length ?  <BubbleChartMobile chartData={filteredBubbleChartData} /> : <p>No Data</p>}
                             </div>
                         {/* </div> */}
                    </div>
@@ -286,13 +267,13 @@ class Analytics extends Component {
 
 
 
-                <FundingSection exits={this.state.exits} companies={this.state.companies} />
+                <FundingSection exits={exits} companies={companies} />
 
-                <PerYearSection exits={this.state.exits} companies={this.state.companies} />
+                <PerYearSection exits={exits} companies={companies} />
 
-                <AverageSection exits={this.state.exits} />
+                <AverageSection exits={exits} />
 
-                {this.state.loading && <Spinner />}
+                {loading && <Spinner />}
 
                 <div className="an-footer">
                     <div className="container-fluid">
@@ -303,7 +284,4 @@ class Analytics extends Component {
                 </div>
             </div>
         );
-    }
 }
-
-export default Analytics;
