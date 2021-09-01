@@ -1,52 +1,47 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import PerYearLogos from './PerYearLogos';
 
-class PerYearChart extends Component  {
+export default function PerYearChart(props) {
 
-  constructor(props) {
-    super(props)
-    this.state = {
-      data:[],
-      show: false,
-      year: null,
-      cx: 0,
-      cy: 0,
-      logos:[]
-    }
-}
+  const [data, setData] = useState(props.data);
+  const [logos, setLogos] = useState([]);
 
-componentDidMount() {
-  this.setState({data:this.props.data});
-}
+  const [show, setShow] = useState(false);
+  const [year, setYear] = useState(null);
+  
+  const [cx, setCx] = useState(0);
+  const [cy, setCy] = useState(0);
 
-  clickedDot = ({cx,cy,payload}) => {
-    this.setState({show:true, cx,cy,logos:payload});
+  // useEffect(() => {
+  //   setData(props.data);
+  // }, []);
 
+  const clickedDot = ({cx,cy,payload}) => {
     const y = payload.year;
-    this.setState({year:payload.year})
     let logos = [];
-
-    const selectedYearCompanies = this.props.exitDates[`${y}`]
-
+    const selectedYearCompanies = props.exitDates[`${y}`];
     selectedYearCompanies.map((c) => {
       logos.push(c.logo);
     });
-
-    this.setState({logos})
-
+    
+    setShow(true);
+    setCx(cx);
+    setCy(cy);
+    setYear(payload.year);
+    // setLogos(payload);
+    setLogos(logos);
   }
 
-  close = () => {
-    this.setState({show:false});
+  const close = () => {
+    setShow(false);
   }
 
-   render () {
     return (
       <>
         <ResponsiveContainer width='100%'>
           <LineChart
-            data={this.props.data}
+            data={data}
             margin={{
               top: 5,
               right: 30,
@@ -64,23 +59,20 @@ componentDidMount() {
             <XAxis dataKey="year" />
             <YAxis />
             <Tooltip />
-            <Line dot strokeWidth={3} isAnimationActive={false} type="monotone" dataKey="company" fill="url(#gradient4)" stroke="#3E999A" activeDot={{ onClick: (event, payload) => this.clickedDot(payload) }} />
+            <Line dot strokeWidth={3} isAnimationActive={false} type="monotone" dataKey="company" fill="url(#gradient4)" stroke="#3E999A" activeDot={{ onClick: (event, payload) => clickedDot(payload)}} />
           </LineChart>
         </ResponsiveContainer>
 
-        {this.state.show && 
+        {show && 
         <PerYearLogos
-          cx={this.state.cx} 
-          cy={this.state.cy} 
-          year={this.state.year} 
-          logos={this.state.logos} 
-          data = {this.props.exitDates}
-          close={this.close} 
+          cx={cx} 
+          cy={cy} 
+          year={year} 
+          logos={logos} 
+          data = {props.exitDates}
+          close={close} 
         /> } 
 
       </>
     );
-   }
 }
- 
-export default PerYearChart;

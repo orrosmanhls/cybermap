@@ -1,82 +1,56 @@
-import React, { Component } from 'react';
-import { render } from 'react-dom';
+import React, { useState, useEffect } from 'react';
 
-class PerYearLogos  extends Component{
+export default function PerYearLogos(props) {
+        
+  const [cx, setCx] = useState(props.cx);
+  const [cy, setCy] = useState(props.cy);
+  const [logos, setLogos] = useState(props.logos);
+  const [year, setYear] = useState(props.year);
+  const [years, setYears] = useState(null);
+  const [key, setKey] = useState(null);
+  const [data, setData] = useState(props.data);
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            cx: null,
-            cy: null,
-            logos: null,
-            year: null,
-            years: [],
-            data: this.props.data,
-            key: null,
-        }
-    }
-
-    scrollRight = () => {
-
-        if(this.state.years[this.state.key+1]) {
-            
-            const y = this.state.years[this.state.key+1];
-            // this.setState({year:this.year})
+  const scrollRight = () => {
+        if(years[key+1]) {
+            const y = years[key+1];
             let logos = [];
-
-            const selectedYearCompanies = this.props.data[`${y}`]
-
+            const selectedYearCompanies = data[`${y}`]
             selectedYearCompanies.map((c) => {
               logos.push(c.logo);
             });
-
-            this.setState({logos, year: y, key: this.state.key+1});
-
+            setLogos(logos);
+            setYear(y);
+            setKey(prevKey => prevKey + 1);
         }
-
     }
 
 
-    scrollLeft = () => {
-        if(this.state.years[this.state.key-1]) {
-            
-            const y = this.state.years[this.state.key-1];
-            // this.setState({year:this.year})
+    const scrollLeft = () => {
+        if(years[key-1]) {
+            const y = years[key-1];
             let logos = [];
-
-            const selectedYearCompanies = this.props.data[`${y}`]
-
+            const selectedYearCompanies = props.data[`${y}`]
             selectedYearCompanies.map((c) => {
               logos.push(c.logo);
             });
-
-            this.setState({logos, year: y, key: this.state.key-1});
-
+            setLogos(logos);
+            setYear(y);
+            setKey(preKey => preKey - 1);
         }
 
     }
-    
-    componentDidMount () {
+    useEffect(() => {
+      let years = [];
+      Object.keys(props.data).map(el => {
+          years.push(Number(el));
+      });
+      let key = Object.keys(props.data).indexOf(props.year);
 
-        this.setState({
-            ...this.props
-        })
+      setYears(years);
+      setKey(key);
+    }, []);
 
-        let years = [];
-        Object.keys(this.props.data).map(el => {
-            years.push(Number(el));
-        })
-
-
-       let key = Object.keys(this.props.data).indexOf(this.props.year);
-
-        this.setState({years,key})
-    }
-
-
- render() {
-
-    const images = this.state.logos?.map((l,index) => {
+    const images = logos?.map((l,index) => {
         return (
             <div className="col s4" key={index}>
                 <img className="logo-image" alt="cybermap analytics" src={`${l}`} />
@@ -84,20 +58,20 @@ class PerYearLogos  extends Component{
         )
     })
     return (
-        <div className="tooltip-modal_custom" style={{'top': `${this.state.cy+50}px`, 'left': `${this.state.cx}px`}}>
+        <div className="tooltip-modal_custom" style={{'top': `${cy+50}px`, 'left': `${cx}px`}}>
             <div className="modal-header">
                 <div className="modal-header_left">
-                    <h4>{this.state.year}</h4>
+                    <h4>{year}</h4>
                     <div>
-                    <button className="scroll-left" onClick={() => this.scrollLeft(this.state.year)}>
+                    <button className="scroll-left" onClick={() => scrollLeft(year)}>
                         <i className="material-icons">arrow_back</i>
                     </button>
-                    <button className="scroll-right" onClick={() => this.scrollRight(this.state.year)}>
+                    <button className="scroll-right" onClick={() => scrollRight(year)}>
                         <i className="material-icons">arrow_forward</i>
                     </button>
                     </div>
                 </div>
-                <button className="close" onClick={() => this.props.close()}><i className="material-icons">close</i></button>
+                <button className="close" onClick={() => props.close()}><i className="material-icons">close</i></button>
             </div>
             <div className="clear"></div>
             <div className="scroll-wrapper">
@@ -107,7 +81,4 @@ class PerYearLogos  extends Component{
             </div>
         </div>
     );
- }
 }
- 
-export default PerYearLogos;

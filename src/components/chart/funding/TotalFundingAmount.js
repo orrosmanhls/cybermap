@@ -1,44 +1,38 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
-class TotalFundingAmount extends Component { 
+export default function TotalFundingAmount(props) { 
 
-  constructor(props) {
-    super(props);
+    const [data, setData] = useState([
+      {
+        name: '$0-10M',
+        value: 62,
+      },
+      {
+        name: '$10-30M',
+        value: 20,
+      },
+      {
+        name: '$30M-50M',
+        value: 53,
+      },
+      {
+        name: '$50M',
+        value: 19,
+      }
+    ]);
+  
 
-    this.state = {
-      data:[
-        {
-          name: '$0-10M',
-          value: 62,
-        },
-        {
-          name: '$10-30M',
-          value: 20,
-        },
-        {
-          name: '$30M-50M',
-          value: 53,
-        },
-        {
-          name: '$50M',
-          value: 19,
-        }
-      ]
-    }
-  }
- 
-
-  componentDidMount() {
-    let newData = this.state.data.map((el,i) => {
-      el.value = this.props.amounts[i];
+  useEffect(() => {
+    let newData = data.map((el,i) => {
+      el.value = props.amounts[i];
       return el;
   });
   
-  this.setState({data: newData});
-  }
+  setData(newData);
+  }, []);
 
-  getSize = (ch,index) => {
+  const getSize = (ch,index) => {
 
     if (index == 0) {
       if(window.innerWidth > 991) {
@@ -74,12 +68,11 @@ class TotalFundingAmount extends Component {
     }
   
   }
-  render() {
 
-    const charts = this.state.data.map((ch, index) => {
+    const charts = data.map((ch, index) => {
       return (
         <div className="amount-chart_item" data-attr={`${ch.name}`} key={index}>
-         <div className="amount-chart_circle" style={this.getSize(ch,index)}>
+         <div className="amount-chart_circle" style={getSize(ch,index)}>
             <span>{ch.value}</span>
          </div>
         </div>
@@ -92,7 +85,4 @@ class TotalFundingAmount extends Component {
      </div>
 
   )
-  }
 }
-
-export default TotalFundingAmount;
