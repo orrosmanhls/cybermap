@@ -1,7 +1,8 @@
 import React from 'react';
 import MetaTags from 'react-meta-tags';
 
-const MetaTagsWrapper = () => {
+export default function MetaTagsWrapper() {
+  
     return (
         <MetaTags>
             <title>Israeli Cybersecurity companies are hiring!</title>
@@ -17,5 +18,3 @@ const MetaTagsWrapper = () => {
         </MetaTags>
       )
 }
- 
-export default MetaTagsWrapper;

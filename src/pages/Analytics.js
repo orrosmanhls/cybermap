@@ -1,7 +1,7 @@
 import React, {Component, useState, useEffect } from 'react'
 import BubbleChartWrapper from '../components/chart/bubble/BubbleChart';
 import PerYearSection from '../components/chart/perYear/PerYearSection';
-import MetaTagsWrapper from '../components/MetaTags';
+import MetaTags from '../components/MetaTags';
 import Tooltip from '../components/Tooltip';
 import {Collapse} from 'react-collapse';
 
@@ -171,7 +171,7 @@ export default function Analytics(prop) {
         const capitalRaised = Math.ceil(totalCapital,5);
         return (
             <div className="careers-view background-dark-grey">
-                <MetaTagsWrapper />
+                <MetaTags />
                 <div className="container-fluid">
                     <h1>CyberMap Analytics</h1>
                     <div className="row">
