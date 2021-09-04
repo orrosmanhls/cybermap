@@ -48,13 +48,14 @@ class Home extends Component {
                 categoryFilter.has(item.category + (item.subcategory ? ' | ' + item.subcategory : '')) ||
                 categoryFilter.has(item.category))
         if (fundingFilter.size) {
+            console.log(fundingFilter)
             data = data.filter(item => {
-                let funding = item.funding ? (parseFloat(item.funding, 10) * (item.funding.includes('M') ?
-                    1000 : item.funding.includes('B') ? 1000000 : 1)) : 0
-                if (item.public || funding >= 50000) return fundingFilter.has('$50M+')
-                if (funding >= 30000 && funding < 50000) return fundingFilter.has('$30M-$50M')
-                if (funding >= 10000 && funding < 30000) return fundingFilter.has('$10M-$30M')
-                if (funding < 10000) return fundingFilter.has('$0-$10M')
+                const funding = item.total_funding;
+                console.log(funding);                
+                if (funding >= 50) return fundingFilter.has('$50M+')
+                if (funding >= 30 && funding < 50) return fundingFilter.has('$30M-$50M')
+                if (funding >= 10 && funding < 30) return fundingFilter.has('$10M-$30M')
+                if (funding < 10) return fundingFilter.has('$0-$10M')
                 return true
             })
         }
