@@ -45,12 +45,12 @@ export default function Home() {
             newCategoryFilter.has(item.category))
     if (newFundingFilter.size) {
         filteredData = filteredData.filter(item => {
-            let funding = item.funding ? (parseFloat(item.funding, 10) * (item.funding.includes('M') ?
-                1000 : item.funding.includes('B') ? 1000000 : 1)) : 0
-            if (item.public || funding >= 50000) return newFundingFilter.has('$50M+')
-            if (funding >= 30000 && funding < 50000) return newFundingFilter.has('$30M-$50M')
-            if (funding >= 10000 && funding < 30000) return newFundingFilter.has('$10M-$30M')
-            if (funding < 10000) return newFundingFilter.has('$0-$10M')
+            let funding = item.total_funding;
+
+            if (item.public || funding >= 50) return newFundingFilter.has('$50M+')
+            if (funding >= 30 && funding < 50) return newFundingFilter.has('$30M-$50M')
+            if (funding >= 10 && funding < 30) return newFundingFilter.has('$10M-$30M')
+            if (funding < 10) return newFundingFilter.has('$0-$10M')
             return true
         })
     }
