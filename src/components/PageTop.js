@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Dropdown from './dropdown'
+import Dropdown from './Dropdown'
 import '../style/pageTop.css'
 import '../style/dropdown.css'
 
