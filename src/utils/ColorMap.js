@@ -2,7 +2,7 @@ const colorMap = {
     'Application Security': '#85C7C8',
     'Blockchain Security': '#B361DC',
     'Cloud Security': '#FF7701',
-    'Data Protection': '#90B66B',
+    'Data Security & Privacy': '#90B66B',
     'Email Security': '#8237A8',
     'Endpoint Security': '#026269',
     'Fraud & Transactions': '#51B892',
@@ -13,8 +13,9 @@ const colorMap = {
     'SaaS Security': '#C28BDE',
     'Security Operations': '#FFA455',
     'Threat Intelligence': '#5FCDD3',
-    'Vulnerability & Risk Mgmt': '#FFAF03',
+    'Vulnerability & Risk Management': '#FFAF03',
     'Web Security': '#67999A',
+    'Zero Trust Network Access & SASE': '#f44336'
 };
 
 export { colorMap };

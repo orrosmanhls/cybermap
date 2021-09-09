@@ -12,12 +12,14 @@ import Spinner from '../components/Spinner';
 import BubbleChartMobile from '../components/chart/bubble/BubbleChartMobile';
 
 import { categoryColor } from '../utils';
+import dataJSON from "../data.json";
+
 
 export default function Analytics(prop) {
   const [isOpened, setIsOpened] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [companies, setCompanies] = useState([]);
-  const [exits, setExits] = useState([]);
+  const [companies, setCompanies] = useState(dataJSON.companies);
+  const [exits, setExits] = useState(dataJSON.exits);
   const [bubbleChartData, setBubbleChartData] = useState({});
   const [filteredBubbleChartData, setFilteredBubbleChartData] = useState({});
   const [totalCompany, setTotalCompany] = useState(0);
@@ -67,28 +69,13 @@ export default function Analytics(prop) {
 
 
     useEffect(() => {
-      setLoading(true);
-      let requestOptions = {
-        method: 'GET',
-        redirect: 'follow'
-      };
-      fetch("https://script.google.com/macros/s/AKfycbzb8LxPHh2JRpmBiZfjKXy0AV1nbZrdpgOsNvVlioTkl81TXLUCx6CZBjoLxA1471ko/exec", requestOptions)
-      .then(response => response.text())
-      .then(result => {
-        let data = JSON.parse(result);
-        console.log(data);
-        
-        const exits = data.exits.map((e) => {
-          e.exit_date =  new Date(e.exit_date).getFullYear();
-          return e;
-        });
-        setCompanies(data.companies);
-        setExits(exits);
-        generateBubble(data);
-        setLoading(false);
-      })
-      .catch(error => console.log('error', error));
-      
+      const naCompanies = dataJSON.companies.filter(company => {
+        if(company.total_funding === 50) {
+          console.log(company.name);
+          return true;
+        }
+      });
+      generateBubble(dataJSON);
     }, []);    
   
     // set active class to filter buttons
@@ -161,7 +148,7 @@ export default function Analytics(prop) {
         
 
         setTotalCompany(resultForCount.length);
-        setTotalCompany(totalCompany);
+        // setTotalCompany(totalCompany);
     }
 
     const showCollapse = () => {
