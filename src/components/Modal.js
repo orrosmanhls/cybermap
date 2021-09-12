@@ -23,9 +23,7 @@ export default function Modal(props) {
                     <div className="turquoise-text modal-category">{item.category}{item.subcategory ? (' | '+item.subcategory) : ''}</div>
                     <div className="font-14 pre-wrap">{item.description}</div>
                     <br />
-                    {
-                      item && console.log(item)
-                    }
+
                     { item.headquarters && <div className="font-13 bold">Headquarters: {item.headquarters}</div> }
                     { <div className="font-13 bold">Funding: {item.total_funding !== "N/A" && "$"}{item.total_funding}{item.total_funding !== "N/A" && "M"}</div> }
                     <br />

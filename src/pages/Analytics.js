@@ -1,25 +1,25 @@
 import React, {Component, useState, useEffect } from 'react'
-import BubbleChartWrapper from '../components/chart/bubble/BubbleChart';
-import PerYearSection from '../components/chart/perYear/PerYearSection';
-import MetaTags from '../components/MetaTags';
-import Tooltip from '../components/Tooltip';
 import {Collapse} from 'react-collapse';
 
 import '../style/analytics.css'
-import FundingSection from '../components/chart/funding/FundingSection';
-import AverageSection from '../components/chart/average/AverageSection';
-import Spinner from '../components/Spinner';
-import BubbleChartMobile from '../components/chart/bubble/BubbleChartMobile';
-
 import { categoryColor } from '../utils';
 import dataJSON from "../data.json";
+import MetaTags from '../components/MetaTags';
+import Spinner from '../components/Spinner';
+import PerYearSection from '../components/chart/perYear/PerYearSection';
+import Tooltip from '../components/Tooltip';
+import FundingSection from '../components/chart/funding/FundingSection';
+import AverageSection from '../components/chart/average/AverageSection';
+import BubbleChartMobile from '../components/chart/bubble/BubbleChartMobile';
+import BubbleChartWrapper from '../components/chart/bubble/BubbleChartNew';
+import dayjs from 'dayjs';
 
 
 export default function Analytics(prop) {
   const [isOpened, setIsOpened] = useState(false);
   const [loading, setLoading] = useState(false);
   const [companies, setCompanies] = useState(dataJSON.companies);
-  const [exits, setExits] = useState(dataJSON.exits);
+  const [exits, setExits] = useState();
   const [bubbleChartData, setBubbleChartData] = useState({});
   const [filteredBubbleChartData, setFilteredBubbleChartData] = useState({});
   const [totalCompany, setTotalCompany] = useState(0);
@@ -27,13 +27,12 @@ export default function Analytics(prop) {
   const [showLessBubble, setShowLessBubble] = useState(true);
   
 
-    const toggleShowLessBubble = () =>  {
-      setShowLessBubble(prevState => !prevState);
-      console.log('called');
-    }
+  const toggleShowLessBubble = () =>  {
+    setShowLessBubble(prevState => !prevState);
+  }
 
 
-    const generateBubble = (data) => {
+  const generateBubble = (data) => {
         
         let totalCapital = 0;
 
@@ -65,16 +64,17 @@ export default function Analytics(prop) {
         setTotalCompany(data?.companies.length);
         setTotalCapital(totalCapital);
 
-    }
+  }
 
 
     useEffect(() => {
       const naCompanies = dataJSON.companies.filter(company => {
         if(company.total_funding === 50) {
-          console.log(company.name);
           return true;
         }
       });
+      const ExitsWithFormattedDated = dataJSON.exits.map(exit => ({...exit, exit_date: dayjs(exit.exit_date).$y}));
+      setExits(ExitsWithFormattedDated);
       generateBubble(dataJSON);
     }, []);    
   
@@ -156,7 +156,7 @@ export default function Analytics(prop) {
     }
 
         const capitalRaised = Math.ceil(totalCapital,5);
-        return (
+        return exits ? (
             <div className="careers-view background-dark-grey">
                 <MetaTags />
                 <div className="container-fluid">
@@ -245,9 +245,9 @@ export default function Analytics(prop) {
                                      <i className="material-icons">{showLessBubble ? 'expand_less' : 'expand_more'}</i>
                                 </button>
                             </div>
-                            <div className="hide-on-large-only">
+                            {/* <div className="hide-on-large-only">
                             {filteredBubbleChartData.length ?  <BubbleChartMobile chartData={filteredBubbleChartData} /> : <p>No Data</p>}
-                            </div>
+                            </div> */}
                         {/* </div> */}
                    </div>
                 </div>
@@ -270,5 +270,5 @@ export default function Analytics(prop) {
                     </div>
                 </div>
             </div>
-        );
+        ) : null;
 }

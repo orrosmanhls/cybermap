@@ -149,6 +149,8 @@ button:focus {
     border-radius: 20px;
     margin-bottom: 30px;
     background-color: #fff;
+    max-height: 400px;
+    overflow-y: scroll;
 }
 
 .title_out {

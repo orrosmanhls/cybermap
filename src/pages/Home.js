@@ -82,7 +82,6 @@ export default function Home() {
 
   return (
     <div>
-      {console.log(sortedKeys)}
         <MetaTags>
             <title>CyberMap by YL Ventures</title>
             <meta name="viewport"

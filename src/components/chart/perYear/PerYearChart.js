@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import PerYearLogos from './PerYearLogos';
 
-export default function PerYearChart(props) {
+export default function PerYearChart({ data, exitDates, companies }) {
 
-  const [data, setData] = useState(props.data);
   const [logos, setLogos] = useState([]);
 
   const [show, setShow] = useState(false);
@@ -13,14 +12,13 @@ export default function PerYearChart(props) {
   const [cx, setCx] = useState(0);
   const [cy, setCy] = useState(0);
 
-  // useEffect(() => {
-  //   setData(props.data);
-  // }, []);
+  useEffect(() => {
+  }, []);
 
   const clickedDot = ({cx,cy,payload}) => {
     const y = payload.year;
     let logos = [];
-    const selectedYearCompanies = props.exitDates[`${y}`];
+    const selectedYearCompanies = exitDates[`${y}`];
     selectedYearCompanies.map((c) => {
       logos.push(c.logo);
     });
@@ -69,7 +67,7 @@ export default function PerYearChart(props) {
           cy={cy} 
           year={year} 
           logos={logos} 
-          data = {props.exitDates}
+          data = {exitDates}
           close={close} 
         /> } 
 

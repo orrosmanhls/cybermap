@@ -1,41 +1,54 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Tooltip from '../../Tooltip';
 import PerYearChart from './PerYearChart';
+import dayjs from "dayjs";
 
-const PerYearSection = ({exits,companies}) => {
-    
-        
-    // per year chart 
+export default function PerYearSection({exits,companies}){
+  
+  const [exitsPerYear, setExitsPerYear] = useState();
+  const [exitsDates, setExitsDates] = useState();
+  const [exitsThisYear, setExitsThisYear] = useState();
+  const [exitsRecentImages, setExitsRecentImages] = useState();
+
+  useEffect(() => {
     let exitDates = exits?.reduce((r, a) => {
       r[a.exit_date] = [...r[a.exit_date] || [], a];
       return r;
     }, {});
-
+  
     let exitPerYears = [];
     let exitThisYear = 0;
     let exitThisYearImages = [];
     let exitRecentImages = [];
-
+  
     Object.keys(exitDates).forEach((year) => {
         let obj = {};
         const d = new Date();
         const n = d.getFullYear();
-
+  
         obj.name = year;
         obj.year = year;
         obj.company = exitDates[year].length;
-
-        if(Number(year) === n) {
+  
+        if(Number(year) === dayjs().$y) {
             exitThisYear = exitDates[year].length;
             exitThisYearImages = exitDates[year];
             exitRecentImages = [...exitDates[year]];
             exitRecentImages.splice(1,6)
         }
-
+  
         exitPerYears.push(obj);
-    });
 
-    return (
+    });
+    setExitsPerYear(exitPerYears);
+    setExitsDates(exitDates);
+    setExitsThisYear(exitThisYear)
+    setExitsRecentImages(exitRecentImages);
+    console.log(exitPerYears);
+  }, []);
+  
+  // per year chart 
+    return exitsPerYear ? (
         <section className="section section-3">
             <div className="container-fluid">
                 <div className="row">
@@ -54,7 +67,7 @@ const PerYearSection = ({exits,companies}) => {
                     <div className="col s12 m9">
 
                         <div className="section-chart_peryear">
-                            {exitPerYears.length ? <PerYearChart data={exitPerYears} {...{exitDates,companies}} /> : <p>Fetching data...</p> } 
+                            {exitsPerYear.length ? <PerYearChart data={exitsPerYear} exitDates={exitsDates} companies={companies} /> : <p>Fetching data...</p> } 
                         </div>
                     </div>
 
@@ -66,7 +79,7 @@ const PerYearSection = ({exits,companies}) => {
                                     year's exits
                                 </span>
                                 <span>
-                                    { exitThisYear ? exitThisYear : 0 }
+                                    { exitsThisYear ? exitsThisYear : "00" }
                                 </span>
                             </div>
                         </div>
@@ -78,7 +91,7 @@ const PerYearSection = ({exits,companies}) => {
                         </div>
                         <div className="cybermap_box">
                             <div className="row box-img_wrapper">
-                                {exitRecentImages?.map((img, index)=>{
+                                {exitsRecentImages?.map((img, index)=>{
                                     return <img alt={'cybermap analytics'} className="logo-image" key={index} src={img.logo} />
                                 })
                                 
@@ -90,7 +103,5 @@ const PerYearSection = ({exits,companies}) => {
                 </div>
             </div>
         </section>
-    );
+    ) : null;
 }
- 
-export default PerYearSection;

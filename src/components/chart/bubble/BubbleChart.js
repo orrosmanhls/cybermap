@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import BubbleChart from '../../../libraries/react-bubble-chart-d3';
+import { useMediaQuery } from 'react-responsive'
+
 
 class BubbleChartWrapper extends Component {
     constructor(props){
@@ -60,6 +62,7 @@ componentDidUpdate() {
     });
 }
 render() {
+  console.log(this.state.chartData);
   return (
     <React.Fragment>
       <div 
@@ -86,7 +89,7 @@ render() {
           offsetY: -0.01,
         }}
         
-        width={window.innerWidth > 991 ? 1099 : 650}
+        width={window.innerWidth > 991 ? 1099 : 350}
         height={window.innerWidth > 991 ? 500 : 450}
         padding={20} // optional value, number that set the padding between bubbles
         showLegend={false} // optional value, pass false to disable the legend.
