@@ -1,0 +1,9 @@
+import { render, screen } from "../../test-utils";
+
+import {{ pascalCase name }} from "./{{ pascalCase name }}";
+
+test("{{ pascalCase name }} should render props", () => {
+  const text = "text";
+  render(<{{ pascalCase name }} text={text} />);
+  expect(screen.getByTestId("{{ kebabCase name }}")).toHaveTextContent(text);
+});
