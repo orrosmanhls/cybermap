@@ -1,18 +1,25 @@
 import React from "react";
+import { ThemeProvider } from "styled-components";
 
-import { AppWrapper } from "./globalStyles";
-import { useApiEffect } from "./hooks/useApi";
+import { theme } from "./styles/themes/theme";
+import { AppWrapper, GlobalStyles } from "./styles/globalStyles";
 import AppRouter from "./router";
+// import { useApiEffect } from "./hooks/useApi";
 
-const mockAuthentication = () =>
-  new Promise((resolve) => setTimeout(() => resolve("auth"), 2000));
+// const mockAuthentication = () =>
+//   new Promise((resolve) => setTimeout(() => resolve("auth"), 2000));
 
 const App: React.FC = () => {
   // TODO: replace with authentication and init functions
-  const [, loading] = useApiEffect(mockAuthentication);
+  // const [, loading] = useApiEffect(mockAuthentication);
 
   return (
-    <AppWrapper>{!loading ? <AppRouter /> : <p>Loading...</p>}</AppWrapper>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <AppWrapper>
+        <AppRouter />
+      </AppWrapper>
+    </ThemeProvider>
   );
 };
 

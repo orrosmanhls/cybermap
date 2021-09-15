@@ -24,5 +24,8 @@
   "include": [
     "src",
     "templates"
+  ],
+  "files": [
+    "src/styles/styled.declarations.ts"
   ]
 }
