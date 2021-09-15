@@ -7,37 +7,23 @@ import MenuItem from "../MenuItem/MenuItem";
 // local styled html elements
 import { Container, Menu } from "./styles"; // styled html elements
 
-interface Props {}
+interface Props {
+  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-const Navbar: React.FC<Props> = () => {
+const Navbar: React.FC<Props> = ({ setShowModal }) => {
+  const openModal = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setShowModal(true);
+  };
+
   return (
     <Container data-testid="navbar">
       <Logo />
       <Menu>
-        <MenuItem
-          text={"About"}
-          onClick={(e) => {
-            console.log("hello world");
-          }}
-        />
-        <MenuItem
-          text={"Add a company"}
-          onClick={(e) => {
-            console.log("hello world");
-          }}
-        />
-        <MenuItem
-          text={"Analytics"}
-          onClick={(e) => {
-            console.log("hello world");
-          }}
-        />
-        <MenuItem
-          text={"ylventures.com"}
-          onClick={(e) => {
-            console.log("hello world");
-          }}
-        />
+        <MenuItem text={"About"} onClick={openModal} />
+        <MenuItem text={"Add a company"} onClick={openModal} />
+        <MenuItem text={"Analytics"} onClick={openModal} />
+        <MenuItem text={"ylventures.com"} onClick={openModal} />
       </Menu>
     </Container>
   );
