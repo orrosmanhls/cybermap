@@ -9,6 +9,7 @@ interface Props {
 }
 
 const Modal: React.FC<Props> = ({ showModal, setShowModal }) => {
+  // opacity transition
   const transitions = useTransition(showModal, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
@@ -23,12 +24,14 @@ const Modal: React.FC<Props> = ({ showModal, setShowModal }) => {
     onRest: () => setShowModal((prev) => !prev),
   });
 
+  // modal grow animation
   const { x } = useSpring({
     from: { x: 0 },
     x: showModal ? 1 : 0,
     config: { duration: 300 },
   });
 
+  // grow animation easing
   const easeOut = x.to({
     range: [0, 0.5, 1],
     output: [0.5, 0.875, 1],
@@ -37,12 +40,6 @@ const Modal: React.FC<Props> = ({ showModal, setShowModal }) => {
   const closeModal = () => {
     setShowModal(false);
   };
-
-  // const onScroll: React.UIEventHandler<HTMLDivElement> = (e) => {
-  //   console.log('hi');
-
-  //   e.preventDefault();
-  // }
 
   return transitions(
     (styles, item) =>
@@ -60,7 +57,6 @@ const Modal: React.FC<Props> = ({ showModal, setShowModal }) => {
                 }}
               >
                 <ExitButton onClick={closeModal}>Close</ExitButton>
-                {/* modal content */}
               </ModalWrapper>
             </animated.div>
           </Background>
