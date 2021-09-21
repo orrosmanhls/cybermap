@@ -1,14 +1,18 @@
 import React from "react";
 import { useTransition, useSpring, animated } from "react-spring";
 
-import { Background, ExitButton, ModalWrapper } from "./styles";
+import { useModal, useModalUpdate } from "../../contexts/ModalContext";
+import { Background, Exit, ExitContainer, ModalWrapper } from "./styles";
+import ModalTabContent from "./ModalTabContent";
+import ModalCompanyContent from "./ModalCompanyContent";
 
-interface Props {
-  setShowModal: React.Dispatch<React.SetStateAction<boolean>>;
-  showModal: boolean;
-}
+interface Props {}
 
-const Modal: React.FC<Props> = ({ showModal, setShowModal }) => {
+const Modal: React.FC<Props> = () => {
+  const { toggleModal } = useModalUpdate();
+  const { showModal, modalType } = useModal();
+  const { type, company, tab } = modalType;
+
   // opacity transition
   const transitions = useTransition(showModal, {
     from: { opacity: 0 },
@@ -21,7 +25,7 @@ const Modal: React.FC<Props> = ({ showModal, setShowModal }) => {
     config: {
       duration: 300,
     },
-    onRest: () => setShowModal((prev) => !prev),
+    onRest: toggleModal,
   });
 
   // modal grow animation
@@ -37,26 +41,23 @@ const Modal: React.FC<Props> = ({ showModal, setShowModal }) => {
     output: [0.5, 0.875, 1],
   });
 
-  const closeModal = () => {
-    setShowModal(false);
+  const stopPropagation = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    e.stopPropagation();
   };
 
   return transitions(
     (styles, item) =>
       item && (
-        <animated.div style={{ ...styles, position: "absolute" }}>
-          <Background onClick={closeModal}>
-            <animated.div
-              style={{
-                scale: easeOut,
-              }}
-            >
-              <ModalWrapper
-                onClick={(e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-                  e.stopPropagation();
-                }}
-              >
-                <ExitButton onClick={closeModal}>Close</ExitButton>
+        <animated.div style={{ ...styles, position: "absolute", zIndex: 9999 }}>
+          <Background onClick={toggleModal}>
+            <animated.div style={{ scale: easeOut }}>
+              <ModalWrapper onClick={stopPropagation}>
+                <Exit onClick={toggleModal}>X</Exit>
+                {/* <ExitContainer><Exit onClick={toggleModal}>X</Exit></ExitContainer> */}
+                {type === "tab" && <ModalTabContent tab={tab} />}
+                {type === "company" && (
+                  <ModalCompanyContent company={company} />
+                )}
               </ModalWrapper>
             </animated.div>
           </Background>

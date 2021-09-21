@@ -28,6 +28,7 @@ declare module "styled-components" {
     typography: {
       fonts: string[];
       fontSizes: {
+        smaller: string;
         small: string;
         medium: string;
         large: string;
@@ -37,6 +38,7 @@ declare module "styled-components" {
         regular: number;
         medium: number;
         bold: number;
+        bolder: number;
       };
     };
     spacing: (digit: number) => string;

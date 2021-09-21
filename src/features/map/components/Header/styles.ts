@@ -11,6 +11,7 @@ export const Container = styled.div`
 
 export const FiltersContainer = styled.div`
   display: flex;
+  align-items: center;
   width: 100%;
   height: 3rem;
   /* height: ${(props) => props.theme.spacing(4)}; */

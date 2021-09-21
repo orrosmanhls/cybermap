@@ -12,6 +12,9 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: ${(props) => props.theme.colors.secondary.main};
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
   }
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;

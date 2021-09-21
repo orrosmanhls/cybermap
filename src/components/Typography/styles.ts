@@ -6,6 +6,9 @@ export const StyledDiv = styled.div`
 export const StyledSpan = styled.span`
   font-weight: ${(props) => props.theme.typography.fontWeights.light};
 `;
+export const StyledParagraph = styled.p`
+  font-weight: ${(props) => props.theme.typography.fontWeights.light};
+`;
 export const StyledH1 = styled.h1`
   font-weight: ${(props) => props.theme.typography.fontWeights.light};
 `;

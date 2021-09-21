@@ -7,6 +7,7 @@ import {
   StyledH2,
   StyledH3,
   StyledH4,
+  StyledParagraph,
 } from "./styles";
 
 interface Props {
@@ -33,6 +34,11 @@ const Typography: React.FC<Props> = ({
 
     case "span":
       return <StyledSpan className={className}>{children}</StyledSpan>;
+
+    case "p":
+      return (
+        <StyledParagraph className={className}>{children}</StyledParagraph>
+      );
 
     case "div":
       return <StyledDiv className={className}>{children}</StyledDiv>;

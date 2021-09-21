@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+
 import Header from "../../components/Header/Header";
 import Section from "../../../../components/Section/Section";
-import dataJSON from "../../../../data.json";
+import { useModal } from "../../../../contexts/ModalContext";
 
 const Home: React.FC = () => {
   const [categoriesFilter, setCategoriesFilter] = useState(null);
@@ -10,6 +11,7 @@ const Home: React.FC = () => {
 
   return (
     <>
+      {console.log(useModal().modalType)}
       <Section direction={"column"}>
         <Header />
       </Section>
