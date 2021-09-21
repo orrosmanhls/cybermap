@@ -27,7 +27,7 @@ interface IOption {
 const Dropdown: React.FC<Props> = ({ title, options, setOptions }) => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleCategory = (clickedOption: IOption) => {
+  const toggleOption = (clickedOption: IOption) => {
     setOptions((prevOptions) =>
       prevOptions.map((option) =>
         option.name !== clickedOption.name
@@ -50,7 +50,7 @@ const Dropdown: React.FC<Props> = ({ title, options, setOptions }) => {
       {isOpen && (
         <OptionsContainer>
           {options.map((option) => (
-            <Option onClick={() => toggleCategory(option)}>
+            <Option onClick={() => toggleOption(option)}>
               {option.selected ? (
                 <CheckBoxOutlineBlankIcon />
               ) : (

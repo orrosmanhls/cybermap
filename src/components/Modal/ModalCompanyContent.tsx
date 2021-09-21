@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-// import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
+import { Timeline } from "react-twitter-widgets";
 
 import { companies } from "../../data.json";
 import { theme } from "../../styles/themes/theme";
@@ -13,6 +13,7 @@ import {
   Paragraph,
   CompanyFunding,
   CompanySocialWrapper,
+  TwitterWrapper,
 } from "./styles";
 
 interface Props {
@@ -48,12 +49,17 @@ const ModalCompanyContent: React.FC<Props> = ({ company }) => {
         <SocialIcon type={"linkedin"} link={companyData.linkedin} />
         <SocialIcon type={"twitter"} link={companyData.twitter} />
       </CompanySocialWrapper>
-      {/* <TwitterTimelineEmbed id={companyData.twitter}
-                            options={{
-                              height: 600,
-                              width: 600
-                            }}
-      /> */}
+      <TwitterWrapper>
+        <Timeline
+          dataSource={{
+            sourceType: "profile",
+            screenName: "TwitterDev",
+          }}
+          options={{
+            width: "2000",
+          }}
+        />
+      </TwitterWrapper>
     </>
   ) : null;
 };

@@ -35,14 +35,13 @@ export const ArrowDropUpIcon = styled(ArrowDropUp)`
 export const OptionsContainer = styled.ul`
   list-style: none;
   text-decoration: none;
-  height: ${(props) => props.theme.spacing(6)};
+  max-height: ${(props) => props.theme.spacing(6)};
   overflow-y: scroll;
   position: absolute;
-  padding: 0;
+  padding: ${(props) => props.theme.spacing(1)} 0;
   margin: 0;
   top: 2.5rem;
   left: 0;
-  width: fit-content;
   background-color: ${(props) => props.theme.colors.secondary.main};
   width: ${(props) => props.theme.spacing(6)};
 `;
@@ -57,6 +56,7 @@ export const Option = styled.li`
   padding: ${(props) => props.theme.spacing(1)}
     ${(props) => props.theme.spacing(2)};
   color: ${(props) => props.theme.colors.primary.main};
+  line-height: 2rem;
 `;
 
 export const StyledSpan = styled(Typography)`

@@ -48,7 +48,9 @@ const Modal: React.FC<Props> = () => {
   return transitions(
     (styles, item) =>
       item && (
-        <animated.div style={{ ...styles, position: "absolute", zIndex: 9999 }}>
+        <animated.div
+          style={{ ...styles, position: "fixed", height: "100%", zIndex: 9999 }}
+        >
           <Background onClick={toggleModal}>
             <animated.div style={{ scale: easeOut }}>
               <ModalWrapper onClick={stopPropagation}>

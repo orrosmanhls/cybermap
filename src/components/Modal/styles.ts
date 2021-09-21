@@ -17,7 +17,7 @@ export const Container = styled.div`
 
 export const Background = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,6 @@ export const CompanyInfo = styled.div`
 
 export const CompanyName = styled(Typography)`
   font-size: 2rem;
-  /* font-size: ${(props) => props.theme.typography.fontSizes.large}; */
   font-weight: ${(props) => props.theme.typography.fontWeights.bold};
   margin-bottom: 0.5rem;
 `;
@@ -139,4 +138,8 @@ export const CompanyFunding = styled(Typography)`
 export const CompanySocialWrapper = styled.div`
   display: flex;
   padding: 0.5rem 0;
+`;
+
+export const TwitterWrapper = styled.div`
+  padding: 0 15%;
 `;
