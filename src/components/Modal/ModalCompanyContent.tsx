@@ -54,6 +54,7 @@ const ModalCompanyContent: React.FC<Props> = ({ company }) => {
           dataSource={{
             sourceType: "profile",
             screenName: "TwitterDev",
+            // screenName: new URL(companyData.twitter).pathname.slice(1),
           }}
           options={{
             width: "2000",

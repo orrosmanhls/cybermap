@@ -6,7 +6,7 @@ import {
   CheckBoxOutlined,
   CheckSharp,
 } from "@material-ui/icons";
-import Typography from "../Typography/Typography";
+import Typography from "../../../../components/Typography/Typography";
 
 export const Container = styled.div`
   display: flex;

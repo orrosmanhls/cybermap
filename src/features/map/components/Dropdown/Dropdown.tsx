@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import { IOption } from "../../map.types";
 import {
   Container,
   ArrowDropDownIcon,
@@ -15,13 +16,7 @@ import {
 interface Props {
   title: string;
   options: IOption[];
-  setOptions: React.Dispatch<
-    React.SetStateAction<{ name: string; selected: boolean }[]>
-  >;
-}
-interface IOption {
-  name: string;
-  selected: boolean;
+  setOptions: React.Dispatch<React.SetStateAction<IOption[]>>;
 }
 
 const Dropdown: React.FC<Props> = ({ title, options, setOptions }) => {

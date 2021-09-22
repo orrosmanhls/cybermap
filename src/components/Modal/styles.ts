@@ -137,7 +137,7 @@ export const CompanyFunding = styled(Typography)`
 
 export const CompanySocialWrapper = styled.div`
   display: flex;
-  padding: 0.5rem 0;
+  padding: 1.5rem 0;
 `;
 
 export const TwitterWrapper = styled.div`
