@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { groupBy } from "lodash";
 
 import Header from "../../components/Header/Header";
 import Section from "../../../../components/Section/Section";
@@ -9,6 +10,9 @@ const categories = dataJSON.categories.map((category) => ({
   name: category.category,
   selected: true,
 }));
+
+// const groupedCategories = dataJSON.
+
 const fundingOptions = ["$0-$10M", "$10M-$30M", "$30M-$50M", "$50M+"].map(
   (item) => ({ name: item, selected: true })
 );
@@ -16,7 +20,7 @@ const fundingOptions = ["$0-$10M", "$10M-$30M", "$30M-$50M", "$50M+"].map(
 const Home: React.FC = () => {
   const [filteredCategories, setFilteredCategories] = useState(categories);
   const [fundingFilters, setFundingFilters] = useState(fundingOptions);
-  const [textFilter, setTextFilter] = useState<string>(null);
+  const [textFilter, setTextFilter] = useState<string>("");
 
   return (
     <>
@@ -26,7 +30,6 @@ const Home: React.FC = () => {
           setFilteredCategories={setFilteredCategories}
           fundingFilters={fundingFilters}
           setFundingFilters={setFundingFilters}
-          textFilter={textFilter}
           setTextFilter={setTextFilter}
         />
       </Section>
@@ -36,7 +39,6 @@ const Home: React.FC = () => {
           setFilteredCategories={setFilteredCategories}
           fundingFilters={fundingFilters}
           setFundingFilters={setFundingFilters}
-          textFilter={textFilter}
           setTextFilter={setTextFilter}
         />
       </Section>
@@ -46,7 +48,6 @@ const Home: React.FC = () => {
           setFilteredCategories={setFilteredCategories}
           fundingFilters={fundingFilters}
           setFundingFilters={setFundingFilters}
-          textFilter={textFilter}
           setTextFilter={setTextFilter}
         />
       </Section>
@@ -56,7 +57,6 @@ const Home: React.FC = () => {
           setFilteredCategories={setFilteredCategories}
           fundingFilters={fundingFilters}
           setFundingFilters={setFundingFilters}
-          textFilter={textFilter}
           setTextFilter={setTextFilter}
         />
       </Section>
