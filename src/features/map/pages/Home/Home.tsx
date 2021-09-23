@@ -18,7 +18,7 @@ const categories: IOption[] = Object.keys(groupedCategories).map((key) => ({
 }));
 
 const fundingOptions = ["$0-$10M", "$10M-$30M", "$30M-$50M", "$50M+"].map(
-  (item) => ({ name: item, selected: true })
+  (item) => ({ name: item, selected: false })
 );
 
 const Home: React.FC = () => {
@@ -44,14 +44,14 @@ const Home: React.FC = () => {
             <Category
               key={category.name}
               name={category.name}
-              value={category.value}
+              subcategories={category.value.subcategories}
             />
           ))
         : filteredCategories.map((category) => (
             <Category
               key={category.name}
               name={category.name}
-              value={category.value}
+              subcategories={category.value.subcategories}
             />
           ))}
     </>

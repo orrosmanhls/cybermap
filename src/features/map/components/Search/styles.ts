@@ -20,6 +20,8 @@ export const Input = styled.input`
   /* height: 100%; */
   background-color: transparent;
   color: ${(props) => props.theme.colors.secondary.main};
+  font-size: 0.875rem;
+  font-weight: ${(props) => props.theme.typography.fontWeights.regular};
   &::placeholder {
     color: ${(props) => props.theme.colors.secondary.main};
   }

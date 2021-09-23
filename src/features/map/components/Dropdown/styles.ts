@@ -16,6 +16,7 @@ export const Container = styled.div`
   font-weight: ${(props) => props.theme.typography.fontWeights.medium};
   cursor: pointer;
   position: relative;
+  margin: 0 ${(props) => props.theme.spacing(1)};
 `;
 export const TitleContainer = styled.div`
   display: flex;

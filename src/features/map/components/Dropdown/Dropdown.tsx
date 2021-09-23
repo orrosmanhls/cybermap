@@ -37,7 +37,7 @@ const Dropdown: React.FC<Props> = ({
   };
 
   const onDropDownBlurred: React.FocusEventHandler<HTMLDivElement> = (e) => {
-    isOpen ? setOpenDropdowns([]) : setOpenDropdowns([title]);
+    setOpenDropdowns([]);
   };
 
   const toggleOption = (clickedOption: IOption) => {

@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
 
   const onItemClicked = (tab: string) => {
     if (showModal) {
-      updateModalType({ type: null });
+      updateModalType(null);
     } else {
       updateModalType({
         type: "tab",

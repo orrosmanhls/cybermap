@@ -104,9 +104,9 @@ export const FooterLink = styled.a`
 
 export const CompanyLogo = styled.img`
   width: 150px;
-  height: 150px;
+  min-height: 150px;
   object-fit: contain;
-  margin: 0 auto;
+  margin: auto;
 `;
 
 export const CompanyInfo = styled.div`

@@ -26,15 +26,6 @@ const Header: React.FC<Props> = ({
   setTextFilter,
 }) => {
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
-  const { toggleModal, updateModalType } = useModalUpdate();
-
-  const openModal = (companyName: string) => {
-    updateModalType({
-      type: "company",
-      company: companyName,
-    });
-    toggleModal();
-  };
 
   return (
     <Container data-testid="header">
@@ -53,15 +44,6 @@ const Header: React.FC<Props> = ({
           isOpen={openDropdowns.some((item) => item === "Categories")}
           setOpenDropdowns={setOpenDropdowns}
         />
-
-        <button
-          onClick={() => {
-            openModal("1touch.io");
-          }}
-          style={{ margin: "0 2rem" }}
-        >
-          open
-        </button>
 
         {/* Funding Filters */}
         <Dropdown

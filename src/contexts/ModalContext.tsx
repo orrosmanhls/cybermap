@@ -21,8 +21,8 @@ export const ModalProvider: React.FC = ({ children }) => {
     setShowModal((prevState) => !prevState);
   };
 
-  const updateModalType = (modalType: ModalType) => {
-    setModalType(modalType || null);
+  const updateModalType = (modalType: ModalType = null) => {
+    setModalType(modalType);
   };
 
   const useModalValue = {

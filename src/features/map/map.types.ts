@@ -1,6 +1,24 @@
 // Add all your feature's interfaces and types
 export interface Map {}
 
+export interface GroupedCategories {
+  [propName: string]: Category;
+}
+
+export interface Category {
+  subcategories: Subcategories;
+  length: number;
+}
+
+export interface Subcategories {
+  [propName: string]: SubCategory;
+}
+
+export interface SubCategory {
+  companies: Company[];
+  length: number;
+}
+
 export interface Company {
   name: string;
   category: string;
@@ -15,24 +33,8 @@ export interface Company {
   logo: string;
 }
 
-export type SubCategory = Company[];
-
-export interface Subcategories {
-  [propName: string]: SubCategory;
-}
-
-export interface Category {
-  name: string;
-  selected: boolean;
-  value: Subcategories;
-}
-
 export interface IOption {
   name: string;
   selected: boolean;
   [propName: string]: any;
-}
-
-export interface GroupedCategories {
-  [propName: string]: Subcategories;
 }

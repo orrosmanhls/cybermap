@@ -30,6 +30,7 @@ declare module "styled-components" {
       fontSizes: {
         smaller: string;
         small: string;
+        regular: string;
         medium: string;
         large: string;
       };

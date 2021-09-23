@@ -55,7 +55,6 @@ const Modal: React.FC<Props> = () => {
             <animated.div style={{ scale: easeOut }}>
               <ModalWrapper onClick={stopPropagation}>
                 <Exit onClick={toggleModal}>X</Exit>
-                {/* <ExitContainer><Exit onClick={toggleModal}>X</Exit></ExitContainer> */}
                 {type === "tab" && <ModalTabContent tab={tab} />}
                 {type === "company" && (
                   <ModalCompanyContent company={company} />
