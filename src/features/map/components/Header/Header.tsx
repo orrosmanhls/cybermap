@@ -7,6 +7,8 @@ import { IOption } from "../../map.types";
 import Search from "../Search/Search";
 
 interface Props {
+  allCategories: IOption[];
+  allFundings: IOption[];
   filteredCategories: IOption[];
   fundingFilters: IOption[];
   setTextFilter: React.Dispatch<React.SetStateAction<string>>;
@@ -15,6 +17,8 @@ interface Props {
 }
 
 const Header: React.FC<Props> = ({
+  allCategories,
+  allFundings,
   filteredCategories,
   fundingFilters,
   setFilteredCategories,
@@ -43,8 +47,9 @@ const Header: React.FC<Props> = ({
       <FiltersContainer>
         <Dropdown
           title={"Categories"}
-          options={filteredCategories}
-          setOptions={setFilteredCategories}
+          allOptions={allCategories}
+          filteredOptions={filteredCategories}
+          setFilteredOptions={setFilteredCategories}
           isOpen={openDropdowns.some((item) => item === "Categories")}
           setOpenDropdowns={setOpenDropdowns}
         />
@@ -61,8 +66,9 @@ const Header: React.FC<Props> = ({
         {/* Funding Filters */}
         <Dropdown
           title={"Funding"}
-          options={fundingFilters}
-          setOptions={setFundingFilters}
+          allOptions={allFundings}
+          filteredOptions={fundingFilters}
+          setFilteredOptions={setFundingFilters}
           isOpen={openDropdowns.some((item) => item === "Funding")}
           setOpenDropdowns={setOpenDropdowns}
         />

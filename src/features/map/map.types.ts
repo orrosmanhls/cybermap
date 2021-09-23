@@ -15,13 +15,22 @@ export interface Company {
   logo: string;
 }
 
+export type SubCategory = Company[];
+
+export interface Subcategories {
+  [propName: string]: SubCategory;
+}
+
+export interface Category {
+  name: string;
+  selected: boolean;
+  value: Subcategories;
+}
+
 export interface IOption {
   name: string;
   selected: boolean;
-}
-
-export interface Subcategories {
-  [propName: string]: Company[];
+  [propName: string]: any;
 }
 
 export interface GroupedCategories {

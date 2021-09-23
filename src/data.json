@@ -6631,23 +6631,6 @@
           "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Certora-logo.png"
         }
       ]
-    },
-    "": {
-      "none": [
-        {
-          "name": "CloudWize ",
-          "category": "",
-          "total_funding": 3,
-          "last_fundraising_date": "",
-          "description": "",
-          "crunchbase": "https://www.crunchbase.com/organization/cloudwize",
-          "homepage": "",
-          "twitter": "",
-          "linkedin": "",
-          "subcategory": "none",
-          "logo": ""
-        }
-      ]
     }
   }
 }

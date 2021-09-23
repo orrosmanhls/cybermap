@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { IOption } from "../../map.types";
 import {
@@ -15,22 +15,28 @@ import {
 
 interface Props {
   title: string;
-  options: IOption[];
-  setOptions: React.Dispatch<React.SetStateAction<IOption[]>>;
+  allOptions: IOption[];
+  filteredOptions: IOption[];
+  setFilteredOptions: React.Dispatch<React.SetStateAction<IOption[]>>;
   isOpen: boolean;
   setOpenDropdowns: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
 const Dropdown: React.FC<Props> = ({
   title,
-  options,
-  setOptions,
+  allOptions,
+  filteredOptions,
+  setFilteredOptions,
   isOpen,
   setOpenDropdowns,
 }) => {
-  // const [isOpen, setIsOpen] = useState(false);
+  const [options, setOptions] = useState(allOptions);
 
   const onDropDownClicked: React.MouseEventHandler<HTMLDivElement> = (e) => {
+    isOpen ? setOpenDropdowns([]) : setOpenDropdowns([title]);
+  };
+
+  const onDropDownBlurred: React.FocusEventHandler<HTMLDivElement> = (e) => {
     isOpen ? setOpenDropdowns([]) : setOpenDropdowns([title]);
   };
 
@@ -44,8 +50,12 @@ const Dropdown: React.FC<Props> = ({
     );
   };
 
+  useEffect(() => {
+    setFilteredOptions(options.filter((option) => option.selected));
+  }, [options]);
+
   return (
-    <Container>
+    <Container tabIndex={0} onBlur={onDropDownBlurred}>
       <TitleContainer data-testid="dropdown" onClick={onDropDownClicked}>
         {title} {isOpen ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}
       </TitleContainer>
@@ -54,9 +64,9 @@ const Dropdown: React.FC<Props> = ({
           {options.map((option) => (
             <Option key={option.name} onClick={() => toggleOption(option)}>
               {option.selected ? (
-                <CheckBoxOutlineBlankIcon />
-              ) : (
                 <CheckSharpIcon />
+              ) : (
+                <CheckBoxOutlineBlankIcon />
               )}
               <StyledSpan>{option.name}</StyledSpan>
             </Option>
