@@ -1,28 +1,21 @@
 // Add all your feature's interfaces and types
 export interface Map {}
 
-export interface GroupedCategories {
-  [propName: string]: Category;
+export interface ICategory {
+  name: string;
+  selected: boolean;
+  subcategories: ISubcategory[];
 }
 
-export interface Category {
-  subcategories: Subcategories;
-  length: number;
+export interface ISubcategory {
+  name: string;
+  companies: ICompany[];
 }
 
-export interface Subcategories {
-  [propName: string]: SubCategory;
-}
-
-export interface SubCategory {
-  companies: Company[];
-  length: number;
-}
-
-export interface Company {
+export interface ICompany {
   name: string;
   category: string;
-  total_funding: number;
+  total_funding: number | string;
   last_fundraising_date: string;
   description: string;
   crunchbase: string;
@@ -37,4 +30,10 @@ export interface IOption {
   name: string;
   selected: boolean;
   [propName: string]: any;
+}
+
+export type Funding = "$0-$10M" | "$10M-$30M" | "$30M-$50M" | "$50M+";
+export interface FundingOption {
+  name: Funding;
+  selected: boolean;
 }

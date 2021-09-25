@@ -2,28 +2,20 @@ import React, { useState } from "react";
 
 import { Container, Title, FiltersContainer, SubTitle } from "./styles";
 import Dropdown from "../Dropdown/Dropdown";
-import { useModalUpdate, useModal } from "../../../../contexts/ModalContext";
-import { IOption } from "../../map.types";
+import { IOption, ICategory } from "../../map.types";
+import { filterByCategory, filterByFunding } from "../../map.utils";
 import Search from "../Search/Search";
 
 interface Props {
   allCategories: IOption[];
   allFundings: IOption[];
-  filteredCategories: IOption[];
-  fundingFilters: IOption[];
-  setTextFilter: React.Dispatch<React.SetStateAction<string>>;
-  setFilteredCategories: React.Dispatch<React.SetStateAction<IOption[]>>;
-  setFundingFilters: React.Dispatch<React.SetStateAction<IOption[]>>;
+  setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
 }
 
 const Header: React.FC<Props> = ({
   allCategories,
   allFundings,
-  filteredCategories,
-  fundingFilters,
   setFilteredCategories,
-  setFundingFilters,
-  setTextFilter,
 }) => {
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
 
@@ -38,9 +30,9 @@ const Header: React.FC<Props> = ({
       <FiltersContainer>
         <Dropdown
           title={"Categories"}
+          applyFilter={filterByCategory}
           allOptions={allCategories}
-          filteredOptions={filteredCategories}
-          setFilteredOptions={setFilteredCategories}
+          setFilteredCategories={setFilteredCategories}
           isOpen={openDropdowns.some((item) => item === "Categories")}
           setOpenDropdowns={setOpenDropdowns}
         />
@@ -49,12 +41,12 @@ const Header: React.FC<Props> = ({
         <Dropdown
           title={"Funding"}
           allOptions={allFundings}
-          filteredOptions={fundingFilters}
-          setFilteredOptions={setFundingFilters}
+          applyFilter={filterByFunding}
+          setFilteredCategories={setFilteredCategories}
           isOpen={openDropdowns.some((item) => item === "Funding")}
           setOpenDropdowns={setOpenDropdowns}
         />
-        <Search setTextFilter={setTextFilter} />
+        <Search setFilteredCategories={setFilteredCategories} />
       </FiltersContainer>
     </Container>
   );

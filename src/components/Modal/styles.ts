@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { CloseSharp } from "@material-ui/icons";
-import { Link } from "react-router-dom";
 
 import Typography from "../Typography/Typography";
 

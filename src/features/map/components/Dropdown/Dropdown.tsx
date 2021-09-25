@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { IOption } from "../../map.types";
+import { ICategory, IOption } from "../../map.types";
 import {
   Container,
   ArrowDropDownIcon,
@@ -16,8 +16,8 @@ import {
 interface Props {
   title: string;
   allOptions: IOption[];
-  filteredOptions: IOption[];
-  setFilteredOptions: React.Dispatch<React.SetStateAction<IOption[]>>;
+  applyFilter: (categories: IOption[], filter: IOption[]) => IOption[];
+  setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
   isOpen: boolean;
   setOpenDropdowns: React.Dispatch<React.SetStateAction<string[]>>;
 }
@@ -25,10 +25,10 @@ interface Props {
 const Dropdown: React.FC<Props> = ({
   title,
   allOptions,
-  filteredOptions,
-  setFilteredOptions,
   isOpen,
   setOpenDropdowns,
+  applyFilter,
+  setFilteredCategories,
 }) => {
   const [options, setOptions] = useState(allOptions);
 
@@ -51,7 +51,10 @@ const Dropdown: React.FC<Props> = ({
   };
 
   useEffect(() => {
-    setFilteredOptions(options.filter((option) => option.selected));
+    // 1. applyFilter(setFilteredCategories, filter)
+    // 2. Execute filter function and get result
+    // 3. set filteredCategories to be result
+    // setFilteredOptions(options.filter((option) => option.selected));
   }, [options]);
 
   return (

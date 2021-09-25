@@ -1,9 +1,5 @@
 import styled from "styled-components";
-import {
-  Category,
-  KeyboardArrowDown,
-  KeyboardArrowUp,
-} from "@material-ui/icons";
+import { KeyboardArrowDown, KeyboardArrowUp } from "@material-ui/icons";
 
 export const Container = styled.div`
   display: flex;
@@ -55,7 +51,6 @@ export const TotalCompanies = styled.span`
 `;
 
 export const CompaniesContainer = styled.div`
-  /* width: 100%; */
   display: flex;
   flex-wrap: wrap;
   margin: 1rem 0;

@@ -1,15 +1,16 @@
 import React from "react";
 
 import { debounce } from "../../map.utils";
+import { ICategory } from "../../map.types";
 import { Container, SearchIcon, Input } from "./styles";
 
 interface Props {
-  setTextFilter: React.Dispatch<React.SetStateAction<string>>;
+  setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
 }
 
-const Search: React.FC<Props> = ({ setTextFilter }) => {
+const Search: React.FC<Props> = () => {
   const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setTextFilter(e.target.value);
+    // setTextFilters(e.target.value);
   };
 
   return (

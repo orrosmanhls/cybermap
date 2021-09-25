@@ -12,6 +12,7 @@ export const Container = styled.div`
 export const FiltersContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 100%;
   height: 3rem;
   /* height: ${(props) => props.theme.spacing(4)}; */
@@ -31,3 +32,5 @@ export const SubTitle = styled(Typography)`
   font-weight: ${(props) => props.theme.typography.fontWeights.medium};
   word-spacing: 0.25rem;
 `;
+
+export const TotalCompanies = styled.div``;

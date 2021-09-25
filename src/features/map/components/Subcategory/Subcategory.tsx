@@ -1,9 +1,7 @@
-import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Section from "../../../../components/Section/Section";
-import { Company } from "../../map.types";
 import CompanyCard from "../CompanyCard/CompanyCard";
+import { ICompany } from "../../map.types";
 
 import {
   Container,
@@ -15,18 +13,16 @@ import {
   ArrowUpIcon,
   TotalCompanies,
   CompaniesContainer,
-  CompanyTag,
 } from "./styles";
 
 interface Props {
   name: string;
-  companies: Company[];
+  companies: ICompany[];
   categoryName: string;
 }
 
 const Subcategory: React.FC<Props> = ({ name, companies, categoryName }) => {
   const [isOpen, setIsOpen] = useState(true);
-  const [filteredCompanies, setFilteredCompanies] = useState(companies);
 
   const toggleCategory: React.MouseEventHandler<HTMLDivElement> = (e) => {
     setIsOpen((prevState) => !prevState);
@@ -42,14 +38,14 @@ const Subcategory: React.FC<Props> = ({ name, companies, categoryName }) => {
             {isOpen ? <ArrowUpIcon /> : <ArrowDownIcon />}
           </Title>
           <TotalCompanies>
-            {filteredCompanies.length}{" "}
-            {filteredCompanies.length === 1 ? "company" : "companies"}
+            {companies.length}{" "}
+            {companies.length === 1 ? "company" : "companies"}
           </TotalCompanies>
         </CategoryHeader>
         {isOpen && (
           <CompaniesContainer>
             {companies.map((company) => (
-              <CompanyCard company={company} />
+              <CompanyCard key={company.name} company={company} />
             ))}
           </CompaniesContainer>
         )}

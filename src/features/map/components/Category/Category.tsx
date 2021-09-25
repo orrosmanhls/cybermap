@@ -1,26 +1,24 @@
 import React from "react";
 
-import Section from "../../../../components/Section/Section";
 import Subcategory from "../Subcategory/Subcategory";
-import { Subcategories } from "../../map.types";
-import { Container } from "./styles";
+import { ISubcategory } from "../../map.types";
 
 interface Props {
   name: string;
-  subcategories: Subcategories;
+  subcategories: ISubcategory[];
 }
 
 const Category: React.FC<Props> = ({ name, subcategories }) => {
-  const subcategoriesKeys = Object.keys(subcategories);
+  // const subcategoriesKeys = Object.keys(subcategories);
 
   return (
     <>
-      {subcategoriesKeys.map((subcategoryKey) => (
+      {subcategories.map((subcategory: ISubcategory) => (
         <Subcategory
-          key={subcategoryKey}
-          name={subcategoryKey}
+          key={subcategory.name}
+          name={subcategory.name}
           categoryName={name}
-          companies={subcategories[subcategoryKey].companies}
+          companies={subcategory.companies}
         />
       ))}
     </>

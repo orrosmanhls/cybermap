@@ -5,7 +5,6 @@ import { companies } from "../../data.json";
 import { theme } from "../../styles/themes/theme";
 import SocialIcon from "../SocialIcon/SocialIcon";
 import {
-  Container,
   CompanyLogo,
   CompanyInfo,
   CompanyName,
@@ -28,7 +27,7 @@ const ModalCompanyContent: React.FC<Props> = ({ company }) => {
       (companyItem) => companyItem.name === company
     );
     setCompanyData(companyObject);
-  }, []);
+  }, [company]);
 
   return companyData ? (
     <>
@@ -49,17 +48,19 @@ const ModalCompanyContent: React.FC<Props> = ({ company }) => {
         <SocialIcon type={"linkedin"} link={companyData.linkedin} />
         <SocialIcon type={"twitter"} link={companyData.twitter} />
       </CompanySocialWrapper>
-      <TwitterWrapper>
-        <Timeline
-          dataSource={{
-            sourceType: "profile",
-            screenName: new URL(companyData.twitter).pathname.slice(1),
-          }}
-          options={{
-            width: "2000",
-          }}
-        />
-      </TwitterWrapper>
+      {companyData.twitter && (
+        <TwitterWrapper>
+          <Timeline
+            dataSource={{
+              sourceType: "profile",
+              screenName: new URL(companyData.twitter).pathname.slice(1),
+            }}
+            options={{
+              width: "2000",
+            }}
+          />
+        </TwitterWrapper>
+      )}
     </>
   ) : null;
 };

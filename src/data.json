@@ -3820,10 +3820,13 @@
       "subcategories": []
     }
   ],
-  "groupedCategories": {
-    "Data Security & Privacy": {
-      "subcategories": {
-        "none": {
+  "categoriesArray": [
+    {
+      "name": "Data Security & Privacy",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "1touch.io",
@@ -3994,15 +3997,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Unbound-logo.png"
             }
-          ],
-          "length": 13
+          ]
         }
-      },
-      "length": 13
+      ]
     },
-    "SaaS Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "SaaS Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Adaptive Shield",
@@ -4056,15 +4060,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Pandora-Security-Logo-1.png"
             }
-          ],
-          "length": 4
+          ]
         }
-      },
-      "length": 4
+      ]
     },
-    "Network Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Network Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "AirEye",
@@ -4196,15 +4201,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Zero-Logo-e1628784799767.png"
             }
-          ],
-          "length": 10
+          ]
         }
-      },
-      "length": 10
+      ]
     },
-    "Cloud Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Cloud Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "AKEYLESS",
@@ -4401,15 +4407,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Cloudwize-Logo.png"
             }
-          ],
-          "length": 15
+          ]
         }
-      },
-      "length": 15
+      ]
     },
-    "Vulnerability & Risk Management": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Vulnerability & Risk Management",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Anecdotes",
@@ -4606,10 +4613,10 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Infinipoint-Logo.png"
             }
-          ],
-          "length": 15
+          ]
         },
-        "Cyber Insurance ": {
+        {
+          "name": "Cyber Insurance ",
           "companies": [
             {
               "name": "At-Bay",
@@ -4650,10 +4657,10 @@
               "subcategory": "Cyber Insurance ",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Sayata-Logo.png"
             }
-          ],
-          "length": 3
+          ]
         },
-        "Breach & Attack Simulation": {
+        {
+          "name": "Breach & Attack Simulation",
           "companies": [
             {
               "name": "Cyrebro",
@@ -4720,10 +4727,10 @@
               "subcategory": "Breach & Attack Simulation",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/XMcyber-logo-1.png"
             }
-          ],
-          "length": 5
+          ]
         },
-        "Attack Surface Management": {
+        {
+          "name": "Attack Surface Management",
           "companies": [
             {
               "name": "Cyberpion",
@@ -4790,15 +4797,16 @@
               "subcategory": "Attack Surface Management",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Cynergy-Logo.png"
             }
-          ],
-          "length": 5
+          ]
         }
-      },
-      "length": 28
+      ]
     },
-    "IoT": {
-      "subcategories": {
-        "SCADA": {
+    {
+      "name": "IoT",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "SCADA",
           "companies": [
             {
               "name": "Aperio",
@@ -4917,10 +4925,10 @@
               "subcategory": "SCADA",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Waterfall-logo.png"
             }
-          ],
-          "length": 9
+          ]
         },
-        "Drones": {
+        {
+          "name": "Drones",
           "companies": [
             {
               "name": "Apolloshield",
@@ -4974,10 +4982,10 @@
               "subcategory": "Drones",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/vorpal.png"
             }
-          ],
-          "length": 4
+          ]
         },
-        "none": {
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Armis Security",
@@ -5174,10 +5182,10 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Kameleon-Logo.png"
             }
-          ],
-          "length": 15
+          ]
         },
-        "Automotive": {
+        {
+          "name": "Automotive",
           "companies": [
             {
               "name": "C2A Security",
@@ -5296,10 +5304,10 @@
               "subcategory": "Automotive",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Upstream_new.png"
             }
-          ],
-          "length": 9
+          ]
         },
-        "Healthcare": {
+        {
+          "name": "Healthcare",
           "companies": [
             {
               "name": "CyberMDX",
@@ -5340,15 +5348,16 @@
               "subcategory": "Healthcare",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Medigate-logo.png"
             }
-          ],
-          "length": 3
+          ]
         }
-      },
-      "length": 40
+      ]
     },
-    "Application Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Application Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Apiiro",
@@ -5532,15 +5541,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Neosec-Logo.png"
             }
-          ],
-          "length": 14
+          ]
         }
-      },
-      "length": 14
+      ]
     },
-    "Identity & Access Management": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Identity & Access Management",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Authomize",
@@ -5672,15 +5682,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Trusona-logo.png"
             }
-          ],
-          "length": 10
+          ]
         }
-      },
-      "length": 10
+      ]
     },
-    "Zero Trust Network Access & SASE": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Zero Trust Network Access & SASE",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Axis Security",
@@ -5760,15 +5771,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Island-Logo.png"
             }
-          ],
-          "length": 6
+          ]
         }
-      },
-      "length": 6
+      ]
     },
-    "Fraud & Transactions": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Fraud & Transactions",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "BioCatch",
@@ -5900,15 +5912,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/ActiveFence-Logo.png"
             }
-          ],
-          "length": 10
+          ]
         }
-      },
-      "length": 10
+      ]
     },
-    "Security Operations": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Security Operations",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "CardinalOps",
@@ -6053,15 +6066,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Zecops-logo.png"
             }
-          ],
-          "length": 11
+          ]
         }
-      },
-      "length": 11
+      ]
     },
-    "Web Security": {
-      "subcategories": {
-        "Ad Fraud": {
+    {
+      "name": "Web Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "Ad Fraud",
           "companies": [
             {
               "name": "CHEQ",
@@ -6089,10 +6103,10 @@
               "subcategory": "Ad Fraud",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Geoedge-Logo.png"
             }
-          ],
-          "length": 2
+          ]
         },
-        "none": {
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Cyabra ",
@@ -6172,10 +6186,10 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Source-Defense-Logo.png"
             }
-          ],
-          "length": 6
+          ]
         },
-        "WAF": {
+        {
+          "name": "WAF",
           "companies": [
             {
               "name": "Imperva",
@@ -6229,15 +6243,16 @@
               "subcategory": "WAF",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Sabres-Logo.png"
             }
-          ],
-          "length": 4
+          ]
         }
-      },
-      "length": 12
+      ]
     },
-    "Threat Intelligence": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Threat Intelligence",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "ClearSky Cyber Security",
@@ -6304,15 +6319,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/verint_new.png"
             }
-          ],
-          "length": 5
+          ]
         }
-      },
-      "length": 5
+      ]
     },
-    "Mobile Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Mobile Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "CommuniTake-Technologies",
@@ -6379,15 +6395,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Zimperium-Logo.png"
             }
-          ],
-          "length": 5
+          ]
         }
-      },
-      "length": 5
+      ]
     },
-    "Endpoint Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Endpoint Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Cyber 2.0",
@@ -6532,15 +6549,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Sentinel-one-logo.png"
             }
-          ],
-          "length": 11
+          ]
         }
-      },
-      "length": 11
+      ]
     },
-    "Email Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Email Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "CybeReady",
@@ -6659,15 +6677,16 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Votiro.png"
             }
-          ],
-          "length": 9
+          ]
         }
-      },
-      "length": 9
+      ]
     },
-    "Blockchain Security": {
-      "subcategories": {
-        "none": {
+    {
+      "name": "Blockchain Security",
+      "selected": false,
+      "subcategories": [
+        {
+          "name": "none",
           "companies": [
             {
               "name": "Fireblocks",
@@ -6747,11 +6766,9 @@
               "subcategory": "none",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Certora-logo.png"
             }
-          ],
-          "length": 6
+          ]
         }
-      },
-      "length": 6
+      ]
     }
-  }
+  ]
 }

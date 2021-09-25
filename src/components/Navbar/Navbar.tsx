@@ -1,11 +1,7 @@
 import React from "react";
-import { Redirect } from "react-router-dom";
+
 import { useModal, useModalUpdate } from "../../contexts/ModalContext";
-
-// global styled components
 import Logo from "../Logo/Logo";
-
-// local styled components
 import {
   Container,
   Menu,

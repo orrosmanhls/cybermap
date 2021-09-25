@@ -4,7 +4,7 @@ import { useTransition, useSpring, animated } from "react-spring";
 import { useModal, useModalUpdate } from "../../contexts/ModalContext";
 import ModalTabContent from "./ModalTabContent";
 import ModalCompanyContent from "./ModalCompanyContent";
-import { Background, Exit, ExitContainer, ModalWrapper } from "./styles";
+import { Background, Exit, ModalWrapper } from "./styles";
 
 interface Props {}
 
