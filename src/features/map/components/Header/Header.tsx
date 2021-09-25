@@ -1,22 +1,19 @@
 import React, { useState } from "react";
 
-import { Container, Title, FiltersContainer, SubTitle } from "./styles";
 import Dropdown from "../Dropdown/Dropdown";
+import Search from "../Search/Search";
+import { fundingOptions } from "../../pages/Home/Home";
+import { categoriesArray as allCategories } from "../../../../data.json";
 import { IOption, ICategory } from "../../map.types";
 import { filterByCategory, filterByFunding } from "../../map.utils";
-import Search from "../Search/Search";
+import { Container, Title, FiltersContainer, SubTitle } from "./styles";
 
 interface Props {
-  allCategories: IOption[];
   allFundings: IOption[];
   setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
 }
 
-const Header: React.FC<Props> = ({
-  allCategories,
-  allFundings,
-  setFilteredCategories,
-}) => {
+const Header: React.FC<Props> = ({ allFundings, setFilteredCategories }) => {
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
 
   return (
@@ -30,21 +27,21 @@ const Header: React.FC<Props> = ({
       <FiltersContainer>
         <Dropdown
           title={"Categories"}
-          applyFilter={filterByCategory}
           allOptions={allCategories}
-          setFilteredCategories={setFilteredCategories}
           isOpen={openDropdowns.some((item) => item === "Categories")}
           setOpenDropdowns={setOpenDropdowns}
+          applyFilter={filterByCategory}
+          setFilteredCategories={setFilteredCategories}
         />
 
         {/* Funding Filters */}
         <Dropdown
           title={"Funding"}
           allOptions={allFundings}
-          applyFilter={filterByFunding}
-          setFilteredCategories={setFilteredCategories}
           isOpen={openDropdowns.some((item) => item === "Funding")}
           setOpenDropdowns={setOpenDropdowns}
+          applyFilter={filterByFunding}
+          setFilteredCategories={setFilteredCategories}
         />
         <Search setFilteredCategories={setFilteredCategories} />
       </FiltersContainer>

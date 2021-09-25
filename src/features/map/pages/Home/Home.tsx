@@ -6,20 +6,22 @@ import { categoriesArray } from "../../../../data.json";
 import { ICategory } from "../../map.types";
 import Category from "../../components/Category/Category";
 
-const fundingOptions = ["$0-$10M", "$10M-$30M", "$30M-$50M", "$50M+"].map(
-  (item) => ({ name: item, selected: false })
-);
+export const fundingOptions = [
+  "$0-$10M",
+  "$10M-$30M",
+  "$30M-$50M",
+  "$50M+",
+].map((item) => ({ name: item, selected: false }));
 
 const Home: React.FC = () => {
   const [filteredCategories, setFilteredCategories] =
     useState<ICategory[]>(categoriesArray);
-  // const [totalCompanies, setTotalCompanies] = useState(0);
 
   return (
     <>
       <Section direction={"column"}>
         <Header
-          allCategories={categoriesArray}
+          // allCategories={categoriesArray}
           allFundings={fundingOptions}
           setFilteredCategories={setFilteredCategories}
         />

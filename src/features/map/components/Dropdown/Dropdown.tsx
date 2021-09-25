@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+import { categoriesArray as allCategories } from "../../../../data.json";
 import { ICategory, IOption } from "../../map.types";
 import {
   Container,
@@ -16,9 +17,9 @@ import {
 interface Props {
   title: string;
   allOptions: IOption[];
-  applyFilter: (categories: IOption[], filter: IOption[]) => IOption[];
-  setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
   isOpen: boolean;
+  applyFilter: (categories: ICategory[], filter: IOption[]) => ICategory[];
+  setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
   setOpenDropdowns: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
@@ -52,6 +53,11 @@ const Dropdown: React.FC<Props> = ({
 
   useEffect(() => {
     // 1. applyFilter(setFilteredCategories, filter)
+    const filteredCategories = applyFilter(
+      allCategories,
+      options.filter((option) => option.selected)
+    );
+    setFilteredCategories(filteredCategories);
     // 2. Execute filter function and get result
     // 3. set filteredCategories to be result
     // setFilteredOptions(options.filter((option) => option.selected));

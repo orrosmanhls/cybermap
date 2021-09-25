@@ -3,6 +3,7 @@ import { Timeline } from "react-twitter-widgets";
 
 import { companies } from "../../data.json";
 import { theme } from "../../styles/themes/theme";
+import { isValidUrl } from "../../features/map/map.utils";
 import SocialIcon from "../SocialIcon/SocialIcon";
 import {
   CompanyLogo,
@@ -39,7 +40,10 @@ const ModalCompanyContent: React.FC<Props> = ({ company }) => {
           {companyData.description}
         </Paragraph>
         <CompanyFunding component={"h4"}>
-          Total Funding: ${companyData.total_funding}M
+          Total Funding:{" "}
+          {companyData.total_funding === "N/A"
+            ? "N/A"
+            : `$${companyData.total_funding}M`}
         </CompanyFunding>
       </CompanyInfo>
       <CompanySocialWrapper>
@@ -48,7 +52,7 @@ const ModalCompanyContent: React.FC<Props> = ({ company }) => {
         <SocialIcon type={"linkedin"} link={companyData.linkedin} />
         <SocialIcon type={"twitter"} link={companyData.twitter} />
       </CompanySocialWrapper>
-      {companyData.twitter && (
+      {isValidUrl(companyData.twitter) && (
         <TwitterWrapper>
           <Timeline
             dataSource={{

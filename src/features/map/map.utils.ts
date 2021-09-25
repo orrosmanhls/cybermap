@@ -1,6 +1,6 @@
 // Add all utils, parses and validations.
 
-import { IOption, ICompany, ISubcategory } from "./map.types";
+import { IOption, ICompany, ISubcategory, ICategory } from "./map.types";
 
 const debounce = (func: (...args: any) => any, wait: number) => {
   let timeout: NodeJS.Timeout;
@@ -49,29 +49,72 @@ const isWithinFunding = (
 };
 
 const filterByCategory = (
-  categories: IOption[],
+  categories: ICategory[],
   categoriesFilter: IOption[]
 ) => {
-  const result = categoriesFilter.filter((category) => category.selected);
-  return result;
+  return categoriesFilter.filter(
+    (category) => category.selected
+  ) as ICategory[];
 };
 
-const filterByFunding = (categories: IOption[], fundingFilters: IOption[]) => {
-  const newCategories = categories.map((category) => {
-    const newCategory = category.subcategories.map(
-      (subcategory: ISubcategory) => ({
-        ...subcategory,
-        companies: subcategory.companies.filter((company: ICompany) =>
-          isWithinFunding(company.total_funding, fundingFilters)
-        ),
-      })
-    );
+const filterByFunding = (
+  categories: ICategory[],
+  fundingFilters: IOption[]
+): ICategory[] => {
+  if (fundingFilters.length === 0) return categories;
+  const newCategories: ICategory[] = categories.map((category) => {
+    const newCategory: ICategory = {
+      ...category,
+      subcategories: category.subcategories.map(
+        (subcategory: ISubcategory) => ({
+          ...subcategory,
+          companies: subcategory.companies.filter((company: ICompany) =>
+            isWithinFunding(company.total_funding, fundingFilters)
+          ),
+        })
+      ),
+    };
+
     return newCategory;
   });
   return newCategories;
-  // setFilteredCompanies(companies.filter(company => (
-  //   company.name.includes(textFilters) && isWithinFunding(company.total_funding, fundingFilters)
-  // )))
 };
 
-export { debounce, filterByCategory, filterByFunding, isWithinFunding };
+const filterByText = (categories: ICategory[], query: string) => {
+  if (query === "") return categories;
+  const newCategories: ICategory[] = categories.map((category) => {
+    const newCategory: ICategory = {
+      ...category,
+      subcategories: category.subcategories.map(
+        (subcategory: ISubcategory) => ({
+          ...subcategory,
+          companies: subcategory.companies.filter((company: ICompany) =>
+            company.name.toUpperCase().includes(query.toUpperCase())
+          ),
+        })
+      ),
+    };
+
+    return newCategory;
+  });
+  return newCategories;
+};
+
+const isValidUrl = (string: string) => {
+  let url;
+  try {
+    url = new URL(string);
+  } catch (_) {
+    return false;
+  }
+  return true;
+};
+
+export {
+  debounce,
+  filterByCategory,
+  filterByFunding,
+  filterByText,
+  isWithinFunding,
+  isValidUrl,
+};

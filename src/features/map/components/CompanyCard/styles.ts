@@ -35,12 +35,12 @@ export const CompanyLogo = styled.img`
 `;
 
 export const CompanyName = styled.div`
-  height: 3rem;
-  max-height: 3rem;
   display: flex;
+  height: 3.5rem;
   justify-content: center;
+  align-items: center;
   border-top: 1px solid #ccc;
   color: ${(props) => props.theme.colors.primary.main};
-  padding: 0.5rem 0 0 0;
   font-weight: ${(props) => props.theme.typography.fontWeights.bold};
+  /* overflow-y: hidden; */
 `;
