@@ -52,6 +52,7 @@ const filterByCategory = (
   categories: ICategory[],
   categoriesFilter: IOption[]
 ) => {
+  if (categoriesFilter.length === 0) return categories;
   return categoriesFilter.filter(
     (category) => category.selected
   ) as ICategory[];
@@ -98,6 +99,10 @@ const filterByText = (categories: ICategory[], query: string) => {
     return newCategory;
   });
   return newCategories;
+};
+
+export const sortAlphabetically = (categories: ICategory[]) => {
+  return categories.sort((a, b) => a.name.localeCompare(b.name));
 };
 
 const isValidUrl = (string: string) => {

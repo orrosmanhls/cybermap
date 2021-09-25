@@ -26,11 +26,14 @@ export const Title = styled(Typography)`
 
 export const SubTitle = styled(Typography)`
   width: 70%;
-  /* padding: ${(props) => props.theme.spacing(3)} 0; */
   margin-bottom: ${(props) => props.theme.spacing(3)};
   line-height: 1.5rem;
   font-weight: ${(props) => props.theme.typography.fontWeights.medium};
   word-spacing: 0.25rem;
+`;
+
+export const Span = styled.span`
+  margin-right: auto;
 `;
 
 export const TotalCompanies = styled.div``;

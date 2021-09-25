@@ -45,6 +45,8 @@ export const OptionsContainer = styled.ul`
   left: 0;
   background-color: ${(props) => props.theme.colors.secondary.main};
   width: ${(props) => props.theme.spacing(6)};
+  border-radius: ${(props) => props.theme.borderRadius};
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;
 
 export const Option = styled.li`

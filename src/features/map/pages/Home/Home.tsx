@@ -21,26 +21,18 @@ const Home: React.FC = () => {
     <>
       <Section direction={"column"}>
         <Header
-          // allCategories={categoriesArray}
+          filteredCategories={filteredCategories}
           allFundings={fundingOptions}
           setFilteredCategories={setFilteredCategories}
         />
       </Section>
-      {filteredCategories.length === 0
-        ? categoriesArray.map((category) => (
-            <Category
-              key={category.name}
-              name={category.name}
-              subcategories={category.subcategories}
-            />
-          ))
-        : filteredCategories.map((category) => (
-            <Category
-              key={category.name}
-              name={category.name}
-              subcategories={category.subcategories}
-            />
-          ))}
+      {filteredCategories.map((category) => (
+        <Category
+          key={category.name}
+          name={category.name}
+          subcategories={category.subcategories}
+        />
+      ))}
     </>
   );
 };

@@ -7,6 +7,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: sans-serif;
     font-size: 16px;
     font-family: ${(props) => props.theme.typography.fonts[0]};
+    background: linear-gradient(to bottom right, #15181b, #23282d);
     /* background-color: ${(props) => props.theme.backgroundColor}; */
     margin: 0;
     -webkit-font-smoothing: antialiased;
