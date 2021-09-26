@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import { categoriesArray as allCategories } from "../../../../data.json";
-import { sortAlphabetically } from "../../map.utils";
 import { ICategory, IOption } from "../../map.types";
 import {
   Container,
@@ -53,18 +52,12 @@ const Dropdown: React.FC<Props> = ({
   };
 
   useEffect(() => {
-    // 1. applyFilter(setFilteredCategories, filter)
-    const filteredCategories = sortAlphabetically(
-      applyFilter(
-        allCategories,
-        options.filter((option) => option.selected)
-      )
+    const filteredCategories = applyFilter(
+      allCategories,
+      options.filter((option) => option.selected)
     );
     setFilteredCategories(filteredCategories);
-    // 2. Execute filter function and get result
-    // 3. set filteredCategories to be result
-    // setFilteredOptions(options.filter((option) => option.selected));
-  }, [options]);
+  }, [options, applyFilter, setFilteredCategories]);
 
   return (
     <Container tabIndex={0} onBlur={onDropDownBlurred}>

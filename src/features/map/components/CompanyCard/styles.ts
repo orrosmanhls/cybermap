@@ -1,16 +1,31 @@
 import styled from "styled-components";
 
-export const Card = styled.div`
+import { isBoxProp } from "../../map.types";
+
+export const Card = styled.div<isBoxProp>`
   height: 163px;
   width: 138px;
   display: flex;
   flex-direction: column;
   background-color: ${(props) => props.theme.colors.secondary.main};
-  border-radius: 1.5rem 1.5rem 0 0;
   border-bottom: 6px solid #f68b1f;
-  padding: 20px 10px 0;
+
   margin: 0 0.5rem 1rem;
   cursor: pointer;
+  ${({ isBox }) =>
+    isBox
+      ? `
+    width: 100px;
+    height: 100px;
+    padding: 1rem 0.675rem;
+    border-radius: 7px 7px 0 0;
+  `
+      : `
+    padding: 20px 10px 0;
+    height: 163px;
+    width: 138px;
+    border-radius: 1.5rem 1.5rem 0 0;
+  `}
 
   // box-sizing
   -webkit-box-sizing: border-box;

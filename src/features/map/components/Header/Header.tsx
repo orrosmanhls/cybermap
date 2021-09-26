@@ -5,18 +5,31 @@ import Search from "../Search/Search";
 import { categoriesArray as allCategories } from "../../../../data.json";
 import { IOption, ICategory, ISubcategory } from "../../map.types";
 import { filterByCategory, filterByFunding } from "../../map.utils";
-import { Container, Title, FiltersContainer, SubTitle, Span } from "./styles";
+import {
+  Container,
+  Title,
+  FiltersContainer,
+  SubTitle,
+  Span,
+  ReorderIcon,
+  ViewModuleIcon,
+  DisplaySwitch,
+} from "./styles";
 
 interface Props {
   allFundings: IOption[];
   filteredCategories: ICategory[];
   setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
+  isBox: boolean;
+  setIsBox: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const Header: React.FC<Props> = ({
   allFundings,
   filteredCategories,
   setFilteredCategories,
+  isBox,
+  setIsBox,
 }) => {
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
 
@@ -34,6 +47,10 @@ const Header: React.FC<Props> = ({
     },
     0
   );
+
+  const toggleDisplay: React.MouseEventHandler<SVGSVGElement> = (e) => {
+    setIsBox((prevState) => !prevState);
+  };
 
   return (
     <Container data-testid="header">
@@ -66,6 +83,10 @@ const Header: React.FC<Props> = ({
           setFilteredCategories={setFilteredCategories}
         />
         <Search setFilteredCategories={setFilteredCategories} />
+        <DisplaySwitch>
+          <ViewModuleIcon isActive={!isBox} onClick={toggleDisplay} />
+          <ReorderIcon isActive={isBox} onClick={toggleDisplay} />
+        </DisplaySwitch>
       </FiltersContainer>
     </Container>
   );

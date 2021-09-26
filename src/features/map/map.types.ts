@@ -37,3 +37,7 @@ export interface FundingOption {
   name: Funding;
   selected: boolean;
 }
+
+export interface isBoxProp {
+  isBox?: boolean;
+}

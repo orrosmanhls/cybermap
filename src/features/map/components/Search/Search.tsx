@@ -1,7 +1,7 @@
 import React from "react";
 
 import { categoriesArray as categories } from "../../../../data.json";
-import { debounce, filterByText } from "../../map.utils";
+import { filterByText } from "../../map.utils";
 import { ICategory } from "../../map.types";
 import { Container, SearchIcon, Input } from "./styles";
 
@@ -19,7 +19,6 @@ const Search: React.FC<Props> = ({ setFilteredCategories }) => {
     <Container data-testid="search">
       <SearchIcon />
       <Input onChange={onInputChange} />
-      {/* <Input onChange={debounce(onInputChange, 250)} /> */}
     </Container>
   );
 };

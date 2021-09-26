@@ -19,9 +19,15 @@ interface Props {
   name: string;
   companies: ICompany[];
   categoryName: string;
+  isBox: boolean;
 }
 
-const Subcategory: React.FC<Props> = ({ name, companies, categoryName }) => {
+const Subcategory: React.FC<Props> = ({
+  name,
+  companies,
+  categoryName,
+  isBox,
+}) => {
   const [isOpen, setIsOpen] = useState(true);
 
   const toggleCategory: React.MouseEventHandler<HTMLDivElement> = (e) => {
@@ -30,22 +36,32 @@ const Subcategory: React.FC<Props> = ({ name, companies, categoryName }) => {
 
   return companies.length > 0 ? (
     <Section data-testid="subcategory" direction={"column"}>
-      <Container>
-        <CategoryHeader>
-          <Title onClick={toggleCategory}>
+      <Container isBox={isBox}>
+        <CategoryHeader isBox={isBox}>
+          <Title onClick={toggleCategory} isBox={isBox}>
             <CategoryTitle>{categoryName}</CategoryTitle>
-            {name !== "none" && <SubcategoryTitle>{name}</SubcategoryTitle>}
-            {isOpen ? <ArrowUpIcon /> : <ArrowDownIcon />}
+            {name !== "none" && (
+              <SubcategoryTitle isBox={isBox}>{name}</SubcategoryTitle>
+            )}
+            {!isBox && (isOpen ? <ArrowUpIcon /> : <ArrowDownIcon />)}
+            {isBox && (
+              <TotalCompanies isBox={isBox}>
+                {companies.length}{" "}
+                {companies.length === 1 ? "company" : "companies"}
+              </TotalCompanies>
+            )}
           </Title>
-          <TotalCompanies>
-            {companies.length}{" "}
-            {companies.length === 1 ? "company" : "companies"}
-          </TotalCompanies>
+          {!isBox && (
+            <TotalCompanies>
+              {companies.length}{" "}
+              {companies.length === 1 ? "company" : "companies"}
+            </TotalCompanies>
+          )}
         </CategoryHeader>
         {isOpen && (
           <CompaniesContainer>
             {companies.map((company) => (
-              <CompanyCard key={company.name} company={company} />
+              <CompanyCard key={company.name} company={company} isBox={isBox} />
             ))}
           </CompaniesContainer>
         )}

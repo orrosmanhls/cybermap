@@ -101,15 +101,14 @@ const filterByText = (categories: ICategory[], query: string) => {
   return newCategories;
 };
 
-export const sortAlphabetically = (categories: ICategory[]) => {
+const sortAlphabetically = (categories: ICategory[]) => {
   return categories.sort((a, b) => a.name.localeCompare(b.name));
 };
 
 const isValidUrl = (string: string) => {
-  let url;
   try {
-    url = new URL(string);
-  } catch (_) {
+    new URL(string);
+  } catch (error) {
     return false;
   }
   return true;
@@ -122,4 +121,5 @@ export {
   filterByText,
   isWithinFunding,
   isValidUrl,
+  sortAlphabetically,
 };

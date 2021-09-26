@@ -5,9 +5,10 @@ import { Card, LogoContainer, CompanyLogo, CompanyName } from "./styles";
 
 interface Props {
   company: ICompany;
+  isBox: boolean;
 }
 
-const CompanyCard: React.FC<Props> = ({ company }) => {
+const CompanyCard: React.FC<Props> = ({ company, isBox }) => {
   const { updateModalType, toggleModal } = useModalUpdate();
 
   const onCardClicked: React.MouseEventHandler<HTMLDivElement> = (e) => {
@@ -19,11 +20,11 @@ const CompanyCard: React.FC<Props> = ({ company }) => {
   };
 
   return (
-    <Card data-testid="company-card" onClick={onCardClicked}>
+    <Card data-testid="company-card" onClick={onCardClicked} isBox={isBox}>
       <LogoContainer>
         <CompanyLogo src={company.logo} />
       </LogoContainer>
-      <CompanyName>{company.name}</CompanyName>
+      {!isBox && <CompanyName>{company.name}</CompanyName>}
     </Card>
   );
 };

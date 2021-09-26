@@ -16,6 +16,7 @@ export const fundingOptions = [
 const Home: React.FC = () => {
   const [filteredCategories, setFilteredCategories] =
     useState<ICategory[]>(categoriesArray);
+  const [isBox, setIsBox] = useState(false);
 
   return (
     <>
@@ -24,6 +25,8 @@ const Home: React.FC = () => {
           filteredCategories={filteredCategories}
           allFundings={fundingOptions}
           setFilteredCategories={setFilteredCategories}
+          isBox={isBox}
+          setIsBox={setIsBox}
         />
       </Section>
       {filteredCategories.map((category) => (
@@ -31,6 +34,7 @@ const Home: React.FC = () => {
           key={category.name}
           name={category.name}
           subcategories={category.subcategories}
+          isBox={isBox}
         />
       ))}
     </>
