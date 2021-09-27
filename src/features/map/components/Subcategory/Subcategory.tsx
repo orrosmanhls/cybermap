@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useMediaQuery } from "@material-ui/core";
+
 import Section from "../../../../components/Section/Section";
 import CompanyCard from "../CompanyCard/CompanyCard";
 import { ICompany } from "../../map.types";
@@ -29,6 +31,7 @@ const Subcategory: React.FC<Props> = ({
   isBox,
 }) => {
   const [isOpen, setIsOpen] = useState(true);
+  const isMobile = useMediaQuery("(max-width:768px)");
 
   const toggleCategory: React.MouseEventHandler<HTMLDivElement> = (e) => {
     setIsOpen((prevState) => !prevState);
@@ -36,7 +39,7 @@ const Subcategory: React.FC<Props> = ({
 
   return companies.length > 0 ? (
     <Section data-testid="subcategory" direction={"column"}>
-      <Container isBox={isBox}>
+      <Container isBox={isBox} isMobile={isMobile}>
         <CategoryHeader isBox={isBox}>
           <Title onClick={toggleCategory} isBox={isBox}>
             <CategoryTitle>{categoryName}</CategoryTitle>
@@ -59,7 +62,7 @@ const Subcategory: React.FC<Props> = ({
           )}
         </CategoryHeader>
         {isOpen && (
-          <CompaniesContainer>
+          <CompaniesContainer isMobile={isMobile}>
             {companies.map((company) => (
               <CompanyCard key={company.name} company={company} isBox={isBox} />
             ))}

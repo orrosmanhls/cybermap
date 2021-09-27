@@ -1,8 +1,9 @@
 import React, { useState, useContext, createContext } from "react";
+import { ICompany } from "../features/map/map.types";
 
 type ModalType = {
   type?: "tab" | "company";
-  company?: string;
+  company?: ICompany;
   tab?: string;
 } | null;
 

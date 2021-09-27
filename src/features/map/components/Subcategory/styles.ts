@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { KeyboardArrowDown, KeyboardArrowUp } from "@material-ui/icons";
 
-import { isBoxProp } from "../../map.types";
+import { isBoxProp, isMobileProp } from "../../map.types";
 
-export const Container = styled.div<isBoxProp>`
+export const Container = styled.div<isBoxProp & isMobileProp>`
   display: flex;
   ${({ isBox }) =>
     !isBox
@@ -13,7 +13,14 @@ export const Container = styled.div<isBoxProp>`
       : `
     align-items: flex-start;
   `}
-  width: 80%;
+  ${({ isMobile }) =>
+    !isMobile
+      ? `
+    width: 80%;
+  `
+      : `
+    padding: 0 .5rem;
+  `}
 `;
 
 export const CategoryHeader = styled.div<isBoxProp>`
@@ -24,6 +31,7 @@ export const CategoryHeader = styled.div<isBoxProp>`
     isBox
       ? `
       min-width: 25%;
+      max-width: 25%;
       padding: 1rem;
   `
       : `
@@ -85,7 +93,6 @@ export const TotalCompanies = styled.span<isBoxProp>`
     props.isBox
       ? props.theme.colors.secondary.main
       : props.theme.colors.primary.light};
-  /* color: ${(props) => props.theme.colors.primary.light}; */
   ${({ isBox }) =>
     isBox &&
     `
@@ -95,10 +102,16 @@ export const TotalCompanies = styled.span<isBoxProp>`
   `}
 `;
 
-export const CompaniesContainer = styled.div`
+export const CompaniesContainer = styled.div<isMobileProp>`
   display: flex;
   flex-wrap: wrap;
   margin: 1rem 0;
+
+  ${({ isMobile }) =>
+    isMobile &&
+    `
+    justify-content: space-evenly;
+  `}
 `;
 
 export const CompanyTag = styled.img`

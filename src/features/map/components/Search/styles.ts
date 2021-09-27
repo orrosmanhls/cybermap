@@ -3,6 +3,7 @@ import { SearchSharp } from "@material-ui/icons";
 
 export const Container = styled.div`
   display: flex;
+  align-items: center;
   background-color: transparent;
   border: 1px solid ${(props) => props.theme.colors.secondary.main};
   /* height: 2rem; */

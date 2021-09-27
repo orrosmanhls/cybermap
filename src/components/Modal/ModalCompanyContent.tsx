@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Timeline } from "react-twitter-widgets";
 
-import { companies } from "../../data.json";
 import { theme } from "../../styles/themes/theme";
 import { isValidUrl } from "../../features/map/map.utils";
 import SocialIcon from "../SocialIcon/SocialIcon";
@@ -15,49 +14,41 @@ import {
   CompanySocialWrapper,
   TwitterWrapper,
 } from "./styles";
+import { ICompany } from "../../features/map/map.types";
 
 interface Props {
-  company: string;
+  company: ICompany;
 }
 
 const ModalCompanyContent: React.FC<Props> = ({ company }) => {
-  const [companyData, setCompanyData] = useState(null);
-
-  useEffect(() => {
-    const companyObject = companies.find(
-      (companyItem) => companyItem.name === company
-    );
-    setCompanyData(companyObject);
-  }, [company]);
-
-  return companyData ? (
+  return (
     <>
-      <CompanyLogo src={companyData.logo} />
+      <CompanyLogo src={company.logo} />
       <CompanyInfo>
-        <CompanyName component={"h1"}>{companyData.name}</CompanyName>
-        <CompanyCategory>{companyData.category}</CompanyCategory>
+        <CompanyName component={"h1"}>{company.name}</CompanyName>
+        <CompanyCategory>{company.category}</CompanyCategory>
         <Paragraph weight={theme.typography.fontWeights.regular}>
-          {companyData.description}
+          {company.description}
         </Paragraph>
         <CompanyFunding component={"h4"}>
           Total Funding:{" "}
-          {companyData.total_funding === "N/A"
+          {company.total_funding === "N/A"
             ? "N/A"
-            : `$${companyData.total_funding}M`}
+            : `$${company.total_funding}M`}
         </CompanyFunding>
       </CompanyInfo>
       <CompanySocialWrapper>
-        <SocialIcon type={"website"} link={companyData.homepage} />
-        <SocialIcon type={"crunchbase"} link={companyData.crunchbase} />
-        <SocialIcon type={"linkedin"} link={companyData.linkedin} />
-        <SocialIcon type={"twitter"} link={companyData.twitter} />
+        <SocialIcon type={"website"} link={company.homepage} />
+        <SocialIcon type={"crunchbase"} link={company.crunchbase} />
+        <SocialIcon type={"linkedin"} link={company.linkedin} />
+        <SocialIcon type={"twitter"} link={company.twitter} />
       </CompanySocialWrapper>
-      {isValidUrl(companyData.twitter) && (
+      {isValidUrl(company.twitter) && (
         <TwitterWrapper>
           <Timeline
             dataSource={{
               sourceType: "profile",
-              screenName: new URL(companyData.twitter).pathname.slice(1),
+              screenName: new URL(company.twitter).pathname.slice(1),
             }}
             options={{
               width: "2000",
@@ -66,7 +57,7 @@ const ModalCompanyContent: React.FC<Props> = ({ company }) => {
         </TwitterWrapper>
       )}
     </>
-  ) : null;
+  );
 };
 
 export default ModalCompanyContent;

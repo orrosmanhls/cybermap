@@ -41,3 +41,6 @@ export interface FundingOption {
 export interface isBoxProp {
   isBox?: boolean;
 }
+export interface isMobileProp {
+  isMobile?: boolean;
+}

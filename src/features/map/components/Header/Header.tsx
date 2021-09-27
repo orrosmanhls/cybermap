@@ -84,8 +84,8 @@ const Header: React.FC<Props> = ({
         />
         <Search setFilteredCategories={setFilteredCategories} />
         <DisplaySwitch>
-          <ViewModuleIcon isActive={!isBox} onClick={toggleDisplay} />
-          <ReorderIcon isActive={isBox} onClick={toggleDisplay} />
+          <ViewModuleIcon $isActive={!isBox} onClick={toggleDisplay} />
+          <ReorderIcon $isActive={isBox} onClick={toggleDisplay} />
         </DisplaySwitch>
       </FiltersContainer>
     </Container>

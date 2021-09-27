@@ -2,10 +2,9 @@ import styled from "styled-components";
 import { Reorder, ViewModule } from "@material-ui/icons";
 
 import Typography from "../../../../components/Typography/Typography";
-import { theme } from "../../../../styles/themes/theme";
 
 interface DisplayIconProps {
-  isActive: boolean;
+  $isActive: boolean;
 }
 
 export const Container = styled.div`
@@ -20,8 +19,7 @@ export const FiltersContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  height: 3rem;
-  /* height: ${(props) => props.theme.spacing(4)}; */
+  height: 2rem;
   border-top: 1px solid;
   padding: ${(props) => props.theme.spacing(3)} 0;
 `;
@@ -53,8 +51,8 @@ export const DisplaySwitch = styled.div`
 export const ViewModuleIcon = styled(ViewModule)<DisplayIconProps>`
   margin: 0 0.3rem;
   cursor: pointer;
-  ${({ isActive }) =>
-    !isActive &&
+  ${({ $isActive }) =>
+    !$isActive &&
     `
     color: #9e9e9e;
   `}
@@ -63,8 +61,8 @@ export const ViewModuleIcon = styled(ViewModule)<DisplayIconProps>`
 export const ReorderIcon = styled(Reorder)<DisplayIconProps>`
   margin-left: 0.3rem;
   cursor: pointer;
-  ${({ isActive }) =>
-    !isActive &&
+  ${({ $isActive }) =>
+    !$isActive &&
     `
     color: #9e9e9e;
   `}

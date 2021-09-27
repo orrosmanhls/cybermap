@@ -14,7 +14,7 @@ const CompanyCard: React.FC<Props> = ({ company, isBox }) => {
   const onCardClicked: React.MouseEventHandler<HTMLDivElement> = (e) => {
     updateModalType({
       type: "company",
-      company: company.name,
+      company: company,
     });
     toggleModal();
   };
