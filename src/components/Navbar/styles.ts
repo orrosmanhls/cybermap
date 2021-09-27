@@ -1,18 +1,22 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { ReorderRounded } from "@material-ui/icons";
 
-export const Container = styled.div`
+import { isMobileProp } from "../../features/analytics/analytics.types";
+
+export const Container = styled.div<isMobileProp>`
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  /* align-self: flex-start; */
+  justify-content: ${(props) =>
+    props.isMobile ? "flex-start" : "space-evenly"};
   width: 100%;
   min-height: ${(props) => props.theme.spacing(4)};
   background: linear-gradient(90deg, #00b9bc, #eeb422);
 `;
 
 export const Menu = styled.div`
-  display: flex;
+  display: inline-flex;
   height: 100%;
 `;
 
@@ -57,4 +61,9 @@ export const MenuItemOutterLink = styled.a`
     transition: 300ms;
     background-color: rgba(0, 0, 0, 0.1);
   }
+`;
+
+export const SidebarIcon = styled(ReorderRounded)`
+  margin: ${(props) => props.theme.spacing(2)};
+  cursor: pointer;
 `;

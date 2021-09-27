@@ -1,16 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import logo from "../../assets/logo.png";
-import { Img } from "./styles";
+import { Img, StyledLogo } from "./styles";
 
-interface Props {}
+interface Props {
+  isMobile?: boolean;
+}
 
-const Logo: React.FC<Props> = () => {
+const Logo: React.FC<Props> = ({ isMobile }) => {
   return (
-    <Link to="/">
-      <Img data-testid="logo" src={logo}></Img>
-    </Link>
+    <StyledLogo to="/" $isMobile={isMobile}>
+      <Img data-testid="logo" src={logo} $isMobile={isMobile}></Img>
+    </StyledLogo>
   );
 };
 

@@ -27,6 +27,7 @@ export const AppWrapper = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+  min-width: 325px;
   max-width: 100vw;
   overflow-x: hidden;
 `;

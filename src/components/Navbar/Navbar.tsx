@@ -1,22 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
+import { useMediaQuery } from "@material-ui/core";
 
 import { useModal, useModalUpdate } from "../../contexts/ModalContext";
 import Logo from "../Logo/Logo";
+import Sidebar from "../Sidebar/Sidebar";
 import {
   Container,
   Menu,
   MenuItem,
   MenuItemInnerLink,
   MenuItemOutterLink,
+  SidebarIcon,
 } from "./styles";
 
-const YLV = "https://www.ylventures.com";
+export const YLV = "https://www.ylventures.com";
 
 const Navbar: React.FC = () => {
+  const isMobile = useMediaQuery("(max-width:768px)");
+  const [showSidebar, setShowSidebar] = useState(false);
+
   const { showModal } = useModal();
   const { toggleModal, updateModalType } = useModalUpdate();
 
-  const onItemClicked = (tab: string) => {
+  const openTabModal = (tab: string) => {
     if (showModal) {
       updateModalType(null);
     } else {
@@ -28,36 +34,51 @@ const Navbar: React.FC = () => {
     toggleModal();
   };
 
+  const openSidebar: React.MouseEventHandler<SVGSVGElement> = () => {
+    setShowSidebar(true);
+  };
+
   return (
-    <Container data-testid="navbar">
-      <Logo />
-      <Menu>
-        <MenuItem
-          onClick={() => {
-            onItemClicked("about");
-          }}
-        >
-          About
-        </MenuItem>
-        <MenuItem
-          onClick={() => {
-            onItemClicked("add");
-          }}
-        >
-          Add a company
-        </MenuItem>
-        <MenuItemInnerLink
-          to={"/analytics"}
-          style={{ textDecoration: "none" }}
-          onClick={() => {}}
-        >
-          Analytics
-        </MenuItemInnerLink>
-        <MenuItemOutterLink href={YLV} target={"_blank"} onClick={() => {}}>
-          ylventures.com
-        </MenuItemOutterLink>
-      </Menu>
-    </Container>
+    <>
+      {isMobile && (
+        <Sidebar
+          showSidebar={showSidebar}
+          setShowSidebar={setShowSidebar}
+          openTabModal={openTabModal}
+        />
+      )}
+      <Container data-testid="navbar" isMobile={isMobile}>
+        {isMobile && <SidebarIcon onClick={openSidebar} />}
+        <Logo isMobile={isMobile} />
+        {!isMobile && (
+          <Menu>
+            <MenuItem
+              onClick={() => {
+                openTabModal("about");
+              }}
+            >
+              About
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                openTabModal("add");
+              }}
+            >
+              Add a company
+            </MenuItem>
+            <MenuItemInnerLink
+              to={"/analytics"}
+              style={{ textDecoration: "none" }}
+            >
+              Analytics
+            </MenuItemInnerLink>
+            <MenuItemOutterLink href={YLV} target={"_blank"} onClick={() => {}}>
+              ylventures.com
+            </MenuItemOutterLink>
+          </Menu>
+        )}
+      </Container>
+    </>
   );
 };
 
