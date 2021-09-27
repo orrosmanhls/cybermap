@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "lib": ["es5", "DOM"],
+        "types": ["cypress", "jest", "@testing-library/cypress"]
+    },
+    "include": ["**/*.ts", "support/index.d.js", "support/index.js"]
+}
