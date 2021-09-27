@@ -1,5 +1,4 @@
 // Add all utils, parses and validations.
-
 import { IOption, ICompany, ISubcategory, ICategory } from "./map.types";
 
 const debounce = (func: (...args: any) => any, wait: number) => {

@@ -23,7 +23,7 @@ export const theme: DefaultTheme = {
   typography: {
     fonts: ["Montserrat", "Roboto", "sans-serif"],
     fontSizes: {
-      smaller: "0.75rem",
+      smaller: "0.875rem",
       small: "1rem",
       regular: "1.1rem",
       medium: "1.25rem",

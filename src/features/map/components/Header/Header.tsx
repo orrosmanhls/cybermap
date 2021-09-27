@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useMediaQuery } from "@material-ui/core";
 
 import Dropdown from "../Dropdown/Dropdown";
 import Search from "../Search/Search";
@@ -32,6 +33,7 @@ const Header: React.FC<Props> = ({
   setIsBox,
 }) => {
   const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
+  const isMobile = useMediaQuery("(max-width:768px)");
 
   const totalCompanies = filteredCategories.reduce(
     (accumulator: number, currentValue: ICategory): number => {
@@ -55,7 +57,7 @@ const Header: React.FC<Props> = ({
   return (
     <Container data-testid="header">
       <Title component={"h1"}>Welcome to CyberMap</Title>
-      <SubTitle>
+      <SubTitle isMobile={isMobile}>
         CyberMap by YL Ventures is the first open, interactive, comprehensive,
         live map of Israel’s cybersecurity startup landscape.
       </SubTitle>

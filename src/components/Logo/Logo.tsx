@@ -10,7 +10,7 @@ interface Props {
 const Logo: React.FC<Props> = ({ isMobile }) => {
   return (
     <StyledLogo to="/" $isMobile={isMobile}>
-      <Img data-testid="logo" src={logo} $isMobile={isMobile}></Img>
+      <Img data-testid="logo" src={logo}></Img>
     </StyledLogo>
   );
 };

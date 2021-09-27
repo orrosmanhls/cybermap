@@ -8,16 +8,29 @@ export const Container = styled.div<isMobileProp>`
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: ${(props) =>
-    props.isMobile ? "flex-start" : "space-evenly"};
+  /* justify-content: ${(props) =>
+    props.isMobile ? "flex-start" : "space-between"}; */
   width: 100%;
   min-height: ${(props) => props.theme.spacing(4)};
   background: linear-gradient(90deg, #00b9bc, #eeb422);
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  ${({ isMobile }) =>
+    isMobile
+      ? `
+    justify-content: flex-start;
+  `
+      : `
+    justify-content: space-between;
+    padding: 0 10%;
+  `}
 `;
 
 export const Menu = styled.div`
   display: inline-flex;
   height: 100%;
+  font-weight: ${(props) => props.theme.typography.fontWeights.medium};
 `;
 
 export const MenuItem = styled.div`

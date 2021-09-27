@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Reorder, ViewModule } from "@material-ui/icons";
 
 import Typography from "../../../../components/Typography/Typography";
+import { isMobileProp } from "../../map.types";
 
 interface DisplayIconProps {
   $isActive: boolean;
@@ -28,8 +29,12 @@ export const Title = styled(Typography)`
   margin: 3rem 0;
 `;
 
-export const SubTitle = styled(Typography)`
-  width: 70%;
+export const SubTitle = styled(Typography)<isMobileProp>`
+  ${(props) =>
+    !props.isMobile &&
+    `
+    width: 70%;
+  `}
   margin-bottom: ${(props) => props.theme.spacing(3)};
   line-height: 1.5rem;
   font-weight: ${(props) => props.theme.typography.fontWeights.medium};

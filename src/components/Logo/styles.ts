@@ -5,8 +5,8 @@ interface isMobileProp {
   $isMobile?: boolean;
 }
 
-export const Img = styled.img<isMobileProp>`
-  height: ${(props) => (props.$isMobile ? "24px" : props.theme.spacing(3))};
+export const Img = styled.img`
+  width: 150px;
   display: flex;
   align-self: center;
   &:hover {

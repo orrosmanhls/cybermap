@@ -12,6 +12,4 @@ const Template: ComponentStory<typeof BubbleChart> = (args) => (
 );
 
 export const Test1 = Template.bind({});
-Test1.args = {
-  text: "This is a test",
-};
+Test1.args = {};
