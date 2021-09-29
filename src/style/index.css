@@ -178,7 +178,8 @@ hr {
 .careers-view {
     position: relative;
     float: left;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    height: calc(100vh - 64px);
     width: 100%;
     text-align: center;
     overflow-x: hidden;
@@ -187,7 +188,7 @@ hr {
 .careers-view .container-fluid {
     max-width: 1200px;
     padding: 20px;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .careers-view h1, .careers-view h2, .careers-view h3, p {
