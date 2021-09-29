@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Dropdown from './Dropdown'
 import '../style/pageTop.css'
 import '../style/dropdown.css'
 
-class PageTop extends Component {
-    onClickTile = () => { if(!this.props.isTile) this.props.onViewChange() }
-    onClickList = () => { if(this.props.isTile) this.props.onViewChange() }
+export default function PageTop(props) {
+  const onClickTile = () => { if(!props.isTile) props.onViewChange() }
+  const onClickList = () => { if(props.isTile) props.onViewChange() }
 
-    render(){
-        let props = this.props
         return(
             <div className="background-dark-grey page-top white-text center">
                 <div className="container">
@@ -46,10 +44,10 @@ CyberMap by YL Ventures is the first open, interactive, comprehensive, live map 
                             <div className="inline-block hide-on-med-and-down">
                                 <span className="vertical-line"></span>
                                 <span className="left-view-changer">
-                                    <i className={"material-icons valign-middle cursor-pointer" + (!props.isTile ? ' grey-text' : '') } onClick={this.onClickTile}>view_module</i>
+                                    <i className={"material-icons valign-middle cursor-pointer" + (!props.isTile ? ' grey-text' : '') } onClick={onClickTile}>view_module</i>
                                 </span>
                                 <span>
-                                    <i className={"material-icons valign-middle cursor-pointer" + (props.isTile ? ' grey-text' : '') } onClick={this.onClickList}>view_headline</i>
+                                    <i className={"material-icons valign-middle cursor-pointer" + (props.isTile ? ' grey-text' : '') } onClick={onClickList}>view_headline</i>
                                 </span>
                             </div>
                         </div>
@@ -59,7 +57,4 @@ CyberMap by YL Ventures is the first open, interactive, comprehensive, live map 
                 </div>
             </div>
         )
-    }
 }
-
-export default PageTop

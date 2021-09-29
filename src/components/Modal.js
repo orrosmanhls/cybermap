@@ -1,17 +1,18 @@
-import React, { Component } from 'react'
+import React, { useRef } from 'react'
 import '../style/modal.css'
 
-class Modal extends Component {
-    render() {
+export default function Modal(props) {
+  const modalRef = useRef();
+
         const toSnakeCase = str => 
             str && 
             str.match(/[A-Z]{2,}(?=[A-Z][a-z]+[0-9]*|\b)|[A-Z]?[a-z]+[0-9]*|[A-Z]|[0-9]+/g)
             .map(x => x.toLowerCase())
             .join('_');
-        let item = this.props.item
+        let item = props.item
         let alt = `${toSnakeCase(item.name)}_cybermap_ylventures`
         return(
-            <div id={this.props.id} className="modal company-modal outline-0 modal-with-x" ref={el => (this.instance = el)}>
+            <div id={props.id} className="modal company-modal outline-0 modal-with-x" ref={modalRef}>
                 <div className="modal-closing-btn modal-close cursor-pointer"><i className="material-icons modal-icon">close</i></div>
                 <div className="modal-content center modal-content-with-x">
                     <img src={item.logo} className="modal-logo" alt={alt}></img>
@@ -56,6 +57,4 @@ class Modal extends Component {
                 </div>
             </div>
         )
-    }
 }
-export default Modal
