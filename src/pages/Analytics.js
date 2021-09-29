@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactLoading from 'react-loading';
 
 import "../style/analytics.css";
 import imageExample from "../assets/image-example.png";
@@ -11,6 +12,7 @@ export default function Analytics(prop) {
   return (
     <div className="careers-view background-dark-grey flex column align-center">
       <MetaTags />
+      {(!imageIsLoaded) && <ReactLoading type={"spinningBubbles"} color={"#a79b9b"} height={'75px'} width={'75px'} className="react-loading"/>}
       {imageIsLoaded && 
       <div className="container-fluid">
         <h1>CyberMap Analytics</h1>
@@ -25,7 +27,7 @@ export default function Analytics(prop) {
           </div>
         </div>
       </div>}
-
+        
       <div className="image-container" style={imageIsLoaded ? {} : { display: 'none' }}>
         <img src={imageExample} className="analytics-image" onLoad={() => {setImageIsLoaded(true)}} />
       </div>

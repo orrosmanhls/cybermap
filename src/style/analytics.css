@@ -70,4 +70,8 @@ button:focus {
   height: 500px;
   object-fit: contain;
 }
+
+.react-loading {
+  margin: auto;
+}
 /* #15181b; */
