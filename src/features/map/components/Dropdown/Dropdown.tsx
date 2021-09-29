@@ -17,28 +17,25 @@ import {
 interface Props {
   title: string;
   allOptions: IOption[];
-  isOpen: boolean;
   applyFilter: (categories: ICategory[], filter: IOption[]) => ICategory[];
   setFilteredCategories: React.Dispatch<React.SetStateAction<ICategory[]>>;
-  setOpenDropdowns: React.Dispatch<React.SetStateAction<string[]>>;
 }
 
 const Dropdown: React.FC<Props> = ({
   title,
   allOptions,
-  isOpen,
-  setOpenDropdowns,
   applyFilter,
   setFilteredCategories,
 }) => {
   const [options, setOptions] = useState(allOptions);
+  const [isOpen, setIsOpen] = useState(false);
 
   const onDropDownClicked: React.MouseEventHandler<HTMLDivElement> = (e) => {
-    isOpen ? setOpenDropdowns([]) : setOpenDropdowns([title]);
+    isOpen ? setIsOpen(false) : setIsOpen(true);
   };
 
   const onDropDownBlurred: React.FocusEventHandler<HTMLDivElement> = (e) => {
-    setOpenDropdowns([]);
+    setIsOpen(false);
   };
 
   const toggleOption = (clickedOption: IOption) => {

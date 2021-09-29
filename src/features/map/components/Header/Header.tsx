@@ -32,7 +32,6 @@ const Header: React.FC<Props> = ({
   isBox,
   setIsBox,
 }) => {
-  const [openDropdowns, setOpenDropdowns] = useState<string[]>([]);
   const isMobile = useMediaQuery("(max-width:768px)");
 
   const totalCompanies = filteredCategories.reduce(
@@ -69,8 +68,6 @@ const Header: React.FC<Props> = ({
         <Dropdown
           title={"Categories"}
           allOptions={allCategories}
-          isOpen={openDropdowns.some((item) => item === "Categories")}
-          setOpenDropdowns={setOpenDropdowns}
           applyFilter={filterByCategory}
           setFilteredCategories={setFilteredCategories}
         />
@@ -79,8 +76,6 @@ const Header: React.FC<Props> = ({
         <Dropdown
           title={"Funding"}
           allOptions={allFundings}
-          isOpen={openDropdowns.some((item) => item === "Funding")}
-          setOpenDropdowns={setOpenDropdowns}
           applyFilter={filterByFunding}
           setFilteredCategories={setFilteredCategories}
         />
