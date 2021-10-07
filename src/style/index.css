@@ -178,8 +178,8 @@ hr {
 .careers-view {
     position: relative;
     float: left;
-    /* min-height: 100vh; */
-    height: calc(100vh - 64px);
+    min-height: calc(100vh - 64px);;
+    /* height: calc(100vh - 64px); */
     width: 100%;
     text-align: center;
     overflow-x: hidden;

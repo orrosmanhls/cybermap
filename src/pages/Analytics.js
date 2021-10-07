@@ -2,18 +2,47 @@ import React, { useState } from "react";
 import ReactLoading from 'react-loading';
 
 import "../style/analytics.css";
-import imageExample from "../assets/image-example.png";
+import categoryImage from "../assets/analytics/img_1_category.jpg";
+import totalImage from "../assets/analytics/img_2_total.jpg";
+import exitsImage from "../assets/analytics/img_3_exits.jpg";
+import lifespanImage from "../assets/analytics/img_4_lifespan.jpg";
 import MetaTags from "../components/MetaTags";
+
+const assets = [
+  {
+    name: "category",
+    image: categoryImage
+  },
+  {
+    name: "total",
+    image: totalImage
+  },
+  {
+    name: "exits",
+    image: exitsImage
+  },
+  {
+    name: "lifespan",
+    image: lifespanImage
+  },
+]
 
 export default function Analytics(prop) {
 
-  const [imageIsLoaded, setImageIsLoaded] = useState(false)
+  const [loadedImages, setLoadedImages] = useState([]); 
+
+  // Indicates whether all images are loaded
+  const allImagesLoaded = (loadedImages.length === 4);
+
+  const onImageLoad = (imageName) => {
+    setLoadedImages(prevLoadedImages => prevLoadedImages.concat([imageName]));
+  }
 
   return (
     <div className="careers-view background-dark-grey flex column align-center">
       <MetaTags />
-      {(!imageIsLoaded) && <ReactLoading type={"spinningBubbles"} color={"#a79b9b"} height={'75px'} width={'75px'} className="react-loading"/>}
-      {imageIsLoaded && 
+      {(!allImagesLoaded) && <ReactLoading type={"spinningBubbles"} color={"#a79b9b"} height={'75px'} width={'75px'} className="react-loading"/>}
+      {allImagesLoaded && 
       <div className="container-fluid">
         <h1>CyberMap Analytics</h1>
         <div className="row">
@@ -28,11 +57,13 @@ export default function Analytics(prop) {
         </div>
       </div>}
         
-      <div className="image-container" style={imageIsLoaded ? {} : { display: 'none' }}>
-        <img src={imageExample} className="analytics-image" onLoad={() => {setImageIsLoaded(true)}} />
+     {assets.map(asset => (
+      <div className="image-container" style={allImagesLoaded ? {} : { display: 'none' }}>
+        <img src={asset.image} className="analytics-image" onLoad={() => {onImageLoad(asset.name)}} />
       </div>
+     ))}   
 
-      {imageIsLoaded && 
+      {allImagesLoaded && 
       <div className="an-footer">
         <div className="container-fluid">
           <p>
