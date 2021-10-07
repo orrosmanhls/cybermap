@@ -2717,45 +2717,6 @@
       "linkedin": "https://www.linkedin.com/company/continuity-storage-protection/",
       "subcategory": "",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Continuity-Logo-1.png"
-    },
-    {
-      "name": "QEDIT",
-      "category": "",
-      "total_funding": 12.4,
-      "last_fundraising_date": "2021-01-01T00:00:00.000Z",
-      "description": "QEDIT helps businesses accelerate trust with Zero-Knowledge Blockchains.",
-      "crunchbase": "https://www.crunchbase.com/organization/qed-it",
-      "homepage": "https://qed-it.com/",
-      "twitter": "https://twitter.com/qeditzkp",
-      "linkedin": "https://www.linkedin.com/company/qedit/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Qedit-Logo.png"
-    },
-    {
-      "name": "Brandefender",
-      "category": "",
-      "total_funding": 8.8,
-      "last_fundraising_date": "2021-03-01T00:00:00.000Z",
-      "description": "Brandefender is an high performance security engine that is able to classify and inspect content across any platform and asses it's risk.",
-      "crunchbase": "https://www.crunchbase.com/organization/brandefender-inc",
-      "homepage": "https://www.brandefender.com/",
-      "twitter": "https://twitter.com/brandefender",
-      "linkedin": "https://www.linkedin.com/company/brandefendr/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Brandefender-Logo.png"
-    },
-    {
-      "name": "Mirato",
-      "category": "",
-      "total_funding": 9,
-      "last_fundraising_date": "2021-02-16T00:00:00.000Z",
-      "description": "Mirato is a TPRM platform that orchestrates and automates the entire TPRM lifecycle.",
-      "crunchbase": "https://www.crunchbase.com/organization/mirato",
-      "homepage": "https://mirato.com/",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/company/miratotprm/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Mirato-Logo.png"
     }
   ],
   "exits": [
