@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ReactLoading from 'react-loading';
+import { useMediaQuery } from '@material-ui/core';
 
 import "../style/analytics.css";
 import categoryImage from "../assets/analytics/img_1_category.jpg";
@@ -39,25 +40,29 @@ const assets = [
 export default function Analytics(prop) {
 
   const [loadedImages, setLoadedImages] = useState([]); 
-  
+  const isMobile = useMediaQuery('(max-width:768px)');
 
+  const getImage = (asset) => isMobile ? asset.mobileImage : asset.image; 
+ 
   // Indicates whether all images are loaded
   const allImagesLoaded = (loadedImages.length === 4);
 
+  const isImageLoaded = (imageName) => loadedImages.some(name => name === imageName);
+
   const onImageLoad = (imageName) => {
+    !isImageLoaded(imageName) && 
     setLoadedImages(prevLoadedImages => prevLoadedImages.concat([imageName]));
   }
-
   return (
     <div className="careers-view background-dark-grey flex column align-center">
       <MetaTags />
       {(!allImagesLoaded) && <ReactLoading type={"spinningBubbles"} color={"#a79b9b"} height={'75px'} width={'75px'} className="react-loading"/>}
-      {allImagesLoaded && 
+      {allImagesLoaded &&
       <div className="container-fluid">
         <h1>CyberMap Analytics</h1>
         <div className="row">
           <div className="col-12 s12 m12 l8">
-            <p className="center-align">
+            <p className="text-justify">
               Explore YL Ventures’ CyberMap analytics to gain in-depth
               perspectives of the Israeli cybersecurity ecosystem. Track the
               industry's movements and market trends with our data-driven
@@ -66,14 +71,14 @@ export default function Analytics(prop) {
           </div>
         </div>
       </div>}
-        
+    
      {assets.map(asset => (
-      <div className="image-container" style={allImagesLoaded ? {} : { display: 'none' }}>
-        <img src={asset.image} className="analytics-image" onLoad={() => {onImageLoad(asset.name)}} />
+      <div key={asset.name} className="image-container" style={allImagesLoaded ? {} : { display: 'none' }}>
+        <img src={getImage(asset)} className="analytics-image" onLoad={() => {onImageLoad(asset.name)}} alt={asset.name}/>
       </div>
-     ))}   
+     ))}
 
-      {allImagesLoaded && 
+      {allImagesLoaded &&
       <div className="an-footer">
         <div className="container-fluid">
           <p>

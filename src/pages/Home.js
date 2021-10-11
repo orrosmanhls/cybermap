@@ -1,15 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useMemo } from 'react'
 import Category from '../components/Category'
 import PageTop from '../components/PageTop'
 import MetaTags from "react-meta-tags";
 import dataJSON from "../data.json";
 
+const fundingOptions = ['$0-$10M', '$10M-$30M', '$30M-$50M', '$50M+'];
 const generateCategories = (companies) => {
   return companies.reduce((result, item) => {
-      let key = item.category + (item.subcategory ? ' | ' + item.subcategory : '')
-      if (!result[key]) result[key] = []
-      result[key].push(item)
-      return result
+    let key = item.category + (item.subcategory ? ' | ' + item.subcategory : '')
+    if (!result[key]) result[key] = []
+    result[key].push(item)
+    return result
   }, {})
 }
 
@@ -23,13 +24,15 @@ const sortCategories = (a, b) => {
 
 export default function Home() {
 
+  const sortedCategories = useMemo(() => Object.keys(generateCategories(dataJSON.companies)).sort(sortCategories), []);
+
   const [data, setData] = useState(dataJSON.companies);
   const [searchFilter, setSearchFilter] = useState(null);
   const [fundingFilter, setFundingFilter] = useState(new Set());
   const [categoryFilter, setCategoryFilter] = useState(new Set());
-  const [fundingOptions, setFundingOptions] = useState(['$0-$10M', '$10M-$30M', '$30M-$50M', '$50M+']);
+  // const [fundingOptions, setFundingOptions] = useState(['$0-$10M', '$10M-$30M', '$30M-$50M', '$50M+']);
   const [isTile, setIsTile] = useState(true);
-  const [sortedCategories, setSortedCategories] = useState(Object.keys(generateCategories(dataJSON.companies)).sort(sortCategories));
+  // const [sortedCategories, setSortedCategories] = useState(Object.keys(generateCategories(dataJSON.companies)).sort(sortCategories));
 
   const applyFilters = (categories, funding, search) => {
     let newCategoryFilter = categories ? new Set(categories) : categoryFilter
