@@ -3,12 +3,13 @@ import ReactLoading from 'react-loading';
 import { useMediaQuery } from '@material-ui/core';
 
 import "../style/analytics.css";
-import categoryImage from "../assets/analytics/img_1_category.jpg";
-import totalImage from "../assets/analytics/img_2_total.jpg";
-import exitsImage from "../assets/analytics/img_3_exits.jpg";
-import lifespanImage from "../assets/analytics/img_4_lifespan.jpg";
 import MetaTags from "../components/MetaTags";
-
+// desktop images
+import categoryImage from "../assets/analytics/desktop/img_1_category.jpg";
+import totalImage from "../assets/analytics/desktop/img_2_total.jpg";
+import exitsImage from "../assets/analytics/desktop/img_3_exits.jpg";
+import lifespanImage from "../assets/analytics/desktop/img_4_lifespan.jpg";
+// mobile images
 import categoryImageMobile from "../assets/analytics/mobile/img_1_category.jpg";
 import totalImageMobile from "../assets/analytics/mobile/img_2_total.jpg";
 import exitsImageMobile from "../assets/analytics/mobile/img_3_exits.jpg";
