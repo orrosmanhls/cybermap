@@ -8,28 +8,38 @@ import exitsImage from "../assets/analytics/img_3_exits.jpg";
 import lifespanImage from "../assets/analytics/img_4_lifespan.jpg";
 import MetaTags from "../components/MetaTags";
 
+import categoryImageMobile from "../assets/analytics/mobile/img_1_category.jpg";
+import totalImageMobile from "../assets/analytics/mobile/img_2_total.jpg";
+import exitsImageMobile from "../assets/analytics/mobile/img_3_exits.jpg";
+import lifespanImageMobile from "../assets/analytics/mobile/img_4_lifespan.jpg";
+
 const assets = [
   {
     name: "category",
-    image: categoryImage
+    image: categoryImage,
+    mobileImage: categoryImageMobile
   },
   {
     name: "total",
-    image: totalImage
+    image: totalImage,
+    mobileImage: totalImageMobile
   },
   {
     name: "exits",
-    image: exitsImage
+    image: exitsImage,
+    mobileImage: exitsImageMobile,
   },
   {
     name: "lifespan",
-    image: lifespanImage
+    image: lifespanImage,
+    mobileImage: lifespanImageMobile,
   },
 ]
 
 export default function Analytics(prop) {
 
   const [loadedImages, setLoadedImages] = useState([]); 
+  
 
   // Indicates whether all images are loaded
   const allImagesLoaded = (loadedImages.length === 4);
