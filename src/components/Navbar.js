@@ -11,13 +11,13 @@ class Navbar extends Component {
     }
 
     render() {
+
         return (
             <div ref={el => (this.instance = el)}>
                 <ul id="sidenav" className="sidenav">
                     <li><a className="modal-trigger" href="#about">About</a></li>
                     <li><a className="modal-trigger" href="#addcompany">Add a company</a></li>
-                    <li><NavLink to="/analytics">Analytics</NavLink></li>
-                    {/* <li><Link to="/careers">Careers</Link></li> */}
+                    <li><NavLink to="/analytics" className="sidenav-close">Analytics</NavLink></li>
                     <li><a target="_blank" href="https://www.ylventures.com" rel="noopener noreferrer">ylventures.com</a></li>
                 </ul>
                 <nav className="nav-gradient">
@@ -27,8 +27,6 @@ class Navbar extends Component {
                             <ul className="right hide-on-med-and-down">
                                 <li><a className="modal-trigger" href="#about">About</a></li>
                                 <li><a className="modal-trigger" href="#addcompany">Add a company</a></li>
-                                {/* <li><Link to="/careers">Careers</Link></li> */}
-                                {/* <li><a className="no-hover cursor-default opacity-04">Analytics (soon)</a></li> */}
                                 <li><NavLink to="/analytics">Analytics</NavLink></li>
                                 <li><a target="_blank" href="https://www.ylventures.com"
                                        rel="noopener noreferrer">ylventures.com</a></li>
