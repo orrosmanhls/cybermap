@@ -104,7 +104,7 @@ export default function Analytics(prop) {
 
       {allImagesLoaded && (
         <div className="an-footer">
-          <div className="container-fluid">
+          <div>
             <p>
               <i className="material-icons">info_outline</i>
               Data included refers to accessible public information. Undisclosed
