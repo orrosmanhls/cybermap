@@ -57,7 +57,7 @@ export default function Analytics(prop) {
       );
   };
   return (
-    <div className="careers-view background-dark-grey flex column align-center">
+    <div className="analytics-container careers-view background-dark-grey flex column align-center">
       <MetaTags />
       {!allImagesLoaded && (
         <ReactLoading

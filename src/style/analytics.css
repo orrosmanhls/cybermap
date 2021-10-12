@@ -70,6 +70,10 @@ button:focus {
   align-items: center;
 }
 
+.analytics-container div:nth-of-type(2) {
+  margin: 0 0 2rem;
+}
+
 .analytics-image {
   max-width: 100%;
   flex-grow: 1;
