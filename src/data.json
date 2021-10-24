@@ -151,7 +151,7 @@
       "last_fundraising_date": "2018-03-01T00:00:00.000Z",
       "description": "JetPatch is a centralized patch management platform focusing on end-to-end enterprise patch management & vulnerability remediation.",
       "crunchbase": "https://www.crunchbase.com/organization/jetpatch",
-      "homepage": "www.JetPatch.com",
+      "homepage": "https://jetpatch.com/",
       "twitter": "https://twitter.com/JetpatchCloud",
       "linkedin": "https://www.linkedin.com/company/jetpatch/",
       "subcategory": "",
@@ -203,7 +203,7 @@
       "last_fundraising_date": "2018-04-15T00:00:00.000Z",
       "description": "InnoSec is a software manufacturer of cyber risk management technology.\r",
       "crunchbase": "https://www.crunchbase.com/organization/innosec",
-      "homepage": "storm.innosec.com",
+      "homepage": "http://storm.innosec.com/",
       "twitter": "https://twitter.com/InnoSecCyRisk",
       "linkedin": "https://www.linkedin.com/company/innosec-ltd/",
       "subcategory": "",
@@ -229,7 +229,7 @@
       "last_fundraising_date": "2018-05-08T00:00:00.000Z",
       "description": "Cyberwrite is a platform that calculates the financial and benchmarked cyber risk of businesses worldwide.",
       "crunchbase": "https://www.crunchbase.com/organization/cyberwrite",
-      "homepage": "www.cyberwrite.com",
+      "homepage": "https://www.cyberwrite.com/",
       "twitter": "https://twitter.com/cyberwrite_inc",
       "linkedin": "https://www.linkedin.com/company/10556543/",
       "subcategory": "",
@@ -333,7 +333,7 @@
       "last_fundraising_date": "2018-11-15T00:00:00.000Z",
       "description": "Embedding Visibility, Security and Control into every cloud workload and Empowering DevOps to Deploy Inherently Secure Workloads.",
       "crunchbase": "https://www.crunchbase.com/organization/cyber-armor#section-overview",
-      "homepage": "armosec.io\r",
+      "homepage": "https://www.armosec.io/",
       "twitter": "",
       "linkedin": "https://www.linkedin.com/company/cyber-armor-soft",
       "subcategory": "",
@@ -411,7 +411,7 @@
       "last_fundraising_date": "2019-02-01T00:00:00.000Z",
       "description": "Cubed Mobile is a contained app-based smartphone workspace that transforms one mobile into two.",
       "crunchbase": "https://www.crunchbase.com/organization/privacy-software-solutions-magis",
-      "homepage": "www.cubedmobile.com",
+      "homepage": "https://cubedmobile.com/",
       "twitter": "https://twitter.com/Cubed_Mobile ",
       "linkedin": "https://www.linkedin.com/company/magis-virtual-smartphone-platform",
       "subcategory": "",
@@ -706,8 +706,8 @@
     {
       "name": "Panorays",
       "category": "Vulnerability & Risk Management",
-      "total_funding": 20,
-      "last_fundraising_date": "2019-12-04T00:00:00.000Z",
+      "total_funding": 62,
+      "last_fundraising_date": "2021-09-23T00:00:00.000Z",
       "description": "Panorays automates, accelerates and scales your third-party security process.",
       "crunchbase": "https://www.crunchbase.com/organization/panorays",
       "homepage": "https://panorays.com/",
@@ -788,7 +788,7 @@
       "last_fundraising_date": "2020-03-05T00:00:00.000Z",
       "description": "Gytpol enables IT admins to implement Group Policy Objects in a more reliable and efficient manner.",
       "crunchbase": "https://www.crunchbase.com/organization/gytpol#section-overview",
-      "homepage": "www.gytpol.com",
+      "homepage": "https://www.gytpol.com",
       "twitter": "https://twitter.com/gytpol",
       "linkedin": "https://www.linkedin.com/company/gytpol/",
       "subcategory": "",
@@ -797,7 +797,7 @@
     {
       "name": "Hysolate",
       "category": "Endpoint Security",
-      "total_funding": 35,
+      "total_funding": 45,
       "last_fundraising_date": "2020-03-05T00:00:00.000Z",
       "description": "Hysolate enables organizations to isolate risky and sensitive activities on users’ endpoints with a local workspace that isolates the data.\r",
       "crunchbase": "https://www.crunchbase.com/organization/hysolate",
@@ -1109,8 +1109,8 @@
     {
       "name": "Adaptive Shield",
       "category": "SaaS Security",
-      "total_funding": 4,
-      "last_fundraising_date": "2020-08-12T00:00:00.000Z",
+      "total_funding": 34,
+      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
       "description": "Adaptive Shield is a developer of a security posture management platform used to help businesses manage their cloud services.",
       "crunchbase": "https://www.crunchbase.com/organization/adaptive-shield/company_financials",
       "homepage": "https://www.adaptive-shield.com/",
@@ -1165,7 +1165,7 @@
       "last_fundraising_date": "2020-10-13T00:00:00.000Z",
       "description": "apiiro Ltd. is a Code Risk Platform™ that helps accelerate delivery by automatically reducing application & infrastructure risk.",
       "crunchbase": "https://www.crunchbase.com/organization/apiiro-ltd",
-      "homepage": "apiiro.com",
+      "homepage": "https://apiiro.com/",
       "twitter": "https://twitter.com/apiiroSecurity",
       "linkedin": "https://www.linkedin.com/company/apiiro/",
       "subcategory": "",
@@ -1191,7 +1191,7 @@
       "last_fundraising_date": "2020-10-15T00:00:00.000Z",
       "description": "NeuraLegion is an AI -powered application security platform that integrates application security into SDLC.",
       "crunchbase": "https://www.crunchbase.com/organization/neuralegion",
-      "homepage": "www.neuralegion.com",
+      "homepage": "https://www.neuralegion.com/",
       "twitter": "https://twitter.com/NeuraLegion",
       "linkedin": "https://www.linkedin.com/company/neuralegion/",
       "subcategory": "",
@@ -1278,8 +1278,8 @@
     {
       "name": "Cato Networks",
       "category": "Zero Trust Network Access & SASE",
-      "total_funding": 332,
-      "last_fundraising_date": "2020-11-17T00:00:00.000Z",
+      "total_funding": 532,
+      "last_fundraising_date": "2021-10-19T00:00:00.000Z",
       "description": "Cato Networks is a provider of the first SASE platform that converges SD-WAN and security into a cloud-native service.",
       "crunchbase": "https://www.crunchbase.com/organization/cato-networks",
       "homepage": "http://www.catonetworks.com",
@@ -1308,7 +1308,7 @@
       "last_fundraising_date": "2020-12-14T00:00:00.000Z",
       "description": "Cyber security company that detects website vulnerabilities, threats and privacy issues generated by their 3rd-party technologies.",
       "crunchbase": "https://www.crunchbase.com/organization/reflectiz",
-      "homepage": "www.reflectiz.com",
+      "homepage": "https://www.reflectiz.com/",
       "twitter": "https://twitter.com/_Reflectiz_",
       "linkedin": "https://www.linkedin.com/company/reflectiz/",
       "subcategory": "",
@@ -1685,7 +1685,7 @@
       "last_fundraising_date": "2021-04-28T00:00:00.000Z",
       "description": "The New Vault for Secrets Management and Zero Trust Access. Pure SaaS, Fully Secured.",
       "crunchbase": "https://www.crunchbase.com/organization/akeyless",
-      "homepage": "www.akeyless.io",
+      "homepage": "https://www.akeyless.io/",
       "twitter": "https://twitter.com/akeylessio",
       "linkedin": "https://www.linkedin.com/company/akeyless/",
       "subcategory": "",
@@ -1798,8 +1798,8 @@
     {
       "name": "Wiz, Inc.",
       "category": "Cloud Security",
-      "total_funding": 350,
-      "last_fundraising_date": "2021-05-26T00:00:00.000Z",
+      "total_funding": 600,
+      "last_fundraising_date": "2021-10-11T00:00:00.000Z",
       "description": "Wiz is a cybersecurity company that allows companies to find security issues in public cloud infrastructure.",
       "crunchbase": "https://www.crunchbase.com/organization/wiz-inc",
       "homepage": "https://www.wiz.io/",
@@ -1954,8 +1954,8 @@
     {
       "name": "Orca Security",
       "category": "Cloud Security",
-      "total_funding": 292,
-      "last_fundraising_date": "2021-07-04T00:00:00.000Z",
+      "total_funding": 482,
+      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
       "description": "Orca Security provides instant-on, workload-level security for AWS, Microsoft Azure, and Google Cloud Platform.",
       "crunchbase": "https://www.crunchbase.com/organization/orca-security#section-overview",
       "homepage": "https://orca.security/",
@@ -2019,8 +2019,8 @@
     {
       "name": "At-Bay",
       "category": "Vulnerability & Risk Management",
-      "total_funding": 272,
-      "last_fundraising_date": "2021-07-27T00:00:00.000Z",
+      "total_funding": 292,
+      "last_fundraising_date": "2021-10-13T00:00:00.000Z",
       "description": "At-Bay is a cybersecurity insurance company for the digital age.",
       "crunchbase": "https://www.crunchbase.com/organization/at-bay",
       "homepage": "https://www.at-bay.com/",
@@ -2032,8 +2032,8 @@
     {
       "name": "Duality Technologies",
       "category": "Data Security & Privacy",
-      "total_funding": 44,
-      "last_fundraising_date": "2021-07-27T00:00:00.000Z",
+      "total_funding": 50,
+      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
       "description": "Duality Technologies addresses the rapidly growing need of enterprises across regulated industries to collaborate on sensitive data.",
       "crunchbase": "https://www.crunchbase.com/organization/duality",
       "homepage": "http://duality.cloud",
@@ -2136,8 +2136,8 @@
     {
       "name": "Snyk",
       "category": "Application Security",
-      "total_funding": 1300,
-      "last_fundraising_date": "2021-09-09T00:00:00.000Z",
+      "total_funding": 1400,
+      "last_fundraising_date": "2021-09-30T00:00:00.000Z",
       "description": "Snyk is a cloud native application security leader that enables millions of developers to build software securely.",
       "crunchbase": "https://www.crunchbase.com/organization/snyk",
       "homepage": "https://snyk.io",
@@ -2166,7 +2166,7 @@
       "last_fundraising_date": "2021-09-14T00:00:00.000Z",
       "description": "Satori Cyber provides data-flow visibility with transparent, secure & compliant data access across all data stores.",
       "crunchbase": "https://www.crunchbase.com/organization/satori-cyber",
-      "homepage": "www.satoricyber.com",
+      "homepage": "https://satoricyber.com/",
       "twitter": "https://twitter.com/SatoriCyber",
       "linkedin": "https://www.linkedin.com/company/satoricyber",
       "subcategory": "",
@@ -2253,8 +2253,8 @@
     {
       "name": "Sternum",
       "category": "IoT",
-      "total_funding": 20,
-      "last_fundraising_date": "15-Sep-2020",
+      "total_funding": 36,
+      "last_fundraising_date": "2021-09-23T00:00:00.000Z",
       "description": "Sternum builds a holistic, highly scalable endpoint security solution for IoT devices, that prevents attacks in real time.",
       "crunchbase": "https://www.crunchbase.com/organization/sternum",
       "homepage": "https://www.sternumiot.com/",
@@ -2654,19 +2654,6 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Sigmadots.png"
     },
     {
-      "name": "SNDBOX",
-      "category": "Security Operations",
-      "total_funding": "N/A",
-      "last_fundraising_date": "N/A",
-      "description": "SNDBOX is an AI malware research platform, offering malware analysis visibility.",
-      "crunchbase": "https://www.crunchbase.com/organization/sndbox",
-      "homepage": "",
-      "twitter": "https://twitter.com/sndboxcom",
-      "linkedin": "https://www.linkedin.com/company/sndbox.com/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Snbx-Logo.png"
-    },
-    {
       "name": "Island",
       "category": "Zero Trust Network Access & SASE",
       "total_funding": "N/A",
@@ -2758,7 +2745,7 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Mirato-Logo.png"
     },
     {
-      "name": "ArcusTeam",
+      "name": "AcrusTeam",
       "category": "IoT",
       "total_funding": 0.3,
       "last_fundraising_date": "2021-08-13T00:00:00.000Z",
@@ -2769,6 +2756,19 @@
       "linkedin": "https://www.linkedin.com/company/arcus-team/",
       "subcategory": "",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Arcusteam-Logo.png"
+    },
+    {
+      "name": "Valence Security",
+      "category": "SaaS Security",
+      "total_funding": 7,
+      "last_fundraising_date": "2021-10-19T00:00:00.000Z",
+      "description": "Valence Security is the first Business Application Mesh security company focused on managing the risks from third-party integrations.",
+      "crunchbase": "https://www.crunchbase.com/organization/valence-security",
+      "homepage": "https://www.valencesecurity.com/",
+      "twitter": "https://twitter.com/Valencesecurity",
+      "linkedin": "https://www.linkedin.com/company/valence-security/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Valence-Logo.png"
     }
   ],
   "exits": [
@@ -3869,7 +3869,7 @@
       "category": "IoT",
       "total_funding_until_exited_m": 15,
       "founded": "2016-01-01T00:00:00.000Z",
-      "exit_date": "2021-09-23T00:00:00.000Z",
+      "exit_date": "2021-09-22T00:00:00.000Z",
       "exit_year": 2021,
       "lifespan_years": 5,
       "acquisition_amount_m": 240,
@@ -3923,90 +3923,37 @@
       "acquisition_amount_m": 400,
       "acquirer_name": "Jamf",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Wandera-Logo.png"
+    },
+    {
+      "company_name": "SNDBOX",
+      "category": "Security Operations",
+      "total_funding_until_exited_m": "N/A",
+      "founded": "2017-01-01T00:00:00.000Z",
+      "exit_date": "2021-09-10T00:00:00.000Z",
+      "exit_year": 2021,
+      "lifespan_years": 4,
+      "acquisition_amount_m": "-",
+      "acquirer_name": "OPSWAT",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Snbx-Logo.png"
     }
   ],
   "categories": [
-    {
-      "category": "Application Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Blockchain Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Cloud Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Data Security & Privacy",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Email Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Endpoint Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Fraud & Transactions",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Identity & Access Management",
-      "subcategories": [
-        
-      ]
-    },
+    { "category": "Application Security", "subcategories": [] },
+    { "category": "Blockchain Security", "subcategories": [] },
+    { "category": "Cloud Security", "subcategories": [] },
+    { "category": "Data Security & Privacy", "subcategories": [] },
+    { "category": "Email Security", "subcategories": [] },
+    { "category": "Endpoint Security", "subcategories": [] },
+    { "category": "Fraud & Transactions", "subcategories": [] },
+    { "category": "Identity & Access Management", "subcategories": [] },
     {
       "category": "IoT",
-      "subcategories": [
-        "SCADA",
-        "Drones",
-        "Automotive",
-        "Healthcare"
-      ]
+      "subcategories": ["SCADA", "Drones", "Automotive", "Healthcare"]
     },
-    {
-      "category": "Mobile Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Network Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Security Operations",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Threat Intelligence",
-      "subcategories": [
-        
-      ]
-    },
+    { "category": "Mobile Security", "subcategories": [] },
+    { "category": "Network Security", "subcategories": [] },
+    { "category": "Security Operations", "subcategories": [] },
+    { "category": "Threat Intelligence", "subcategories": [] },
     {
       "category": "Vulnerability & Risk Management",
       "subcategories": [
@@ -4015,25 +3962,9 @@
         "Attack Surface Management"
       ]
     },
-    {
-      "category": "Web Security",
-      "subcategories": [
-        "Ad Fraud",
-        "WAF"
-      ]
-    },
-    {
-      "category": "SaaS Security",
-      "subcategories": [
-        
-      ]
-    },
-    {
-      "category": "Zero Trust Network Access & SASE",
-      "subcategories": [
-        
-      ]
-    }
+    { "category": "Web Security", "subcategories": ["Ad Fraud", "WAF"] },
+    { "category": "SaaS Security", "subcategories": [] },
+    { "category": "Zero Trust Network Access & SASE", "subcategories": [] }
   ],
   "categoriesArray": [
     {
@@ -4076,7 +4007,7 @@
               "last_fundraising_date": "2020-10-13T00:00:00.000Z",
               "description": "apiiro Ltd. is a Code Risk Platform™ that helps accelerate delivery by automatically reducing application & infrastructure risk.",
               "crunchbase": "https://www.crunchbase.com/organization/apiiro-ltd",
-              "homepage": "apiiro.com",
+              "homepage": "https://apiiro.com/",
               "twitter": "https://twitter.com/apiiroSecurity",
               "linkedin": "https://www.linkedin.com/company/apiiro/",
               "subcategory": "",
@@ -4089,7 +4020,7 @@
               "last_fundraising_date": "2020-10-15T00:00:00.000Z",
               "description": "NeuraLegion is an AI -powered application security platform that integrates application security into SDLC.",
               "crunchbase": "https://www.crunchbase.com/organization/neuralegion",
-              "homepage": "www.neuralegion.com",
+              "homepage": "https://www.neuralegion.com/",
               "twitter": "https://twitter.com/NeuraLegion",
               "linkedin": "https://www.linkedin.com/company/neuralegion/",
               "subcategory": "",
@@ -4202,8 +4133,8 @@
             {
               "name": "Snyk",
               "category": "Application Security",
-              "total_funding": 1300,
-              "last_fundraising_date": "2021-09-09T00:00:00.000Z",
+              "total_funding": 1400,
+              "last_fundraising_date": "2021-09-30T00:00:00.000Z",
               "description": "Snyk is a cloud native application security leader that enables millions of developers to build software securely.",
               "crunchbase": "https://www.crunchbase.com/organization/snyk",
               "homepage": "https://snyk.io",
@@ -4358,7 +4289,7 @@
               "last_fundraising_date": "2018-11-15T00:00:00.000Z",
               "description": "Embedding Visibility, Security and Control into every cloud workload and Empowering DevOps to Deploy Inherently Secure Workloads.",
               "crunchbase": "https://www.crunchbase.com/organization/cyber-armor#section-overview",
-              "homepage": "armosec.io\r",
+              "homepage": "https://www.armosec.io/",
               "twitter": "",
               "linkedin": "https://www.linkedin.com/company/cyber-armor-soft",
               "subcategory": "",
@@ -4423,7 +4354,7 @@
               "last_fundraising_date": "2021-04-28T00:00:00.000Z",
               "description": "The New Vault for Secrets Management and Zero Trust Access. Pure SaaS, Fully Secured.",
               "crunchbase": "https://www.crunchbase.com/organization/akeyless",
-              "homepage": "www.akeyless.io",
+              "homepage": "https://www.akeyless.io/",
               "twitter": "https://twitter.com/akeylessio",
               "linkedin": "https://www.linkedin.com/company/akeyless/",
               "subcategory": "",
@@ -4432,8 +4363,8 @@
             {
               "name": "Wiz, Inc.",
               "category": "Cloud Security",
-              "total_funding": 350,
-              "last_fundraising_date": "2021-05-26T00:00:00.000Z",
+              "total_funding": 600,
+              "last_fundraising_date": "2021-10-11T00:00:00.000Z",
               "description": "Wiz is a cybersecurity company that allows companies to find security issues in public cloud infrastructure.",
               "crunchbase": "https://www.crunchbase.com/organization/wiz-inc",
               "homepage": "https://www.wiz.io/",
@@ -4484,8 +4415,8 @@
             {
               "name": "Orca Security",
               "category": "Cloud Security",
-              "total_funding": 292,
-              "last_fundraising_date": "2021-07-04T00:00:00.000Z",
+              "total_funding": 482,
+              "last_fundraising_date": "2021-10-05T00:00:00.000Z",
               "description": "Orca Security provides instant-on, workload-level security for AWS, Microsoft Azure, and Google Cloud Platform.",
               "crunchbase": "https://www.crunchbase.com/organization/orca-security#section-overview",
               "homepage": "https://orca.security/",
@@ -4625,8 +4556,8 @@
             {
               "name": "Duality Technologies",
               "category": "Data Security & Privacy",
-              "total_funding": 44,
-              "last_fundraising_date": "2021-07-27T00:00:00.000Z",
+              "total_funding": 50,
+              "last_fundraising_date": "2021-10-05T00:00:00.000Z",
               "description": "Duality Technologies addresses the rapidly growing need of enterprises across regulated industries to collaborate on sensitive data.",
               "crunchbase": "https://www.crunchbase.com/organization/duality",
               "homepage": "http://duality.cloud",
@@ -4642,7 +4573,7 @@
               "last_fundraising_date": "2021-09-14T00:00:00.000Z",
               "description": "Satori Cyber provides data-flow visibility with transparent, secure & compliant data access across all data stores.",
               "crunchbase": "https://www.crunchbase.com/organization/satori-cyber",
-              "homepage": "www.satoricyber.com",
+              "homepage": "https://satoricyber.com/",
               "twitter": "https://twitter.com/SatoriCyber",
               "linkedin": "https://www.linkedin.com/company/satoricyber",
               "subcategory": "",
@@ -4872,7 +4803,7 @@
               "last_fundraising_date": "2020-03-05T00:00:00.000Z",
               "description": "Gytpol enables IT admins to implement Group Policy Objects in a more reliable and efficient manner.",
               "crunchbase": "https://www.crunchbase.com/organization/gytpol#section-overview",
-              "homepage": "www.gytpol.com",
+              "homepage": "https://www.gytpol.com",
               "twitter": "https://twitter.com/gytpol",
               "linkedin": "https://www.linkedin.com/company/gytpol/",
               "subcategory": "",
@@ -4881,7 +4812,7 @@
             {
               "name": "Hysolate",
               "category": "Endpoint Security",
-              "total_funding": 35,
+              "total_funding": 45,
               "last_fundraising_date": "2020-03-05T00:00:00.000Z",
               "description": "Hysolate enables organizations to isolate risky and sensitive activities on users’ endpoints with a local workspace that isolates the data.\r",
               "crunchbase": "https://www.crunchbase.com/organization/hysolate",
@@ -5517,8 +5448,8 @@
             {
               "name": "Sternum",
               "category": "IoT",
-              "total_funding": 20,
-              "last_fundraising_date": "15-Sep-2020",
+              "total_funding": 36,
+              "last_fundraising_date": "2021-09-23T00:00:00.000Z",
               "description": "Sternum builds a holistic, highly scalable endpoint security solution for IoT devices, that prevents attacks in real time.",
               "crunchbase": "https://www.crunchbase.com/organization/sternum",
               "homepage": "https://www.sternumiot.com/",
@@ -5554,7 +5485,7 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Sigmadots.png"
             },
             {
-              "name": "ArcusTeam",
+              "name": "AcrusTeam",
               "category": "IoT",
               "total_funding": 0.3,
               "last_fundraising_date": "2021-08-13T00:00:00.000Z",
@@ -5898,7 +5829,7 @@
               "last_fundraising_date": "2019-02-01T00:00:00.000Z",
               "description": "Cubed Mobile is a contained app-based smartphone workspace that transforms one mobile into two.",
               "crunchbase": "https://www.crunchbase.com/organization/privacy-software-solutions-magis",
-              "homepage": "www.cubedmobile.com",
+              "homepage": "https://cubedmobile.com/",
               "twitter": "https://twitter.com/Cubed_Mobile ",
               "linkedin": "https://www.linkedin.com/company/magis-virtual-smartphone-platform",
               "subcategory": "",
@@ -6085,8 +6016,8 @@
             {
               "name": "Adaptive Shield",
               "category": "SaaS Security",
-              "total_funding": 4,
-              "last_fundraising_date": "2020-08-12T00:00:00.000Z",
+              "total_funding": 34,
+              "last_fundraising_date": "2021-10-05T00:00:00.000Z",
               "description": "Adaptive Shield is a developer of a security posture management platform used to help businesses manage their cloud services.",
               "crunchbase": "https://www.crunchbase.com/organization/adaptive-shield/company_financials",
               "homepage": "https://www.adaptive-shield.com/",
@@ -6133,6 +6064,19 @@
               "linkedin": "https://www.linkedin.com/company/pandora-security-ltd/",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Pandora-Logo.png"
+            },
+            {
+              "name": "Valence Security",
+              "category": "SaaS Security",
+              "total_funding": 7,
+              "last_fundraising_date": "2021-10-19T00:00:00.000Z",
+              "description": "Valence Security is the first Business Application Mesh security company focused on managing the risks from third-party integrations.",
+              "crunchbase": "https://www.crunchbase.com/organization/valence-security",
+              "homepage": "https://www.valencesecurity.com/",
+              "twitter": "https://twitter.com/Valencesecurity",
+              "linkedin": "https://www.linkedin.com/company/valence-security/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Valence-Logo.png"
             }
           ]
         }
@@ -6274,19 +6218,6 @@
               "linkedin": "http://www.linkedin.com/company/3526356",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/logo-color-250.png"
-            },
-            {
-              "name": "SNDBOX",
-              "category": "Security Operations",
-              "total_funding": "N/A",
-              "last_fundraising_date": "N/A",
-              "description": "SNDBOX is an AI malware research platform, offering malware analysis visibility.",
-              "crunchbase": "https://www.crunchbase.com/organization/sndbox",
-              "homepage": "",
-              "twitter": "https://twitter.com/sndboxcom",
-              "linkedin": "https://www.linkedin.com/company/sndbox.com/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Snbx-Logo.png"
             }
           ]
         }
@@ -6408,7 +6339,7 @@
               "last_fundraising_date": "2018-03-01T00:00:00.000Z",
               "description": "JetPatch is a centralized patch management platform focusing on end-to-end enterprise patch management & vulnerability remediation.",
               "crunchbase": "https://www.crunchbase.com/organization/jetpatch",
-              "homepage": "www.JetPatch.com",
+              "homepage": "https://jetpatch.com/",
               "twitter": "https://twitter.com/JetpatchCloud",
               "linkedin": "https://www.linkedin.com/company/jetpatch/",
               "subcategory": "",
@@ -6421,7 +6352,7 @@
               "last_fundraising_date": "2018-04-15T00:00:00.000Z",
               "description": "InnoSec is a software manufacturer of cyber risk management technology.\r",
               "crunchbase": "https://www.crunchbase.com/organization/innosec",
-              "homepage": "storm.innosec.com",
+              "homepage": "http://storm.innosec.com/",
               "twitter": "https://twitter.com/InnoSecCyRisk",
               "linkedin": "https://www.linkedin.com/company/innosec-ltd/",
               "subcategory": "",
@@ -6434,7 +6365,7 @@
               "last_fundraising_date": "2018-05-08T00:00:00.000Z",
               "description": "Cyberwrite is a platform that calculates the financial and benchmarked cyber risk of businesses worldwide.",
               "crunchbase": "https://www.crunchbase.com/organization/cyberwrite",
-              "homepage": "www.cyberwrite.com",
+              "homepage": "https://www.cyberwrite.com/",
               "twitter": "https://twitter.com/cyberwrite_inc",
               "linkedin": "https://www.linkedin.com/company/10556543/",
               "subcategory": "",
@@ -6469,8 +6400,8 @@
             {
               "name": "Panorays",
               "category": "Vulnerability & Risk Management",
-              "total_funding": 20,
-              "last_fundraising_date": "2019-12-04T00:00:00.000Z",
+              "total_funding": 62,
+              "last_fundraising_date": "2021-09-23T00:00:00.000Z",
               "description": "Panorays automates, accelerates and scales your third-party security process.",
               "crunchbase": "https://www.crunchbase.com/organization/panorays",
               "homepage": "https://panorays.com/",
@@ -6674,8 +6605,8 @@
             {
               "name": "At-Bay",
               "category": "Vulnerability & Risk Management",
-              "total_funding": 272,
-              "last_fundraising_date": "2021-07-27T00:00:00.000Z",
+              "total_funding": 292,
+              "last_fundraising_date": "2021-10-13T00:00:00.000Z",
               "description": "At-Bay is a cybersecurity insurance company for the digital age.",
               "crunchbase": "https://www.crunchbase.com/organization/at-bay",
               "homepage": "https://www.at-bay.com/",
@@ -6824,7 +6755,7 @@
               "last_fundraising_date": "2020-12-14T00:00:00.000Z",
               "description": "Cyber security company that detects website vulnerabilities, threats and privacy issues generated by their 3rd-party technologies.",
               "crunchbase": "https://www.crunchbase.com/organization/reflectiz",
-              "homepage": "www.reflectiz.com",
+              "homepage": "https://www.reflectiz.com/",
               "twitter": "https://twitter.com/_Reflectiz_",
               "linkedin": "https://www.linkedin.com/company/reflectiz/",
               "subcategory": "",
@@ -6984,8 +6915,8 @@
             {
               "name": "Cato Networks",
               "category": "Zero Trust Network Access & SASE",
-              "total_funding": 332,
-              "last_fundraising_date": "2020-11-17T00:00:00.000Z",
+              "total_funding": 532,
+              "last_fundraising_date": "2021-10-19T00:00:00.000Z",
               "description": "Cato Networks is a provider of the first SASE platform that converges SD-WAN and security into a cloud-native service.",
               "crunchbase": "https://www.crunchbase.com/organization/cato-networks",
               "homepage": "http://www.catonetworks.com",
