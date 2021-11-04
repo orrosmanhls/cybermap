@@ -2,6 +2,19 @@
   "status": true,
   "companies": [
     {
+      "name": "Continuity",
+      "category": "Data Security & Privacy",
+      "total_funding": 9.5,
+      "last_fundraising_date": "2006-01-03T00:00:00.000Z",
+      "description": "Continuity Software offers IT Resilience Assurance solutions to mitigate downtime and data-loss risks of organizations.",
+      "crunchbase": "https://www.crunchbase.com/organization/continuity-software",
+      "homepage": "https://www.continuitysoftware.com/",
+      "twitter": "https://twitter.com/ContinuitySoft",
+      "linkedin": "https://www.linkedin.com/company/continuity-storage-protection/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Continuity-Logo-1.png"
+    },
+    {
       "name": "CommuniTake-Technologies",
       "category": "Mobile Security",
       "total_funding": 4.1,
@@ -277,8 +290,8 @@
     {
       "name": "Cyabra ",
       "category": "Web Security",
-      "total_funding": 1,
-      "last_fundraising_date": "2018-06-27T00:00:00.000Z",
+      "total_funding": 6.6,
+      "last_fundraising_date": "2021-10-26T00:00:00.000Z",
       "description": "Cyabra is breaking down social media to empower brands and uncover disinformation.",
       "crunchbase": "https://www.crunchbase.com/organization/cyabra#section-overview",
       "homepage": "https://www.cyabra.com/",
@@ -299,6 +312,19 @@
       "linkedin": "https://www.linkedin.com/company/576564/",
       "subcategory": "SCADA",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Radiflow-logo.png"
+    },
+    {
+      "name": "Reblaze",
+      "category": "Web Security",
+      "total_funding": "N/A",
+      "last_fundraising_date": "2018-09-01T00:00:00.000Z",
+      "description": "Reblaze provides a cloud based web security and acceleration platform.",
+      "crunchbase": "https://www.crunchbase.com/organization/reblaze",
+      "homepage": "http://www.reblaze.com",
+      "twitter": "https://twitter.com/reblaze",
+      "linkedin": "https://www.linkedin.com/company/reblaze",
+      "subcategory": "WAF",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Reblaze-Logo-2.png"
     },
     {
       "name": "Fraugster",
@@ -329,8 +355,8 @@
     {
       "name": "ARMO",
       "category": "Cloud Security",
-      "total_funding": 3.5,
-      "last_fundraising_date": "2018-11-15T00:00:00.000Z",
+      "total_funding": 4.5,
+      "last_fundraising_date": "2021-01-27T00:00:00.000Z",
       "description": "Embedding Visibility, Security and Control into every cloud workload and Empowering DevOps to Deploy Inherently Secure Workloads.",
       "crunchbase": "https://www.crunchbase.com/organization/cyber-armor#section-overview",
       "homepage": "https://www.armosec.io/",
@@ -470,17 +496,17 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/FirstPoint-Mobile-Guard_new.png"
     },
     {
-      "name": "Sayata Labs",
+      "name": "Sayata",
       "category": "Vulnerability & Risk Management",
-      "total_funding": 6.5,
-      "last_fundraising_date": "2019-03-25T00:00:00.000Z",
-      "description": "Sayata Labs is an enterprise-grade cyber risk assessment company.",
+      "total_funding": 23.5,
+      "last_fundraising_date": "2021-08-25T00:00:00.000Z",
+      "description": "Sayata streamlines the quote-bind-issue process for insurance brokers and carriers to help grow their commercial book.",
       "crunchbase": "https://www.crunchbase.com/organization/sayata-labs",
       "homepage": "https://www.sayatalabs.com/",
       "twitter": "https://twitter.com/Sayatalabs",
       "linkedin": "https://www.linkedin.com/company/sayata-labs/",
       "subcategory": "Cyber Insurance ",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Sayata-Logo.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Sayata-Logo.png"
     },
     {
       "name": "IXDen",
@@ -613,6 +639,45 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cervello_Logo.png"
     },
     {
+      "name": "Kovrr",
+      "category": "Vulnerability & Risk Management",
+      "total_funding": 5.5,
+      "last_fundraising_date": "2019-09-10T00:00:00.000Z",
+      "description": "Enabling (Re) Insurers to transparently predict and price cyber risk.",
+      "crunchbase": "https://www.crunchbase.com/organization/kovrr",
+      "homepage": "https://www.kovrr.com",
+      "twitter": "https://twitter.com/kovrrins",
+      "linkedin": "https://www.linkedin.com/company/kovrr",
+      "subcategory": "Cyber Insurance ",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Kovrr.png"
+    },
+    {
+      "name": "ShieldIOT\r",
+      "category": "IoT",
+      "total_funding": 3.6,
+      "last_fundraising_date": "2019-09-23T00:00:00.000Z",
+      "description": "ShieldIOT delivers innovative cybersecurity solutions that protect edge devices from security threats and operational risks.",
+      "crunchbase": "https://www.crunchbase.com/organization/shieldiot",
+      "homepage": "https://shieldiot.io/",
+      "twitter": "https://twitter.com/ShieldIoT1",
+      "linkedin": "https://www.linkedin.com/company/shieldiot/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/ShieldIOT.png"
+    },
+    {
+      "name": "D-Fend Solutions",
+      "category": "IoT",
+      "total_funding": 28,
+      "last_fundraising_date": "2019-09-24T00:00:00.000Z",
+      "description": "D-Fend provides an autonomous counter-drone perimeter security system, which automatically detects, identifies and intercepts intruding commercial-drones.",
+      "crunchbase": "https://www.crunchbase.com/organization/d-fend-solutions",
+      "homepage": "http://www.d-fendsolutions.com",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/company/d-fend-solutions/",
+      "subcategory": "Drones",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/D-Fend-Logo.png"
+    },
+    {
       "name": "Paygilant",
       "category": "Fraud & Transactions",
       "total_funding": 2.2,
@@ -702,19 +767,6 @@
       "linkedin": "https://www.linkedin.com/company/odixcdr/",
       "subcategory": "",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Odix-logo.png"
-    },
-    {
-      "name": "Panorays",
-      "category": "Vulnerability & Risk Management",
-      "total_funding": 62,
-      "last_fundraising_date": "2021-09-23T00:00:00.000Z",
-      "description": "Panorays automates, accelerates and scales your third-party security process.",
-      "crunchbase": "https://www.crunchbase.com/organization/panorays",
-      "homepage": "https://panorays.com/",
-      "twitter": "https://twitter.com/panorays",
-      "linkedin": "https://www.linkedin.com/company/panorays/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Panorays-Logo-1.png"
     },
     {
       "name": "Trusona",
@@ -1107,17 +1159,82 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Perimeter-81-Logo.png"
     },
     {
-      "name": "Adaptive Shield",
-      "category": "SaaS Security",
-      "total_funding": 34,
-      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
-      "description": "Adaptive Shield is a developer of a security posture management platform used to help businesses manage their cloud services.",
-      "crunchbase": "https://www.crunchbase.com/organization/adaptive-shield/company_financials",
-      "homepage": "https://www.adaptive-shield.com/",
-      "twitter": "https://twitter.com/AdaptiveShield",
-      "linkedin": "https://www.linkedin.com/company/adaptiveshield/",
+      "name": "Suridata.ai",
+      "category": "Data Security & Privacy",
+      "total_funding": 2.5,
+      "last_fundraising_date": "2020-09-03T00:00:00.000Z",
+      "description": "Suridata.ai specializes in helping organizations gain visibility and obtain control over their sensitive data.",
+      "crunchbase": "https://www.crunchbase.com/organization/suridata-ai",
+      "homepage": "https://www.suridata.ai/",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/company/suridataai/",
       "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Adaptive-Shield.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Suridata-logo-1.png"
+    },
+    {
+      "name": "Pentera",
+      "category": "Vulnerability & Risk Management",
+      "total_funding": 39.5,
+      "last_fundraising_date": "2020-09-09T00:00:00.000Z",
+      "description": "Pentera develops and provides an Automated Security Validation platform that reduces corporate cybersecurity risks.",
+      "crunchbase": "https://www.crunchbase.com/organization/pcysys",
+      "homepage": "https://www.pentera.io/",
+      "twitter": "https://twitter.com/penterasec",
+      "linkedin": "https://www.linkedin.com/company/18445647/",
+      "subcategory": "Breach & Attack Simulation",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Pentera-Logo-2.png"
+    },
+    {
+      "name": "EverC",
+      "category": "Fraud & Transactions",
+      "total_funding": 48,
+      "last_fundraising_date": "2020-09-10T00:00:00.000Z",
+      "description": "EverC provides cyber intelligence tools that detect and prevent money laundering through online transactions.",
+      "crunchbase": "https://www.crunchbase.com/organization/evercompliant",
+      "homepage": "http://www.evercompliant.com/",
+      "twitter": "https://twitter.com/evercteam?lang=en",
+      "linkedin": "https://www.linkedin.com/company/everc/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Everc-logo.png"
+    },
+    {
+      "name": "Medigate",
+      "category": "IoT",
+      "total_funding": 50.4,
+      "last_fundraising_date": "2020-09-15T00:00:00.000Z",
+      "description": "Medigate owns and operates a medical device security platform that protects all connected medical devices on health care provider networks.",
+      "crunchbase": "https://www.crunchbase.com/organization/medigate-eae8",
+      "homepage": "https://www.medigate.io/",
+      "twitter": "https://twitter.com/MedigateLtd",
+      "linkedin": "https://www.linkedin.com/company/18340376/",
+      "subcategory": "Healthcare",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Medigate-logo.png"
+    },
+    {
+      "name": "BioCatch",
+      "category": "Fraud & Transactions",
+      "total_funding": 213.7,
+      "last_fundraising_date": "2020-09-30T00:00:00.000Z",
+      "description": "BioCatch unlocks the power of behavior and deliver actionable insights to create a digital world where identity, trust and ease co-exist.",
+      "crunchbase": "https://www.crunchbase.com/organization/biocatch",
+      "homepage": "http://biocatch.com",
+      "twitter": "http://twitter.com/BioCatch",
+      "linkedin": "http://www.linkedin.com/company/biocatch",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Biocatch-logo-1.png"
+    },
+    {
+      "name": "Cybersixgill",
+      "category": "Threat Intelligence",
+      "total_funding": 21,
+      "last_fundraising_date": "2020-09-30T00:00:00.000Z",
+      "description": "Cybersecurity, threat intelligence, agile threat intelligence, SaaS.",
+      "crunchbase": "https://www.crunchbase.com/organization/sixgill",
+      "homepage": "http://cybersixgill.com/",
+      "twitter": "https://www.twitter.com/cybersixgill",
+      "linkedin": "https://www.linkedin.com/company/sixgill",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cybersixgill-logo.png"
     },
     {
       "name": "GK8",
@@ -1276,19 +1393,6 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Sentinel-one-logo.png"
     },
     {
-      "name": "Cato Networks",
-      "category": "Zero Trust Network Access & SASE",
-      "total_funding": 532,
-      "last_fundraising_date": "2021-10-19T00:00:00.000Z",
-      "description": "Cato Networks is a provider of the first SASE platform that converges SD-WAN and security into a cloud-native service.",
-      "crunchbase": "https://www.crunchbase.com/organization/cato-networks",
-      "homepage": "http://www.catonetworks.com",
-      "twitter": "https://twitter.com/catonetworks",
-      "linkedin": "https://www.linkedin.com/company/cato-networks",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cato-logo.png"
-    },
-    {
       "name": "Unbound Tech",
       "category": "Data Security & Privacy",
       "total_funding": 35.1,
@@ -1326,6 +1430,19 @@
       "linkedin": "https://www.linkedin.com/company/plainid",
       "subcategory": "",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Plain-ID-Logo.png"
+    },
+    {
+      "name": "QEDIT",
+      "category": "Data Security & Privacy",
+      "total_funding": 12.4,
+      "last_fundraising_date": "2021-01-01T00:00:00.000Z",
+      "description": "QEDIT helps businesses accelerate trust with Zero-Knowledge Blockchains.",
+      "crunchbase": "https://www.crunchbase.com/organization/qed-it",
+      "homepage": "https://qed-it.com/",
+      "twitter": "https://twitter.com/qeditzkp",
+      "linkedin": "https://www.linkedin.com/company/qedit/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Qedit-Logo.png"
     },
     {
       "name": "L7 Defense",
@@ -1406,6 +1523,19 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/SecuriThings-Logo-1.png"
     },
     {
+      "name": "Mirato",
+      "category": "Vulnerability & Risk Management",
+      "total_funding": 9,
+      "last_fundraising_date": "2021-02-16T00:00:00.000Z",
+      "description": "Mirato is a TPRM platform that orchestrates and automates the entire TPRM lifecycle.",
+      "crunchbase": "https://www.crunchbase.com/organization/mirato",
+      "homepage": "https://mirato.com/",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/company/miratotprm/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Mirato-Logo.png"
+    },
+    {
       "name": "Spectral",
       "category": "Application Security",
       "total_funding": 6.2,
@@ -1430,6 +1560,19 @@
       "linkedin": "http://www.linkedin.com/company/perimeterx",
       "subcategory": "",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/PerimeterX_new.png"
+    },
+    {
+      "name": "Brandefender",
+      "category": "Threat Intelligence",
+      "total_funding": 8.8,
+      "last_fundraising_date": "2021-03-01T00:00:00.000Z",
+      "description": "Brandefender is an high performance security engine that is able to classify and inspect content across any platform and asses it's risk.",
+      "crunchbase": "https://www.crunchbase.com/organization/brandefender-inc",
+      "homepage": "https://www.brandefender.com/",
+      "twitter": "https://twitter.com/brandefender",
+      "linkedin": "https://www.linkedin.com/company/brandefendr/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Brandefender-Logo.png"
     },
     {
       "name": "Identiq",
@@ -1796,19 +1939,6 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Salt-Logo.png"
     },
     {
-      "name": "Wiz, Inc.",
-      "category": "Cloud Security",
-      "total_funding": 600,
-      "last_fundraising_date": "2021-10-11T00:00:00.000Z",
-      "description": "Wiz is a cybersecurity company that allows companies to find security issues in public cloud infrastructure.",
-      "crunchbase": "https://www.crunchbase.com/organization/wiz-inc",
-      "homepage": "https://www.wiz.io/",
-      "twitter": "https://twitter.com/wiz_io",
-      "linkedin": "https://www.linkedin.com/company/wizsecurity/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/wiz-logo-black.svg"
-    },
-    {
       "name": "SAM Seamless Networks",
       "category": "IoT",
       "total_funding": 35.5,
@@ -1952,19 +2082,6 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Noname-logo.png"
     },
     {
-      "name": "Orca Security",
-      "category": "Cloud Security",
-      "total_funding": 482,
-      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
-      "description": "Orca Security provides instant-on, workload-level security for AWS, Microsoft Azure, and Google Cloud Platform.",
-      "crunchbase": "https://www.crunchbase.com/organization/orca-security#section-overview",
-      "homepage": "https://orca.security/",
-      "twitter": "https://twitter.com/OrcaSec",
-      "linkedin": "https://www.linkedin.com/company/orca-security/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Orca-logo-4.png"
-    },
-    {
       "name": "Deep Instinct",
       "category": "Endpoint Security",
       "total_funding": 259.1,
@@ -2015,32 +2132,6 @@
       "linkedin": "https://www.linkedin.com/company/kameleonsec/",
       "subcategory": "",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Kameleon-Logo.png"
-    },
-    {
-      "name": "At-Bay",
-      "category": "Vulnerability & Risk Management",
-      "total_funding": 292,
-      "last_fundraising_date": "2021-10-13T00:00:00.000Z",
-      "description": "At-Bay is a cybersecurity insurance company for the digital age.",
-      "crunchbase": "https://www.crunchbase.com/organization/at-bay",
-      "homepage": "https://www.at-bay.com/",
-      "twitter": "https://twitter.com/keeprisk_atbay",
-      "linkedin": "https://www.linkedin.com/company/at-bay/",
-      "subcategory": "Cyber Insurance ",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/at-bay.png"
-    },
-    {
-      "name": "Duality Technologies",
-      "category": "Data Security & Privacy",
-      "total_funding": 50,
-      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
-      "description": "Duality Technologies addresses the rapidly growing need of enterprises across regulated industries to collaborate on sensitive data.",
-      "crunchbase": "https://www.crunchbase.com/organization/duality",
-      "homepage": "http://duality.cloud",
-      "twitter": "https://twitter.com/DualityTech",
-      "linkedin": "https://www.linkedin.com/company/duality-technologies",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/DUALITY_NEW.png"
     },
     {
       "name": "Fireblocks",
@@ -2108,6 +2199,19 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Siga-Logo.png"
     },
     {
+      "name": "AcrusTeam",
+      "category": "IoT",
+      "total_funding": 0.3,
+      "last_fundraising_date": "2021-08-13T00:00:00.000Z",
+      "description": "ArcusTeam has developed an Automated Platform for Detecting Vulnerabilities on ANY IoT Software.",
+      "crunchbase": "https://www.crunchbase.com/organization/arcusteam",
+      "homepage": "https://arcusteam.com/",
+      "twitter": "https://twitter.com/arcusteam_",
+      "linkedin": "https://www.linkedin.com/company/arcus-team/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Arcusteam-Logo.png"
+    },
+    {
       "name": "Hunters",
       "category": "Security Operations",
       "total_funding": 50.4,
@@ -2132,19 +2236,6 @@
       "linkedin": "https://www.linkedin.com/company/upstream-security/",
       "subcategory": "Automotive",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Upstream_new.png"
-    },
-    {
-      "name": "Snyk",
-      "category": "Application Security",
-      "total_funding": 1400,
-      "last_fundraising_date": "2021-09-30T00:00:00.000Z",
-      "description": "Snyk is a cloud native application security leader that enables millions of developers to build software securely.",
-      "crunchbase": "https://www.crunchbase.com/organization/snyk",
-      "homepage": "https://snyk.io",
-      "twitter": "https://www.twitter.com/snyksec",
-      "linkedin": "https://www.linkedin.com/company/snyk",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Snyk-logo-2.png"
     },
     {
       "name": "Rezilion",
@@ -2199,56 +2290,17 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Cynamics-Logo.png"
     },
     {
-      "name": "Reblaze",
-      "category": "Web Security",
-      "total_funding": "N/A",
-      "last_fundraising_date": "1-Sep-2018",
-      "description": "Reblaze provides a cloud based web security and acceleration platform.",
-      "crunchbase": "https://www.crunchbase.com/organization/reblaze",
-      "homepage": "http://www.reblaze.com",
-      "twitter": "https://twitter.com/reblaze",
-      "linkedin": "https://www.linkedin.com/company/reblaze",
-      "subcategory": "WAF",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Reblaze-Logo-2.png"
-    },
-    {
-      "name": "Kovrr",
+      "name": "Panorays",
       "category": "Vulnerability & Risk Management",
-      "total_funding": 5.5,
-      "last_fundraising_date": "10-Sep-2019",
-      "description": "Enabling (Re) Insurers to transparently predict and price cyber risk.",
-      "crunchbase": "https://www.crunchbase.com/organization/kovrr",
-      "homepage": "https://www.kovrr.com",
-      "twitter": "https://twitter.com/kovrrins",
-      "linkedin": "https://www.linkedin.com/company/kovrr",
-      "subcategory": "Cyber Insurance ",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Kovrr.png"
-    },
-    {
-      "name": "EverC",
-      "category": "Fraud & Transactions",
-      "total_funding": 48,
-      "last_fundraising_date": "10-Sep-2020",
-      "description": "EverC provides cyber intelligence tools that detect and prevent money laundering through online transactions.",
-      "crunchbase": "https://www.crunchbase.com/organization/evercompliant",
-      "homepage": "http://www.evercompliant.com/",
-      "twitter": "https://twitter.com/evercteam?lang=en",
-      "linkedin": "https://www.linkedin.com/company/everc/",
+      "total_funding": 62,
+      "last_fundraising_date": "2021-09-23T00:00:00.000Z",
+      "description": "Panorays automates, accelerates and scales your third-party security process.",
+      "crunchbase": "https://www.crunchbase.com/organization/panorays",
+      "homepage": "https://panorays.com/",
+      "twitter": "https://twitter.com/panorays",
+      "linkedin": "https://www.linkedin.com/company/panorays/",
       "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Everc-logo.png"
-    },
-    {
-      "name": "Medigate",
-      "category": "IoT",
-      "total_funding": 50.4,
-      "last_fundraising_date": "15-Sep-2020",
-      "description": "Medigate owns and operates a medical device security platform that protects all connected medical devices on health care provider networks.",
-      "crunchbase": "https://www.crunchbase.com/organization/medigate-eae8",
-      "homepage": "https://www.medigate.io/",
-      "twitter": "https://twitter.com/MedigateLtd",
-      "linkedin": "https://www.linkedin.com/company/18340376/",
-      "subcategory": "Healthcare",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Medigate-logo.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Panorays-Logo-1.png"
     },
     {
       "name": "Sternum",
@@ -2264,82 +2316,30 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/sternum.png"
     },
     {
-      "name": "ShieldIOT\r",
-      "category": "IoT",
-      "total_funding": 3.6,
-      "last_fundraising_date": "23-Sep-2019",
-      "description": "ShieldIOT delivers innovative cybersecurity solutions that protect edge devices from security threats and operational risks.",
-      "crunchbase": "https://www.crunchbase.com/organization/shieldiot",
-      "homepage": "https://shieldiot.io/",
-      "twitter": "https://twitter.com/ShieldIoT1",
-      "linkedin": "https://www.linkedin.com/company/shieldiot/",
+      "name": "Snyk",
+      "category": "Application Security",
+      "total_funding": 1400,
+      "last_fundraising_date": "2021-09-30T00:00:00.000Z",
+      "description": "Snyk is a cloud native application security leader that enables millions of developers to build software securely.",
+      "crunchbase": "https://www.crunchbase.com/organization/snyk",
+      "homepage": "https://snyk.io",
+      "twitter": "https://www.twitter.com/snyksec",
+      "linkedin": "https://www.linkedin.com/company/snyk",
       "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/ShieldIOT.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Snyk-logo-2.png"
     },
     {
-      "name": "D-Fend Solutions",
-      "category": "IoT",
-      "total_funding": 28,
-      "last_fundraising_date": "24-Sep-2019",
-      "description": "D-Fend provides an autonomous counter-drone perimeter security system, which automatically detects, identifies and intercepts intruding commercial-drones.",
-      "crunchbase": "https://www.crunchbase.com/organization/d-fend-solutions",
-      "homepage": "http://www.d-fendsolutions.com",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/company/d-fend-solutions/",
-      "subcategory": "Drones",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/D-Fend-Logo.png"
-    },
-    {
-      "name": "Suridata.ai",
-      "category": "Data Security & Privacy",
-      "total_funding": 2.5,
-      "last_fundraising_date": "3-Sep-2020",
-      "description": "Suridata.ai specializes in helping organizations gain visibility and obtain control over their sensitive data.",
-      "crunchbase": "https://www.crunchbase.com/organization/suridata-ai",
-      "homepage": "https://www.suridata.ai/",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/company/suridataai/",
+      "name": "Adaptive Shield",
+      "category": "SaaS Security",
+      "total_funding": 34,
+      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
+      "description": "Adaptive Shield is a developer of a security posture management platform used to help businesses manage their cloud services.",
+      "crunchbase": "https://www.crunchbase.com/organization/adaptive-shield/company_financials",
+      "homepage": "https://www.adaptive-shield.com/",
+      "twitter": "https://twitter.com/AdaptiveShield",
+      "linkedin": "https://www.linkedin.com/company/adaptiveshield/",
       "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Suridata-logo-1.png"
-    },
-    {
-      "name": "BioCatch",
-      "category": "Fraud & Transactions",
-      "total_funding": 213.7,
-      "last_fundraising_date": "30-Sep-2020",
-      "description": "BioCatch unlocks the power of behavior and deliver actionable insights to create a digital world where identity, trust and ease co-exist.",
-      "crunchbase": "https://www.crunchbase.com/organization/biocatch",
-      "homepage": "http://biocatch.com",
-      "twitter": "http://twitter.com/BioCatch",
-      "linkedin": "http://www.linkedin.com/company/biocatch",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Biocatch-logo-1.png"
-    },
-    {
-      "name": "Cybersixgill",
-      "category": "Threat Intelligence",
-      "total_funding": 21,
-      "last_fundraising_date": "30-Sep-2020",
-      "description": "Cybersecurity, threat intelligence, agile threat intelligence, SaaS.",
-      "crunchbase": "https://www.crunchbase.com/organization/sixgill",
-      "homepage": "http://cybersixgill.com/",
-      "twitter": "https://www.twitter.com/cybersixgill",
-      "linkedin": "https://www.linkedin.com/company/sixgill",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cybersixgill-logo.png"
-    },
-    {
-      "name": "Pentera",
-      "category": "Vulnerability & Risk Management",
-      "total_funding": 39.5,
-      "last_fundraising_date": "9-Sep-2020",
-      "description": "Pentera develops and provides an Automated Security Validation platform that reduces corporate cybersecurity risks.",
-      "crunchbase": "https://www.crunchbase.com/organization/pcysys",
-      "homepage": "https://www.pentera.io/",
-      "twitter": "https://twitter.com/penterasec",
-      "linkedin": "https://www.linkedin.com/company/18445647/",
-      "subcategory": "Breach & Attack Simulation",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Pentera-Logo-2.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Adaptive-Shield.png"
     },
     {
       "name": "beame.io",
@@ -2683,7 +2683,7 @@
       "name": "Pandora Security",
       "category": "SaaS Security",
       "total_funding": "N/A",
-      "last_fundraising_date": "N/A",
+      "last_fundraising_date": "2021-09-01T00:00:00.000Z",
       "description": "Pandora is an SSPM, that helps the enterprise eliminate the risks posed by insecure personal online accounts.",
       "crunchbase": "https://www.crunchbase.com/organization/pandora-security",
       "homepage": "https://www.pandorasecure.com/",
@@ -2693,69 +2693,69 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Pandora-Logo.png"
     },
     {
-      "name": "Continuity",
+      "name": "Orca Security",
+      "category": "Cloud Security",
+      "total_funding": 482,
+      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
+      "description": "Orca Security provides instant-on, workload-level security for AWS, Microsoft Azure, and Google Cloud Platform.",
+      "crunchbase": "https://www.crunchbase.com/organization/orca-security#section-overview",
+      "homepage": "https://orca.security/",
+      "twitter": "https://twitter.com/OrcaSec",
+      "linkedin": "https://www.linkedin.com/company/orca-security/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Orca-logo-4.png"
+    },
+    {
+      "name": "Duality Technologies",
       "category": "Data Security & Privacy",
-      "total_funding": 9.5,
-      "last_fundraising_date": "2006-01-03T00:00:00.000Z",
-      "description": "Continuity Software offers IT Resilience Assurance solutions to mitigate downtime and data-loss risks of organizations.",
-      "crunchbase": "https://www.crunchbase.com/organization/continuity-software",
-      "homepage": "https://www.continuitysoftware.com/",
-      "twitter": "https://twitter.com/ContinuitySoft",
-      "linkedin": "https://www.linkedin.com/company/continuity-storage-protection/",
+      "total_funding": 50,
+      "last_fundraising_date": "2021-10-05T00:00:00.000Z",
+      "description": "Duality Technologies addresses the rapidly growing need of enterprises across regulated industries to collaborate on sensitive data.",
+      "crunchbase": "https://www.crunchbase.com/organization/duality",
+      "homepage": "http://duality.cloud",
+      "twitter": "https://twitter.com/DualityTech",
+      "linkedin": "https://www.linkedin.com/company/duality-technologies",
       "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Continuity-Logo-1.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/DUALITY_NEW.png"
     },
     {
-      "name": "QEDIT",
-      "category": "Data Security & Privacy",
-      "total_funding": 12.4,
-      "last_fundraising_date": "2021-01-01T00:00:00.000Z",
-      "description": "QEDIT helps businesses accelerate trust with Zero-Knowledge Blockchains.",
-      "crunchbase": "https://www.crunchbase.com/organization/qed-it",
-      "homepage": "https://qed-it.com/",
-      "twitter": "https://twitter.com/qeditzkp",
-      "linkedin": "https://www.linkedin.com/company/qedit/",
+      "name": "Wiz, Inc.",
+      "category": "Cloud Security",
+      "total_funding": 600,
+      "last_fundraising_date": "2021-10-11T00:00:00.000Z",
+      "description": "Wiz is a cybersecurity company that allows companies to find security issues in public cloud infrastructure.",
+      "crunchbase": "https://www.crunchbase.com/organization/wiz-inc",
+      "homepage": "https://www.wiz.io/",
+      "twitter": "https://twitter.com/wiz_io",
+      "linkedin": "https://www.linkedin.com/company/wizsecurity/",
       "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Qedit-Logo.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/wiz-logo-black.svg"
     },
     {
-      "name": "Brandefender",
-      "category": "Threat Intelligence",
-      "total_funding": 8.8,
-      "last_fundraising_date": "2021-03-01T00:00:00.000Z",
-      "description": "Brandefender is an high performance security engine that is able to classify and inspect content across any platform and asses it's risk.",
-      "crunchbase": "https://www.crunchbase.com/organization/brandefender-inc",
-      "homepage": "https://www.brandefender.com/",
-      "twitter": "https://twitter.com/brandefender",
-      "linkedin": "https://www.linkedin.com/company/brandefendr/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Brandefender-Logo.png"
-    },
-    {
-      "name": "Mirato",
+      "name": "At-Bay",
       "category": "Vulnerability & Risk Management",
-      "total_funding": 9,
-      "last_fundraising_date": "2021-02-16T00:00:00.000Z",
-      "description": "Mirato is a TPRM platform that orchestrates and automates the entire TPRM lifecycle.",
-      "crunchbase": "https://www.crunchbase.com/organization/mirato",
-      "homepage": "https://mirato.com/",
-      "twitter": "",
-      "linkedin": "https://www.linkedin.com/company/miratotprm/",
-      "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Mirato-Logo.png"
+      "total_funding": 292,
+      "last_fundraising_date": "2021-10-13T00:00:00.000Z",
+      "description": "At-Bay is a cybersecurity insurance company for the digital age.",
+      "crunchbase": "https://www.crunchbase.com/organization/at-bay",
+      "homepage": "https://www.at-bay.com/",
+      "twitter": "https://twitter.com/keeprisk_atbay",
+      "linkedin": "https://www.linkedin.com/company/at-bay/",
+      "subcategory": "Cyber Insurance ",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/at-bay.png"
     },
     {
-      "name": "AcrusTeam",
-      "category": "IoT",
-      "total_funding": 0.3,
-      "last_fundraising_date": "2021-08-13T00:00:00.000Z",
-      "description": "ArcusTeam has developed an Automated Platform for Detecting Vulnerabilities on ANY IoT Software.",
-      "crunchbase": "https://www.crunchbase.com/organization/arcusteam",
-      "homepage": "https://arcusteam.com/",
-      "twitter": "https://twitter.com/arcusteam_",
-      "linkedin": "https://www.linkedin.com/company/arcus-team/",
+      "name": "Cato Networks",
+      "category": "Zero Trust Network Access & SASE",
+      "total_funding": 532,
+      "last_fundraising_date": "2021-10-19T00:00:00.000Z",
+      "description": "Cato Networks is a provider of the first SASE platform that converges SD-WAN and security into a cloud-native service.",
+      "crunchbase": "https://www.crunchbase.com/organization/cato-networks",
+      "homepage": "http://www.catonetworks.com",
+      "twitter": "https://twitter.com/catonetworks",
+      "linkedin": "https://www.linkedin.com/company/cato-networks",
       "subcategory": "",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Arcusteam-Logo.png"
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cato-logo.png"
     },
     {
       "name": "Valence Security",
@@ -2769,6 +2769,123 @@
       "linkedin": "https://www.linkedin.com/company/valence-security/",
       "subcategory": "",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Valence-Logo.png"
+    },
+    {
+      "name": "Cynomi",
+      "category": "Vulnerability & Risk Management",
+      "total_funding": "-",
+      "last_fundraising_date": "2021-04-05T00:00:00.000Z",
+      "description": "Cynomi addresses a critical gap in mid-market cyber protection - creating and executing a cyber and compliance strategy.",
+      "crunchbase": "https://www.crunchbase.com/organization/cynomi",
+      "homepage": "https://www.cynomi.com/",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/company/cynomi/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Cynomi-Logo.png"
+    },
+    {
+      "name": "Oxeye Security",
+      "category": "Application Security",
+      "total_funding": "-",
+      "last_fundraising_date": "2021-04-05T00:00:00.000Z",
+      "description": "Cloud-native application security testing.",
+      "crunchbase": "https://www.crunchbase.com/organization/oxeye-security",
+      "homepage": "https://www.oxeye.io/",
+      "twitter": "https://twitter.com/OxeyeSecurity",
+      "linkedin": "https://www.linkedin.com/company/oxeyeio/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Oxeye-Logo.png"
+    },
+    {
+      "name": "Torq",
+      "category": "Security Operations",
+      "total_funding": 28,
+      "last_fundraising_date": "2021-01-19T00:00:00.000Z",
+      "description": "Torq is a no-code automation platform for security and ops teams.",
+      "crunchbase": "https://www.crunchbase.com/organization/stackpulse",
+      "homepage": "https://torq.io/",
+      "twitter": "https://twitter.com/torq_io",
+      "linkedin": "https://www.linkedin.com/company/torqio/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Torq-Logo.png"
+    },
+    {
+      "name": "TrackerDetect",
+      "category": "Application Security",
+      "total_funding": 3.2,
+      "last_fundraising_date": "2021-02-17T00:00:00.000Z",
+      "description": "TrackerDetect develops new and innovative detection solution for Insider Threats based on a generalized SaaS Activity Flow Model.",
+      "crunchbase": "https://www.crunchbase.com/organization/trackerdetect",
+      "homepage": "https://www.trackerdetect.com/",
+      "twitter": "",
+      "linkedin": "https://www.linkedin.com/company/trackerdetect/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/TrackerDetect-Logo-1.png"
+    },
+    {
+      "name": "Flow Security",
+      "category": "Data Security & Privacy",
+      "total_funding": "-",
+      "last_fundraising_date": "-",
+      "description": "Cloud Data Security for Modern Architectures.",
+      "crunchbase": "https://www.crunchbase.com/organization/flow-security",
+      "homepage": "https://www.flowsecurity.com/",
+      "twitter": "https://twitter.com/flow_security",
+      "linkedin": "",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Flow-Logo.png"
+    },
+    {
+      "name": "Piiano",
+      "category": "Data Security & Privacy",
+      "total_funding": 9,
+      "last_fundraising_date": "2021-10-26T00:00:00.000Z",
+      "description": "Piiano develops privacy engineering infrastructure for cloud-native applications.",
+      "crunchbase": "https://www.crunchbase.com/organization/piiano",
+      "homepage": "https://piiano.com/",
+      "twitter": "https://twitter.com/PrivacyPiiano",
+      "linkedin": "https://www.linkedin.com/company/piiano/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Piiano-Logo.png"
+    },
+    {
+      "name": "Cyrus ",
+      "category": "Web Security",
+      "total_funding": "-",
+      "last_fundraising_date": "2020-11-01T00:00:00.000Z",
+      "description": "Cyrus is the next-generation of Personal Cybersecurity, Privacy & Identity Protection.",
+      "crunchbase": "https://www.crunchbase.com/organization/cyrus-security-ltd",
+      "homepage": "https://cyrus.app/",
+      "twitter": "https://twitter.com/safe_with_cyrus",
+      "linkedin": "https://www.linkedin.com/company/cyrus-security/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Cyrus-Logo.png"
+    },
+    {
+      "name": "Commugen ",
+      "category": "Vulnerability & Risk Management",
+      "total_funding": "-",
+      "last_fundraising_date": "2017-05-17T00:00:00.000Z",
+      "description": "Commugen is the first no-code cyber security GRC platform",
+      "crunchbase": "https://www.crunchbase.com/organization/commugen",
+      "homepage": "https://www.cyber.commugen.com/",
+      "twitter": "https://twitter.com/CommugenNews",
+      "linkedin": "https://www.linkedin.com/company/commugen/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Commugen-Logo.png"
+    },
+    {
+      "name": "CyBellum",
+      "category": "IoT",
+      "total_funding": 15,
+      "last_fundraising_date": "2020-07-29T00:00:00.000Z",
+      "description": "Cybellum enables the product security team to develop and maintain secure connected products.",
+      "crunchbase": "https://www.crunchbase.com/organization/cybellum/company_financials",
+      "homepage": "https://cybellum.com/",
+      "twitter": "https://twitter.com/Cybellum",
+      "linkedin": "https://www.linkedin.com/company/cybellum/",
+      "subcategory": "",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cybellum-logo-1.png"
     }
   ],
   "exits": [
@@ -3589,6 +3706,18 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Polyrize-logo-1.png"
     },
     {
+      "company_name": "CloudEssence",
+      "category": "Application Security",
+      "total_funding_until_exited_m": "N/A",
+      "founded": "2020-07-01T00:00:00.000Z",
+      "exit_date": "2021-01-01T00:00:00.000Z",
+      "exit_year": 2021,
+      "lifespan_years": 0,
+      "acquisition_amount_m": "-",
+      "acquirer_name": "Contrast Security ",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/CloudEssence-Logo.png"
+    },
+    {
       "company_name": "Alcide",
       "category": "Cloud Security",
       "total_funding_until_exited_m": 12.3,
@@ -3709,6 +3838,18 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Whitehat-logo.png"
     },
     {
+      "company_name": "Xpandion",
+      "category": "Vulnerability & Risk Management",
+      "total_funding_until_exited_m": 0.1,
+      "founded": "2007-01-01T00:00:00.000Z",
+      "exit_date": "2021-05-04T00:00:00.000Z",
+      "exit_year": 2021,
+      "lifespan_years": 14,
+      "acquisition_amount_m": "-",
+      "acquirer_name": "Appsian",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Xpandion-Logo-1.png"
+    },
+    {
       "company_name": "Simplex",
       "category": "Fraud & Transactions",
       "total_funding_until_exited_m": 19,
@@ -3731,6 +3872,18 @@
       "acquisition_amount_m": "-",
       "acquirer_name": "Help Systems",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Beyond-logo.png"
+    },
+    {
+      "company_name": "Wandera",
+      "category": "Zero Trust Network Access & SASE",
+      "total_funding_until_exited_m": 53.5,
+      "founded": "2012-01-01T00:00:00.000Z",
+      "exit_date": "2021-05-11T00:00:00.000Z",
+      "exit_year": 2021,
+      "lifespan_years": 9,
+      "acquisition_amount_m": 400,
+      "acquirer_name": "Jamf",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Wandera-Logo.png"
     },
     {
       "company_name": "Ayehu Software Technologies",
@@ -3865,16 +4018,16 @@
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Secbi-Logo.png"
     },
     {
-      "company_name": "CyBellum",
-      "category": "IoT",
-      "total_funding_until_exited_m": 15,
-      "founded": "2016-01-01T00:00:00.000Z",
-      "exit_date": "2021-09-22T00:00:00.000Z",
+      "company_name": "SNDBOX",
+      "category": "Security Operations",
+      "total_funding_until_exited_m": "N/A",
+      "founded": "2017-01-01T00:00:00.000Z",
+      "exit_date": "2021-09-10T00:00:00.000Z",
       "exit_year": 2021,
-      "lifespan_years": 5,
-      "acquisition_amount_m": 240,
-      "acquirer_name": "LG Electronics",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cybellum-logo-1.png"
+      "lifespan_years": 4,
+      "acquisition_amount_m": "-",
+      "acquirer_name": "OPSWAT",
+      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Snbx-Logo.png"
     },
     {
       "company_name": "GuardiCore",
@@ -3887,54 +4040,6 @@
       "acquisition_amount_m": 600,
       "acquirer_name": "Akamai Technologies",
       "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Guardicore.png"
-    },
-    {
-      "company_name": "CloudEssence",
-      "category": "Application Security",
-      "total_funding_until_exited_m": "N/A",
-      "founded": "2020-07-01T00:00:00.000Z",
-      "exit_date": "2021-01-01T00:00:00.000Z",
-      "exit_year": 2021,
-      "lifespan_years": 0,
-      "acquisition_amount_m": "-",
-      "acquirer_name": "Contrast Security ",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/CloudEssence-Logo.png"
-    },
-    {
-      "company_name": "Xpandion",
-      "category": "Vulnerability & Risk Management",
-      "total_funding_until_exited_m": 0.1,
-      "founded": "2007-01-01T00:00:00.000Z",
-      "exit_date": "2021-05-04T00:00:00.000Z",
-      "exit_year": 2021,
-      "lifespan_years": 14,
-      "acquisition_amount_m": "-",
-      "acquirer_name": "Appsian",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Xpandion-Logo-1.png"
-    },
-    {
-      "company_name": "Wandera",
-      "category": "Zero Trust Network Access & SASE",
-      "total_funding_until_exited_m": 53.5,
-      "founded": "2012-01-01T00:00:00.000Z",
-      "exit_date": "2021-05-11T00:00:00.000Z",
-      "exit_year": 2021,
-      "lifespan_years": 9,
-      "acquisition_amount_m": 400,
-      "acquirer_name": "Jamf",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Wandera-Logo.png"
-    },
-    {
-      "company_name": "SNDBOX",
-      "category": "Security Operations",
-      "total_funding_until_exited_m": "N/A",
-      "founded": "2017-01-01T00:00:00.000Z",
-      "exit_date": "2021-09-10T00:00:00.000Z",
-      "exit_year": 2021,
-      "lifespan_years": 4,
-      "acquisition_amount_m": "-",
-      "acquirer_name": "OPSWAT",
-      "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Snbx-Logo.png"
     }
   ],
   "categories": [
@@ -4131,6 +4236,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Noname-logo.png"
             },
             {
+              "name": "Neosec",
+              "category": "Application Security",
+              "total_funding": 20.7,
+              "last_fundraising_date": "2021-09-14T00:00:00.000Z",
+              "description": "Neosec leverages AI-based behavioral analytics to provide unmatched visibility and threat hunting capabilities to stop threat actors.",
+              "crunchbase": "https://www.crunchbase.com/organization/neosec",
+              "homepage": "https://www.neosec.com/",
+              "twitter": "https://twitter.com/neosec_com",
+              "linkedin": "https://www.linkedin.com/company/neosec-com/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Neosec-Logo.png"
+            },
+            {
               "name": "Snyk",
               "category": "Application Security",
               "total_funding": 1400,
@@ -4144,17 +4262,30 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Snyk-logo-2.png"
             },
             {
-              "name": "Neosec",
+              "name": "Oxeye Security",
               "category": "Application Security",
-              "total_funding": 20.7,
-              "last_fundraising_date": "2021-09-14T00:00:00.000Z",
-              "description": "Neosec leverages AI-based behavioral analytics to provide unmatched visibility and threat hunting capabilities to stop threat actors.",
-              "crunchbase": "https://www.crunchbase.com/organization/neosec",
-              "homepage": "https://www.neosec.com/",
-              "twitter": "https://twitter.com/neosec_com",
-              "linkedin": "https://www.linkedin.com/company/neosec-com/",
+              "total_funding": "-",
+              "last_fundraising_date": "2021-04-05T00:00:00.000Z",
+              "description": "Cloud-native application security testing.",
+              "crunchbase": "https://www.crunchbase.com/organization/oxeye-security",
+              "homepage": "https://www.oxeye.io/",
+              "twitter": "https://twitter.com/OxeyeSecurity",
+              "linkedin": "https://www.linkedin.com/company/oxeyeio/",
               "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/09/Neosec-Logo.png"
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Oxeye-Logo.png"
+            },
+            {
+              "name": "TrackerDetect",
+              "category": "Application Security",
+              "total_funding": 3.2,
+              "last_fundraising_date": "2021-02-17T00:00:00.000Z",
+              "description": "TrackerDetect develops new and innovative detection solution for Insider Threats based on a generalized SaaS Activity Flow Model.",
+              "crunchbase": "https://www.crunchbase.com/organization/trackerdetect",
+              "homepage": "https://www.trackerdetect.com/",
+              "twitter": "",
+              "linkedin": "https://www.linkedin.com/company/trackerdetect/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/TrackerDetect-Logo-1.png"
             }
           ]
         }
@@ -4285,8 +4416,8 @@
             {
               "name": "ARMO",
               "category": "Cloud Security",
-              "total_funding": 3.5,
-              "last_fundraising_date": "2018-11-15T00:00:00.000Z",
+              "total_funding": 4.5,
+              "last_fundraising_date": "2021-01-27T00:00:00.000Z",
               "description": "Embedding Visibility, Security and Control into every cloud workload and Empowering DevOps to Deploy Inherently Secure Workloads.",
               "crunchbase": "https://www.crunchbase.com/organization/cyber-armor#section-overview",
               "homepage": "https://www.armosec.io/",
@@ -4361,19 +4492,6 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/AKEYLESS.png"
             },
             {
-              "name": "Wiz, Inc.",
-              "category": "Cloud Security",
-              "total_funding": 600,
-              "last_fundraising_date": "2021-10-11T00:00:00.000Z",
-              "description": "Wiz is a cybersecurity company that allows companies to find security issues in public cloud infrastructure.",
-              "crunchbase": "https://www.crunchbase.com/organization/wiz-inc",
-              "homepage": "https://www.wiz.io/",
-              "twitter": "https://twitter.com/wiz_io",
-              "linkedin": "https://www.linkedin.com/company/wizsecurity/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/wiz-logo-black.svg"
-            },
-            {
               "name": "CloudWize ",
               "category": "Cloud Security",
               "total_funding": 3,
@@ -4413,6 +4531,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Mitiga.png"
             },
             {
+              "name": "Rezilion",
+              "category": "Cloud Security",
+              "total_funding": 38,
+              "last_fundraising_date": "2021-09-13T00:00:00.000Z",
+              "description": "Rezilion is an autonomous cloud workload protection platform that makes production environments self-healing and resilient to threats.",
+              "crunchbase": "https://www.crunchbase.com/organization/rezilion",
+              "homepage": "https://www.rezilion.com/",
+              "twitter": "https://twitter.com/rezilion_",
+              "linkedin": "https://www.linkedin.com/company/rezilion/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Rezilion-logo-3.png"
+            },
+            {
               "name": "Orca Security",
               "category": "Cloud Security",
               "total_funding": 482,
@@ -4426,17 +4557,17 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Orca-logo-4.png"
             },
             {
-              "name": "Rezilion",
+              "name": "Wiz, Inc.",
               "category": "Cloud Security",
-              "total_funding": 38,
-              "last_fundraising_date": "2021-09-13T00:00:00.000Z",
-              "description": "Rezilion is an autonomous cloud workload protection platform that makes production environments self-healing and resilient to threats.",
-              "crunchbase": "https://www.crunchbase.com/organization/rezilion",
-              "homepage": "https://www.rezilion.com/",
-              "twitter": "https://twitter.com/rezilion_",
-              "linkedin": "https://www.linkedin.com/company/rezilion/",
+              "total_funding": 600,
+              "last_fundraising_date": "2021-10-11T00:00:00.000Z",
+              "description": "Wiz is a cybersecurity company that allows companies to find security issues in public cloud infrastructure.",
+              "crunchbase": "https://www.crunchbase.com/organization/wiz-inc",
+              "homepage": "https://www.wiz.io/",
+              "twitter": "https://twitter.com/wiz_io",
+              "linkedin": "https://www.linkedin.com/company/wizsecurity/",
               "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Rezilion-logo-3.png"
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/wiz-logo-black.svg"
             }
           ]
         }
@@ -4449,6 +4580,19 @@
         {
           "name": "",
           "companies": [
+            {
+              "name": "Continuity",
+              "category": "Data Security & Privacy",
+              "total_funding": 9.5,
+              "last_fundraising_date": "2006-01-03T00:00:00.000Z",
+              "description": "Continuity Software offers IT Resilience Assurance solutions to mitigate downtime and data-loss risks of organizations.",
+              "crunchbase": "https://www.crunchbase.com/organization/continuity-software",
+              "homepage": "https://www.continuitysoftware.com/",
+              "twitter": "https://twitter.com/ContinuitySoft",
+              "linkedin": "https://www.linkedin.com/company/continuity-storage-protection/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Continuity-Logo-1.png"
+            },
             {
               "name": "ITsMine",
               "category": "Data Security & Privacy",
@@ -4502,6 +4646,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/1touch.io-logo.png"
             },
             {
+              "name": "Suridata.ai",
+              "category": "Data Security & Privacy",
+              "total_funding": 2.5,
+              "last_fundraising_date": "2020-09-03T00:00:00.000Z",
+              "description": "Suridata.ai specializes in helping organizations gain visibility and obtain control over their sensitive data.",
+              "crunchbase": "https://www.crunchbase.com/organization/suridata-ai",
+              "homepage": "https://www.suridata.ai/",
+              "twitter": "",
+              "linkedin": "https://www.linkedin.com/company/suridataai/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Suridata-logo-1.png"
+            },
+            {
               "name": "Mine",
               "category": "Data Security & Privacy",
               "total_funding": 12.5,
@@ -4526,6 +4683,19 @@
               "linkedin": "http://www.linkedin.com/company/3238521",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Unbound-logo.png"
+            },
+            {
+              "name": "QEDIT",
+              "category": "Data Security & Privacy",
+              "total_funding": 12.4,
+              "last_fundraising_date": "2021-01-01T00:00:00.000Z",
+              "description": "QEDIT helps businesses accelerate trust with Zero-Knowledge Blockchains.",
+              "crunchbase": "https://www.crunchbase.com/organization/qed-it",
+              "homepage": "https://qed-it.com/",
+              "twitter": "https://twitter.com/qeditzkp",
+              "linkedin": "https://www.linkedin.com/company/qedit/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Qedit-Logo.png"
             },
             {
               "name": "BigID",
@@ -4554,19 +4724,6 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/anjuna-NEW.png"
             },
             {
-              "name": "Duality Technologies",
-              "category": "Data Security & Privacy",
-              "total_funding": 50,
-              "last_fundraising_date": "2021-10-05T00:00:00.000Z",
-              "description": "Duality Technologies addresses the rapidly growing need of enterprises across regulated industries to collaborate on sensitive data.",
-              "crunchbase": "https://www.crunchbase.com/organization/duality",
-              "homepage": "http://duality.cloud",
-              "twitter": "https://twitter.com/DualityTech",
-              "linkedin": "https://www.linkedin.com/company/duality-technologies",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/DUALITY_NEW.png"
-            },
-            {
               "name": "Satori Cyber",
               "category": "Data Security & Privacy",
               "total_funding": 25.3,
@@ -4578,19 +4735,6 @@
               "linkedin": "https://www.linkedin.com/company/satoricyber",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2019/12/Satori_logo_horizontal_color-e1576587774878.png"
-            },
-            {
-              "name": "Suridata.ai",
-              "category": "Data Security & Privacy",
-              "total_funding": 2.5,
-              "last_fundraising_date": "3-Sep-2020",
-              "description": "Suridata.ai specializes in helping organizations gain visibility and obtain control over their sensitive data.",
-              "crunchbase": "https://www.crunchbase.com/organization/suridata-ai",
-              "homepage": "https://www.suridata.ai/",
-              "twitter": "",
-              "linkedin": "https://www.linkedin.com/company/suridataai/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Suridata-logo-1.png"
             },
             {
               "name": "DataSunrise",
@@ -4619,30 +4763,43 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/SecuPi_new.png"
             },
             {
-              "name": "Continuity",
+              "name": "Duality Technologies",
               "category": "Data Security & Privacy",
-              "total_funding": 9.5,
-              "last_fundraising_date": "2006-01-03T00:00:00.000Z",
-              "description": "Continuity Software offers IT Resilience Assurance solutions to mitigate downtime and data-loss risks of organizations.",
-              "crunchbase": "https://www.crunchbase.com/organization/continuity-software",
-              "homepage": "https://www.continuitysoftware.com/",
-              "twitter": "https://twitter.com/ContinuitySoft",
-              "linkedin": "https://www.linkedin.com/company/continuity-storage-protection/",
+              "total_funding": 50,
+              "last_fundraising_date": "2021-10-05T00:00:00.000Z",
+              "description": "Duality Technologies addresses the rapidly growing need of enterprises across regulated industries to collaborate on sensitive data.",
+              "crunchbase": "https://www.crunchbase.com/organization/duality",
+              "homepage": "http://duality.cloud",
+              "twitter": "https://twitter.com/DualityTech",
+              "linkedin": "https://www.linkedin.com/company/duality-technologies",
               "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Continuity-Logo-1.png"
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/DUALITY_NEW.png"
             },
             {
-              "name": "QEDIT",
+              "name": "Flow Security",
               "category": "Data Security & Privacy",
-              "total_funding": 12.4,
-              "last_fundraising_date": "2021-01-01T00:00:00.000Z",
-              "description": "QEDIT helps businesses accelerate trust with Zero-Knowledge Blockchains.",
-              "crunchbase": "https://www.crunchbase.com/organization/qed-it",
-              "homepage": "https://qed-it.com/",
-              "twitter": "https://twitter.com/qeditzkp",
-              "linkedin": "https://www.linkedin.com/company/qedit/",
+              "total_funding": "-",
+              "last_fundraising_date": "-",
+              "description": "Cloud Data Security for Modern Architectures.",
+              "crunchbase": "https://www.crunchbase.com/organization/flow-security",
+              "homepage": "https://www.flowsecurity.com/",
+              "twitter": "https://twitter.com/flow_security",
+              "linkedin": "",
               "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Qedit-Logo.png"
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Flow-Logo.png"
+            },
+            {
+              "name": "Piiano",
+              "category": "Data Security & Privacy",
+              "total_funding": 9,
+              "last_fundraising_date": "2021-10-26T00:00:00.000Z",
+              "description": "Piiano develops privacy engineering infrastructure for cloud-native applications.",
+              "crunchbase": "https://www.crunchbase.com/organization/piiano",
+              "homepage": "https://piiano.com/",
+              "twitter": "https://twitter.com/PrivacyPiiano",
+              "linkedin": "https://www.linkedin.com/company/piiano/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Piiano-Logo.png"
             }
           ]
         }
@@ -5003,6 +5160,32 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Riskified-Logo-1.png"
             },
             {
+              "name": "EverC",
+              "category": "Fraud & Transactions",
+              "total_funding": 48,
+              "last_fundraising_date": "2020-09-10T00:00:00.000Z",
+              "description": "EverC provides cyber intelligence tools that detect and prevent money laundering through online transactions.",
+              "crunchbase": "https://www.crunchbase.com/organization/evercompliant",
+              "homepage": "http://www.evercompliant.com/",
+              "twitter": "https://twitter.com/evercteam?lang=en",
+              "linkedin": "https://www.linkedin.com/company/everc/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Everc-logo.png"
+            },
+            {
+              "name": "BioCatch",
+              "category": "Fraud & Transactions",
+              "total_funding": 213.7,
+              "last_fundraising_date": "2020-09-30T00:00:00.000Z",
+              "description": "BioCatch unlocks the power of behavior and deliver actionable insights to create a digital world where identity, trust and ease co-exist.",
+              "crunchbase": "https://www.crunchbase.com/organization/biocatch",
+              "homepage": "http://biocatch.com",
+              "twitter": "http://twitter.com/BioCatch",
+              "linkedin": "http://www.linkedin.com/company/biocatch",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Biocatch-logo-1.png"
+            },
+            {
               "name": "Forter",
               "category": "Fraud & Transactions",
               "total_funding": 525,
@@ -5040,32 +5223,6 @@
               "linkedin": "https://www.linkedin.com/company/activefence/",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/ActiveFence-Logo.png"
-            },
-            {
-              "name": "EverC",
-              "category": "Fraud & Transactions",
-              "total_funding": 48,
-              "last_fundraising_date": "10-Sep-2020",
-              "description": "EverC provides cyber intelligence tools that detect and prevent money laundering through online transactions.",
-              "crunchbase": "https://www.crunchbase.com/organization/evercompliant",
-              "homepage": "http://www.evercompliant.com/",
-              "twitter": "https://twitter.com/evercteam?lang=en",
-              "linkedin": "https://www.linkedin.com/company/everc/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Everc-logo.png"
-            },
-            {
-              "name": "BioCatch",
-              "category": "Fraud & Transactions",
-              "total_funding": 213.7,
-              "last_fundraising_date": "30-Sep-2020",
-              "description": "BioCatch unlocks the power of behavior and deliver actionable insights to create a digital world where identity, trust and ease co-exist.",
-              "crunchbase": "https://www.crunchbase.com/organization/biocatch",
-              "homepage": "http://biocatch.com",
-              "twitter": "http://twitter.com/BioCatch",
-              "linkedin": "http://www.linkedin.com/company/biocatch",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Biocatch-logo-1.png"
             }
           ]
         }
@@ -5259,6 +5416,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Apollo-Shield-Logo-e1628688047860.png"
             },
             {
+              "name": "D-Fend Solutions",
+              "category": "IoT",
+              "total_funding": 28,
+              "last_fundraising_date": "2019-09-24T00:00:00.000Z",
+              "description": "D-Fend provides an autonomous counter-drone perimeter security system, which automatically detects, identifies and intercepts intruding commercial-drones.",
+              "crunchbase": "https://www.crunchbase.com/organization/d-fend-solutions",
+              "homepage": "http://www.d-fendsolutions.com",
+              "twitter": "",
+              "linkedin": "https://www.linkedin.com/company/d-fend-solutions/",
+              "subcategory": "Drones",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/D-Fend-Logo.png"
+            },
+            {
               "name": "InfiniDome",
               "category": "IoT",
               "total_funding": 5.1,
@@ -5270,19 +5440,6 @@
               "linkedin": "https://www.linkedin.com/company/gps-dome-ltd/",
               "subcategory": "Drones",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Infinidome-logo.png"
-            },
-            {
-              "name": "D-Fend Solutions",
-              "category": "IoT",
-              "total_funding": 28,
-              "last_fundraising_date": "24-Sep-2019",
-              "description": "D-Fend provides an autonomous counter-drone perimeter security system, which automatically detects, identifies and intercepts intruding commercial-drones.",
-              "crunchbase": "https://www.crunchbase.com/organization/d-fend-solutions",
-              "homepage": "http://www.d-fendsolutions.com",
-              "twitter": "",
-              "linkedin": "https://www.linkedin.com/company/d-fend-solutions/",
-              "subcategory": "Drones",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/D-Fend-Logo.png"
             }
           ]
         },
@@ -5340,6 +5497,19 @@
               "linkedin": "https://www.linkedin.com/company/cervello-cyber-security/",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cervello_Logo.png"
+            },
+            {
+              "name": "ShieldIOT\r",
+              "category": "IoT",
+              "total_funding": 3.6,
+              "last_fundraising_date": "2019-09-23T00:00:00.000Z",
+              "description": "ShieldIOT delivers innovative cybersecurity solutions that protect edge devices from security threats and operational risks.",
+              "crunchbase": "https://www.crunchbase.com/organization/shieldiot",
+              "homepage": "https://shieldiot.io/",
+              "twitter": "https://twitter.com/ShieldIoT1",
+              "linkedin": "https://www.linkedin.com/company/shieldiot/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/ShieldIOT.png"
             },
             {
               "name": "Firedome",
@@ -5446,6 +5616,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Kameleon-Logo.png"
             },
             {
+              "name": "AcrusTeam",
+              "category": "IoT",
+              "total_funding": 0.3,
+              "last_fundraising_date": "2021-08-13T00:00:00.000Z",
+              "description": "ArcusTeam has developed an Automated Platform for Detecting Vulnerabilities on ANY IoT Software.",
+              "crunchbase": "https://www.crunchbase.com/organization/arcusteam",
+              "homepage": "https://arcusteam.com/",
+              "twitter": "https://twitter.com/arcusteam_",
+              "linkedin": "https://www.linkedin.com/company/arcus-team/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Arcusteam-Logo.png"
+            },
+            {
               "name": "Sternum",
               "category": "IoT",
               "total_funding": 36,
@@ -5457,19 +5640,6 @@
               "linkedin": "https://www.linkedin.com/company/sternumiot//",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/sternum.png"
-            },
-            {
-              "name": "ShieldIOT\r",
-              "category": "IoT",
-              "total_funding": 3.6,
-              "last_fundraising_date": "23-Sep-2019",
-              "description": "ShieldIOT delivers innovative cybersecurity solutions that protect edge devices from security threats and operational risks.",
-              "crunchbase": "https://www.crunchbase.com/organization/shieldiot",
-              "homepage": "https://shieldiot.io/",
-              "twitter": "https://twitter.com/ShieldIoT1",
-              "linkedin": "https://www.linkedin.com/company/shieldiot/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/ShieldIOT.png"
             },
             {
               "name": "SigmaDots ",
@@ -5485,17 +5655,17 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Sigmadots.png"
             },
             {
-              "name": "AcrusTeam",
+              "name": "CyBellum",
               "category": "IoT",
-              "total_funding": 0.3,
-              "last_fundraising_date": "2021-08-13T00:00:00.000Z",
-              "description": "ArcusTeam has developed an Automated Platform for Detecting Vulnerabilities on ANY IoT Software.",
-              "crunchbase": "https://www.crunchbase.com/organization/arcusteam",
-              "homepage": "https://arcusteam.com/",
-              "twitter": "https://twitter.com/arcusteam_",
-              "linkedin": "https://www.linkedin.com/company/arcus-team/",
+              "total_funding": 15,
+              "last_fundraising_date": "2020-07-29T00:00:00.000Z",
+              "description": "Cybellum enables the product security team to develop and maintain secure connected products.",
+              "crunchbase": "https://www.crunchbase.com/organization/cybellum/company_financials",
+              "homepage": "https://cybellum.com/",
+              "twitter": "https://twitter.com/Cybellum",
+              "linkedin": "https://www.linkedin.com/company/cybellum/",
               "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Arcusteam-Logo.png"
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cybellum-logo-1.png"
             }
           ]
         },
@@ -5747,6 +5917,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/cybermdx-logo-cmyk-2color.png"
             },
             {
+              "name": "Medigate",
+              "category": "IoT",
+              "total_funding": 50.4,
+              "last_fundraising_date": "2020-09-15T00:00:00.000Z",
+              "description": "Medigate owns and operates a medical device security platform that protects all connected medical devices on health care provider networks.",
+              "crunchbase": "https://www.crunchbase.com/organization/medigate-eae8",
+              "homepage": "https://www.medigate.io/",
+              "twitter": "https://twitter.com/MedigateLtd",
+              "linkedin": "https://www.linkedin.com/company/18340376/",
+              "subcategory": "Healthcare",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Medigate-logo.png"
+            },
+            {
               "name": "Cynerio",
               "category": "IoT",
               "total_funding": 37,
@@ -5758,19 +5941,6 @@
               "linkedin": "https://www.linkedin.com/company/cynerio-cyber/?originalSubdomain=il",
               "subcategory": "Healthcare",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cynerio-logo-1.png"
-            },
-            {
-              "name": "Medigate",
-              "category": "IoT",
-              "total_funding": 50.4,
-              "last_fundraising_date": "15-Sep-2020",
-              "description": "Medigate owns and operates a medical device security platform that protects all connected medical devices on health care provider networks.",
-              "crunchbase": "https://www.crunchbase.com/organization/medigate-eae8",
-              "homepage": "https://www.medigate.io/",
-              "twitter": "https://twitter.com/MedigateLtd",
-              "linkedin": "https://www.linkedin.com/company/18340376/",
-              "subcategory": "Healthcare",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Medigate-logo.png"
             }
           ]
         }
@@ -6014,19 +6184,6 @@
           "name": "",
           "companies": [
             {
-              "name": "Adaptive Shield",
-              "category": "SaaS Security",
-              "total_funding": 34,
-              "last_fundraising_date": "2021-10-05T00:00:00.000Z",
-              "description": "Adaptive Shield is a developer of a security posture management platform used to help businesses manage their cloud services.",
-              "crunchbase": "https://www.crunchbase.com/organization/adaptive-shield/company_financials",
-              "homepage": "https://www.adaptive-shield.com/",
-              "twitter": "https://twitter.com/AdaptiveShield",
-              "linkedin": "https://www.linkedin.com/company/adaptiveshield/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Adaptive-Shield.png"
-            },
-            {
               "name": "DoControl",
               "category": "SaaS Security",
               "total_funding": 13.35,
@@ -6053,10 +6210,23 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Grip_logo_light.png"
             },
             {
+              "name": "Adaptive Shield",
+              "category": "SaaS Security",
+              "total_funding": 34,
+              "last_fundraising_date": "2021-10-05T00:00:00.000Z",
+              "description": "Adaptive Shield is a developer of a security posture management platform used to help businesses manage their cloud services.",
+              "crunchbase": "https://www.crunchbase.com/organization/adaptive-shield/company_financials",
+              "homepage": "https://www.adaptive-shield.com/",
+              "twitter": "https://twitter.com/AdaptiveShield",
+              "linkedin": "https://www.linkedin.com/company/adaptiveshield/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Adaptive-Shield.png"
+            },
+            {
               "name": "Pandora Security",
               "category": "SaaS Security",
               "total_funding": "N/A",
-              "last_fundraising_date": "N/A",
+              "last_fundraising_date": "2021-09-01T00:00:00.000Z",
               "description": "Pandora is an SSPM, that helps the enterprise eliminate the risks posed by insecure personal online accounts.",
               "crunchbase": "https://www.crunchbase.com/organization/pandora-security",
               "homepage": "https://www.pandorasecure.com/",
@@ -6218,6 +6388,19 @@
               "linkedin": "http://www.linkedin.com/company/3526356",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/logo-color-250.png"
+            },
+            {
+              "name": "Torq",
+              "category": "Security Operations",
+              "total_funding": 28,
+              "last_fundraising_date": "2021-01-19T00:00:00.000Z",
+              "description": "Torq is a no-code automation platform for security and ops teams.",
+              "crunchbase": "https://www.crunchbase.com/organization/stackpulse",
+              "homepage": "https://torq.io/",
+              "twitter": "https://twitter.com/torq_io",
+              "linkedin": "https://www.linkedin.com/company/torqio/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Torq-Logo.png"
             }
           ]
         }
@@ -6286,7 +6469,7 @@
               "name": "Cybersixgill",
               "category": "Threat Intelligence",
               "total_funding": 21,
-              "last_fundraising_date": "30-Sep-2020",
+              "last_fundraising_date": "2020-09-30T00:00:00.000Z",
               "description": "Cybersecurity, threat intelligence, agile threat intelligence, SaaS.",
               "crunchbase": "https://www.crunchbase.com/organization/sixgill",
               "homepage": "http://cybersixgill.com/",
@@ -6398,19 +6581,6 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Shieldox_Cognni.png"
             },
             {
-              "name": "Panorays",
-              "category": "Vulnerability & Risk Management",
-              "total_funding": 62,
-              "last_fundraising_date": "2021-09-23T00:00:00.000Z",
-              "description": "Panorays automates, accelerates and scales your third-party security process.",
-              "crunchbase": "https://www.crunchbase.com/organization/panorays",
-              "homepage": "https://panorays.com/",
-              "twitter": "https://twitter.com/panorays",
-              "linkedin": "https://www.linkedin.com/company/panorays/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Panorays-Logo-1.png"
-            },
-            {
               "name": "Vicarius",
               "category": "Vulnerability & Risk Management",
               "total_funding": 5.2,
@@ -6476,6 +6646,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/06/Anecdotes-logo.png"
             },
             {
+              "name": "Mirato",
+              "category": "Vulnerability & Risk Management",
+              "total_funding": 9,
+              "last_fundraising_date": "2021-02-16T00:00:00.000Z",
+              "description": "Mirato is a TPRM platform that orchestrates and automates the entire TPRM lifecycle.",
+              "crunchbase": "https://www.crunchbase.com/organization/mirato",
+              "homepage": "https://mirato.com/",
+              "twitter": "",
+              "linkedin": "https://www.linkedin.com/company/miratotprm/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Mirato-Logo.png"
+            },
+            {
               "name": "Vulcan Cyber",
               "category": "Vulnerability & Risk Management",
               "total_funding": 35,
@@ -6487,6 +6670,19 @@
               "linkedin": "https://www.linkedin.com/company/vulcancyber/",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Vulcan-logo-2.png"
+            },
+            {
+              "name": "Panorays",
+              "category": "Vulnerability & Risk Management",
+              "total_funding": 62,
+              "last_fundraising_date": "2021-09-23T00:00:00.000Z",
+              "description": "Panorays automates, accelerates and scales your third-party security process.",
+              "crunchbase": "https://www.crunchbase.com/organization/panorays",
+              "homepage": "https://panorays.com/",
+              "twitter": "https://twitter.com/panorays",
+              "linkedin": "https://www.linkedin.com/company/panorays/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Panorays-Logo-1.png"
             },
             {
               "name": "Findings  ",
@@ -6502,17 +6698,30 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Findings-logo-4.png"
             },
             {
-              "name": "Mirato",
+              "name": "Cynomi",
               "category": "Vulnerability & Risk Management",
-              "total_funding": 9,
-              "last_fundraising_date": "2021-02-16T00:00:00.000Z",
-              "description": "Mirato is a TPRM platform that orchestrates and automates the entire TPRM lifecycle.",
-              "crunchbase": "https://www.crunchbase.com/organization/mirato",
-              "homepage": "https://mirato.com/",
+              "total_funding": "-",
+              "last_fundraising_date": "2021-04-05T00:00:00.000Z",
+              "description": "Cynomi addresses a critical gap in mid-market cyber protection - creating and executing a cyber and compliance strategy.",
+              "crunchbase": "https://www.crunchbase.com/organization/cynomi",
+              "homepage": "https://www.cynomi.com/",
               "twitter": "",
-              "linkedin": "https://www.linkedin.com/company/miratotprm/",
+              "linkedin": "https://www.linkedin.com/company/cynomi/",
               "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Mirato-Logo.png"
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Cynomi-Logo.png"
+            },
+            {
+              "name": "Commugen ",
+              "category": "Vulnerability & Risk Management",
+              "total_funding": "-",
+              "last_fundraising_date": "2017-05-17T00:00:00.000Z",
+              "description": "Commugen is the first no-code cyber security GRC platform",
+              "crunchbase": "https://www.crunchbase.com/organization/commugen",
+              "homepage": "https://www.cyber.commugen.com/",
+              "twitter": "https://twitter.com/CommugenNews",
+              "linkedin": "https://www.linkedin.com/company/commugen/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Commugen-Logo.png"
             }
           ]
         },
@@ -6590,17 +6799,30 @@
           "name": "Cyber Insurance ",
           "companies": [
             {
-              "name": "Sayata Labs",
+              "name": "Sayata",
               "category": "Vulnerability & Risk Management",
-              "total_funding": 6.5,
-              "last_fundraising_date": "2019-03-25T00:00:00.000Z",
-              "description": "Sayata Labs is an enterprise-grade cyber risk assessment company.",
+              "total_funding": 23.5,
+              "last_fundraising_date": "2021-08-25T00:00:00.000Z",
+              "description": "Sayata streamlines the quote-bind-issue process for insurance brokers and carriers to help grow their commercial book.",
               "crunchbase": "https://www.crunchbase.com/organization/sayata-labs",
               "homepage": "https://www.sayatalabs.com/",
               "twitter": "https://twitter.com/Sayatalabs",
               "linkedin": "https://www.linkedin.com/company/sayata-labs/",
               "subcategory": "Cyber Insurance ",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Sayata-Logo.png"
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/10/Sayata-Logo.png"
+            },
+            {
+              "name": "Kovrr",
+              "category": "Vulnerability & Risk Management",
+              "total_funding": 5.5,
+              "last_fundraising_date": "2019-09-10T00:00:00.000Z",
+              "description": "Enabling (Re) Insurers to transparently predict and price cyber risk.",
+              "crunchbase": "https://www.crunchbase.com/organization/kovrr",
+              "homepage": "https://www.kovrr.com",
+              "twitter": "https://twitter.com/kovrrins",
+              "linkedin": "https://www.linkedin.com/company/kovrr",
+              "subcategory": "Cyber Insurance ",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Kovrr.png"
             },
             {
               "name": "At-Bay",
@@ -6614,19 +6836,6 @@
               "linkedin": "https://www.linkedin.com/company/at-bay/",
               "subcategory": "Cyber Insurance ",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/at-bay.png"
-            },
-            {
-              "name": "Kovrr",
-              "category": "Vulnerability & Risk Management",
-              "total_funding": 5.5,
-              "last_fundraising_date": "10-Sep-2019",
-              "description": "Enabling (Re) Insurers to transparently predict and price cyber risk.",
-              "crunchbase": "https://www.crunchbase.com/organization/kovrr",
-              "homepage": "https://www.kovrr.com",
-              "twitter": "https://twitter.com/kovrrins",
-              "linkedin": "https://www.linkedin.com/company/kovrr",
-              "subcategory": "Cyber Insurance ",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/Kovrr.png"
             }
           ]
         },
@@ -6660,6 +6869,19 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/XMcyber-logo-1.png"
             },
             {
+              "name": "Pentera",
+              "category": "Vulnerability & Risk Management",
+              "total_funding": 39.5,
+              "last_fundraising_date": "2020-09-09T00:00:00.000Z",
+              "description": "Pentera develops and provides an Automated Security Validation platform that reduces corporate cybersecurity risks.",
+              "crunchbase": "https://www.crunchbase.com/organization/pcysys",
+              "homepage": "https://www.pentera.io/",
+              "twitter": "https://twitter.com/penterasec",
+              "linkedin": "https://www.linkedin.com/company/18445647/",
+              "subcategory": "Breach & Attack Simulation",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Pentera-Logo-2.png"
+            },
+            {
               "name": "Cyrebro",
               "category": "Vulnerability & Risk Management",
               "total_funding": 21,
@@ -6684,19 +6906,6 @@
               "linkedin": "https://www.linkedin.com/company/cymulate-ltd",
               "subcategory": "Breach & Attack Simulation",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/04/logo-Cymulate-rgb-horizontal-black.png"
-            },
-            {
-              "name": "Pentera",
-              "category": "Vulnerability & Risk Management",
-              "total_funding": 39.5,
-              "last_fundraising_date": "9-Sep-2020",
-              "description": "Pentera develops and provides an Automated Security Validation platform that reduces corporate cybersecurity risks.",
-              "crunchbase": "https://www.crunchbase.com/organization/pcysys",
-              "homepage": "https://www.pentera.io/",
-              "twitter": "https://twitter.com/penterasec",
-              "linkedin": "https://www.linkedin.com/company/18445647/",
-              "subcategory": "Breach & Attack Simulation",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/07/Pentera-Logo-2.png"
             }
           ]
         }
@@ -6712,8 +6921,8 @@
             {
               "name": "Cyabra ",
               "category": "Web Security",
-              "total_funding": 1,
-              "last_fundraising_date": "2018-06-27T00:00:00.000Z",
+              "total_funding": 6.6,
+              "last_fundraising_date": "2021-10-26T00:00:00.000Z",
               "description": "Cyabra is breaking down social media to empower brands and uncover disinformation.",
               "crunchbase": "https://www.crunchbase.com/organization/cyabra#section-overview",
               "homepage": "https://www.cyabra.com/",
@@ -6786,12 +6995,38 @@
               "linkedin": "https://www.linkedin.com/company/securitydam",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/SecurityDam-Logo.png"
+            },
+            {
+              "name": "Cyrus ",
+              "category": "Web Security",
+              "total_funding": "-",
+              "last_fundraising_date": "2020-11-01T00:00:00.000Z",
+              "description": "Cyrus is the next-generation of Personal Cybersecurity, Privacy & Identity Protection.",
+              "crunchbase": "https://www.crunchbase.com/organization/cyrus-security-ltd",
+              "homepage": "https://cyrus.app/",
+              "twitter": "https://twitter.com/safe_with_cyrus",
+              "linkedin": "https://www.linkedin.com/company/cyrus-security/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Cyrus-Logo.png"
             }
           ]
         },
         {
           "name": "WAF",
           "companies": [
+            {
+              "name": "Reblaze",
+              "category": "Web Security",
+              "total_funding": "N/A",
+              "last_fundraising_date": "2018-09-01T00:00:00.000Z",
+              "description": "Reblaze provides a cloud based web security and acceleration platform.",
+              "crunchbase": "https://www.crunchbase.com/organization/reblaze",
+              "homepage": "http://www.reblaze.com",
+              "twitter": "https://twitter.com/reblaze",
+              "linkedin": "https://www.linkedin.com/company/reblaze",
+              "subcategory": "WAF",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Reblaze-Logo-2.png"
+            },
             {
               "name": "Imperva",
               "category": "Web Security",
@@ -6804,19 +7039,6 @@
               "linkedin": "http://www.linkedin.com/company/imperva",
               "subcategory": "WAF",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/imperva_logo_color_rgb-e1563483436307.png"
-            },
-            {
-              "name": "Reblaze",
-              "category": "Web Security",
-              "total_funding": "N/A",
-              "last_fundraising_date": "1-Sep-2018",
-              "description": "Reblaze provides a cloud based web security and acceleration platform.",
-              "crunchbase": "https://www.crunchbase.com/organization/reblaze",
-              "homepage": "http://www.reblaze.com",
-              "twitter": "https://twitter.com/reblaze",
-              "linkedin": "https://www.linkedin.com/company/reblaze",
-              "subcategory": "WAF",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Reblaze-Logo-2.png"
             },
             {
               "name": "Radware",
@@ -6913,19 +7135,6 @@
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Perimeter-81-Logo.png"
             },
             {
-              "name": "Cato Networks",
-              "category": "Zero Trust Network Access & SASE",
-              "total_funding": 532,
-              "last_fundraising_date": "2021-10-19T00:00:00.000Z",
-              "description": "Cato Networks is a provider of the first SASE platform that converges SD-WAN and security into a cloud-native service.",
-              "crunchbase": "https://www.crunchbase.com/organization/cato-networks",
-              "homepage": "http://www.catonetworks.com",
-              "twitter": "https://twitter.com/catonetworks",
-              "linkedin": "https://www.linkedin.com/company/cato-networks",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cato-logo.png"
-            },
-            {
               "name": "Axis Security",
               "category": "Zero Trust Network Access & SASE",
               "total_funding": 99.5,
@@ -6963,6 +7172,19 @@
               "linkedin": "https://www.linkedin.com/company/island-io/",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/Island-Logo.png"
+            },
+            {
+              "name": "Cato Networks",
+              "category": "Zero Trust Network Access & SASE",
+              "total_funding": 532,
+              "last_fundraising_date": "2021-10-19T00:00:00.000Z",
+              "description": "Cato Networks is a provider of the first SASE platform that converges SD-WAN and security into a cloud-native service.",
+              "crunchbase": "https://www.crunchbase.com/organization/cato-networks",
+              "homepage": "http://www.catonetworks.com",
+              "twitter": "https://twitter.com/catonetworks",
+              "linkedin": "https://www.linkedin.com/company/cato-networks",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/05/Cato-logo.png"
             }
           ]
         }
