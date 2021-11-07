@@ -2773,7 +2773,7 @@
     {
       "name": "Cynomi",
       "category": "Vulnerability & Risk Management",
-      "total_funding": "-",
+      "total_funding": "N/A",
       "last_fundraising_date": "2021-04-05T00:00:00.000Z",
       "description": "Cynomi addresses a critical gap in mid-market cyber protection - creating and executing a cyber and compliance strategy.",
       "crunchbase": "https://www.crunchbase.com/organization/cynomi",
@@ -2786,7 +2786,7 @@
     {
       "name": "Oxeye Security",
       "category": "Application Security",
-      "total_funding": "-",
+      "total_funding": "N/A",
       "last_fundraising_date": "2021-04-05T00:00:00.000Z",
       "description": "Cloud-native application security testing.",
       "crunchbase": "https://www.crunchbase.com/organization/oxeye-security",
@@ -2825,7 +2825,7 @@
     {
       "name": "Flow Security",
       "category": "Data Security & Privacy",
-      "total_funding": "-",
+      "total_funding": "N/A",
       "last_fundraising_date": "-",
       "description": "Cloud Data Security for Modern Architectures.",
       "crunchbase": "https://www.crunchbase.com/organization/flow-security",
@@ -2850,8 +2850,8 @@
     },
     {
       "name": "Cyrus ",
-      "category": "Web Security",
-      "total_funding": "-",
+      "category": "Data Security & Privacy",
+      "total_funding": "N/A",
       "last_fundraising_date": "2020-11-01T00:00:00.000Z",
       "description": "Cyrus is the next-generation of Personal Cybersecurity, Privacy & Identity Protection.",
       "crunchbase": "https://www.crunchbase.com/organization/cyrus-security-ltd",
@@ -2864,7 +2864,7 @@
     {
       "name": "Commugen ",
       "category": "Vulnerability & Risk Management",
-      "total_funding": "-",
+      "total_funding": "N/A",
       "last_fundraising_date": "2017-05-17T00:00:00.000Z",
       "description": "Commugen is the first no-code cyber security GRC platform",
       "crunchbase": "https://www.crunchbase.com/organization/commugen",
@@ -4264,7 +4264,7 @@
             {
               "name": "Oxeye Security",
               "category": "Application Security",
-              "total_funding": "-",
+              "total_funding": "N/A",
               "last_fundraising_date": "2021-04-05T00:00:00.000Z",
               "description": "Cloud-native application security testing.",
               "crunchbase": "https://www.crunchbase.com/organization/oxeye-security",
@@ -4778,7 +4778,7 @@
             {
               "name": "Flow Security",
               "category": "Data Security & Privacy",
-              "total_funding": "-",
+              "total_funding": "N/A",
               "last_fundraising_date": "-",
               "description": "Cloud Data Security for Modern Architectures.",
               "crunchbase": "https://www.crunchbase.com/organization/flow-security",
@@ -4800,6 +4800,19 @@
               "linkedin": "https://www.linkedin.com/company/piiano/",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Piiano-Logo.png"
+            },
+            {
+              "name": "Cyrus ",
+              "category": "Data Security & Privacy",
+              "total_funding": "N/A",
+              "last_fundraising_date": "2020-11-01T00:00:00.000Z",
+              "description": "Cyrus is the next-generation of Personal Cybersecurity, Privacy & Identity Protection.",
+              "crunchbase": "https://www.crunchbase.com/organization/cyrus-security-ltd",
+              "homepage": "https://cyrus.app/",
+              "twitter": "https://twitter.com/safe_with_cyrus",
+              "linkedin": "https://www.linkedin.com/company/cyrus-security/",
+              "subcategory": "",
+              "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Cyrus-Logo.png"
             }
           ]
         }
@@ -6700,7 +6713,7 @@
             {
               "name": "Cynomi",
               "category": "Vulnerability & Risk Management",
-              "total_funding": "-",
+              "total_funding": "N/A",
               "last_fundraising_date": "2021-04-05T00:00:00.000Z",
               "description": "Cynomi addresses a critical gap in mid-market cyber protection - creating and executing a cyber and compliance strategy.",
               "crunchbase": "https://www.crunchbase.com/organization/cynomi",
@@ -6713,7 +6726,7 @@
             {
               "name": "Commugen ",
               "category": "Vulnerability & Risk Management",
-              "total_funding": "-",
+              "total_funding": "N/A",
               "last_fundraising_date": "2017-05-17T00:00:00.000Z",
               "description": "Commugen is the first no-code cyber security GRC platform",
               "crunchbase": "https://www.crunchbase.com/organization/commugen",
@@ -6995,19 +7008,6 @@
               "linkedin": "https://www.linkedin.com/company/securitydam",
               "subcategory": "",
               "logo": "https://www.ylventures.com/wp-content/uploads/2021/08/SecurityDam-Logo.png"
-            },
-            {
-              "name": "Cyrus ",
-              "category": "Web Security",
-              "total_funding": "-",
-              "last_fundraising_date": "2020-11-01T00:00:00.000Z",
-              "description": "Cyrus is the next-generation of Personal Cybersecurity, Privacy & Identity Protection.",
-              "crunchbase": "https://www.crunchbase.com/organization/cyrus-security-ltd",
-              "homepage": "https://cyrus.app/",
-              "twitter": "https://twitter.com/safe_with_cyrus",
-              "linkedin": "https://www.linkedin.com/company/cyrus-security/",
-              "subcategory": "",
-              "logo": "https://www.ylventures.com/wp-content/uploads/2021/11/Cyrus-Logo.png"
             }
           ]
         },
