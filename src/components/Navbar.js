@@ -23,7 +23,7 @@ class Navbar extends Component {
                 <nav className="nav-gradient">
                     <div className="container">
                         <div className="nav-wrapper fixed-navbar padding-top-bottom">
-                            <a href="/" className="brand-logo"><img src="/logo.png" alt="logo"/></a>
+                            <a href="/" className="brand-logo"><img src="/logo.png" alt="Israel Cyber Security Startup"/></a>
                             <ul className="right hide-on-med-and-down">
                                 <li><a className="modal-trigger" href="#about">About</a></li>
                                 <li><a className="modal-trigger" href="#addcompany">Add a company</a></li>
